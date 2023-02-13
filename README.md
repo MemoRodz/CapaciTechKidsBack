@@ -4,7 +4,7 @@
 
 * Diagrama entidad Relación:
 <br/>
-    <img  src='./img/Version 00.jpeg' height='70px'>
+    <img  src='./img/Version 00.jpeg' height='100px'>
 
 
 
