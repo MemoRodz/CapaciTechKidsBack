@@ -1,7 +1,5 @@
 require('dotenv').config();
-const { Sequelize, Op, BelongsTo} = require('sequelize');
-const modeltblUsers = require('./models/tblCourses');
-const modeltblCourses = require('./models/tblUsers');
+const { Sequelize, Op} = require('sequelize');
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
@@ -14,7 +12,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
    logging: false, 
    native: false 
 }
-);
+); 
 
 /*  const sequelize = new Sequelize(DB_DEPLOY,
    { 
@@ -25,20 +23,13 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
 //Acá irán las funciones de los modelos. ej: modelStudents(sequelize)
 
-modeltblUsers(sequelize);
-modeltblCourses(sequelize);
 
-const { tblUsers, tblCourses } = sequelize.models;
+
+const { /* modelos */ } = sequelize.models;  
 
 // Acá van las relaciones: 
 
-// Relación de Usuarios tipo Students a cursos.
-// tblUsers.hasMany(tblCourses);
-// tblCourses.hasMany(tblUsers);
 
-
-tblCourses.belongsTo(tblUsers, {
-    foreignKey: "FK_Instructor"});
 
 
 
