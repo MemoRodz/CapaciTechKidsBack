@@ -1,5 +1,4 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../DB_connection');
 
 /*
     Para los campos que permiten los valores NULOS sólo es para 
