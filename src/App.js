@@ -1,6 +1,8 @@
+
 const express = require("express");
 const morgan = require("morgan"); // middleware que te da informacion por consola cuando se haga una solicitud. 
 const bodyParser = require ("body-parser")
+
 
 
 const server= express();  
@@ -17,7 +19,7 @@ server.use(morgan("dev"));
 
 server.use(express.json());
 
-server.use(mainRouter); // te permite modularizar tus routes.
+//server.use(mainRouter); // te permite modularizar tus routes.
 
 module.exports = server; 
 
