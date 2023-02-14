@@ -40,10 +40,6 @@ module.exports = sequelize => {
             type: DataTypes.DATEONLY,
             allowNull: true
         },
-        FK_Instructor: {
-            type: DataTypes.STRING,
-            allowNull: true
-        }
     },
         { timestamps: false }
     );

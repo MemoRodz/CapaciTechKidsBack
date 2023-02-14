@@ -36,8 +36,9 @@ const { tblUsers, tblCourses } = sequelize.models;
 // tblUsers.hasMany(tblCourses);
 // tblCourses.hasMany(tblUsers);
 
-//
-//tblCourses.belongsTo(tblUsers, {foreignKey: 'FK_Instructor'});
+
+tblCourses.belongsTo(tblUsers, {
+    foreignKey: "FK_Instructor"});
 
 
 
