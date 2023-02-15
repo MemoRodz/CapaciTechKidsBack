@@ -7,7 +7,8 @@ let falseApi =
             End_Date: 2023-03-03,
             Image: "https://stackify.com/wp-content/uploads/2018/10/JavaScript-Tutorials-for-Beginners-881x441.jpg",
             Duration: 21600,
-            Instructor:  8
+            Instructor:  8,
+            Score : 5
 
         },
         {   
@@ -18,7 +19,8 @@ let falseApi =
             End_Date: 2023-02-20,
             Image: "https://vaguefoundation.com/wp-content/uploads/2020/06/Connect-4.png",
             Duration: 259200,
-            Instructor: 7
+            Instructor: 7,
+            Score : 3
         },
         {   
             Title: "Node: De cero a experto",
@@ -28,7 +30,8 @@ let falseApi =
             End_Date: 2023-04-23,
             Image: "https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png",
             Duration: 36000,
-            Instructor: 8
+            Instructor: 8,
+            Score : 4
             
         },
         {   
@@ -39,7 +42,8 @@ let falseApi =
             End_Date: 2023-05-20,
             Image: "https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png",
             Duration: 54000,
-            Instructor: 8
+            Instructor: 8,
+            Score : 5
             
         },
         {   
@@ -50,7 +54,8 @@ let falseApi =
             End_Date: 2023-06-20,
             Image: "https://res.cloudinary.com/practicaldev/image/fetch/s--lyTFtvJ5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kncmnrczdkyunzqwa56o.png",
             Duration: 72000,
-            Instructor: 7
+            Instructor: 7,
+            Score : 4
            
         },
         {   
@@ -61,7 +66,8 @@ let falseApi =
             End_Date: 2023-12-28,
             Image: "https://agilescrum.com.mx/wp-content/uploads/2022/01/logo_AS_266x78-01.png",
             Duration: 14400,
-            Instructor: 8
+            Instructor: 8,
+            Score : 5
             
         },
         {   
@@ -72,7 +78,8 @@ let falseApi =
             End_Date: 2023-08-15,
             Image: "https://assets.stickpng.com/images/62c6bc0beee9410fe137d91e.png",
             Duration: 28800,
-            Instructor: 7
+            Instructor: 7,
+            Score : 5
             
         },
         {   
@@ -83,7 +90,8 @@ let falseApi =
             End_Date: 2023-10-08,
             Image: "https://pythonforundergradengineers.com/posts/git/images/git_and_github_logo.png",
             Duration: 7200,
-            Instructor: 8
+            Instructor: 8,
+            Score : 4
             
         },
         ]
