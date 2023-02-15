@@ -21,6 +21,7 @@ const getFalseApiToDB = async() => {
 
 
   for (const data of mapeados) {  
+    console.log(data.Profesores)
    await tblCourses.create({
         Title : data.Title,
         Description : data.Description,
@@ -29,7 +30,7 @@ const getFalseApiToDB = async() => {
         End_Date : data.End_Date,
         Image : data.Image,
         Duration : data.Duration,
-        ProfesoresID: data.Profesores
+        PK_Users : data.Profesores
     })}
 
     return tblCourses.findAll()

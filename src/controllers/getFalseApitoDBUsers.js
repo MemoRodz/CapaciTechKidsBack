@@ -1,34 +1,31 @@
 const {tblUsers} = require("../DB_connection.js");
-const falseApi = require("../utils/falseApi")
+const falseApiUsers = require("../utils/falseApiUsers")
 
 const getFalseApiToDBUsers = async() => {
     try {
- const mapeados = []
- for (let i = 0; i < 4; i++) {
+ let mapeados = []  
+ for (let i = 0; i < falseApiUsers.length -1; i++) {
+    console.log(falseApiUsers[i])
     let courseArray = {};
-    courseArray.Title = falseApiUsers[i].Title;
-    courseArray.Description = falseApiUsers[i].Description;
-    courseArray.Category = falseApiUsers[i].Category;
-    courseArray.Start_Date = falseApiUsers[i].Start_Date;
-    courseArray.End_Date = falseApiUsers[i].End_Date;
-    courseArray.Image = falseApiUsers[i].Image;
-    courseArray.Duration = falseApiUsers[i].Duration;
-    mapeados.push(courseArray);
+    courseArray.Name = falseApiUsers[i].Name
+    courseArray.Email = falseApiUsers[i].Email 
+    courseArray.Password = falseApiUsers[i].Password
+    courseArray.UserType = falseApiUsers[i].UserType;
+    courseArray.Register_Date= falseApiUsers[i].Register_Date
+    mapeados.push(courseArray)
   }
   console.log(mapeados)
 
   for (const data of mapeados) {  
    await tblUsers.create({
-        Title : data.Title,
-        Description : data.Description,
-        Category : data.Category,
-        Start_Date: data.Start_Date,
-        End_Date : data.End_Date,
-        Image : data.Image,
-        Duration : data.Duration,
+        Name : data.Name,
+        Email : data.Email,
+        Password : data.Password,
+        UserType: data.UserType,
+        Register_Date : data.Register_Date,
     })}
 
-    return tblCourses.findAll()
+    return tblUsers.findAll()
     }
     catch(error){
         return error.message

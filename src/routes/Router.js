@@ -15,6 +15,6 @@ catch(error){
 })
 
 mainRouter.use("/courses", CourseRouter)
-// mainRouter.use("/users", UsersRouter)
+mainRouter.use("/users", UsersRouter)
 
 module.exports = mainRouter;

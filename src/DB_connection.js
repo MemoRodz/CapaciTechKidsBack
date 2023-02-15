@@ -38,8 +38,7 @@ const { tblUsers, tblCourses } = sequelize.models;
 
 
 tblCourses.belongsTo(tblUsers, {
-    foreignKey: "ProfesoresID",
-    as : "Profesores"
+    foreignKey: "PK_Users"
    });
 
 
