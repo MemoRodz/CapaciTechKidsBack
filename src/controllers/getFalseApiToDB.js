@@ -1,4 +1,4 @@
-const {tblCourses} = require("../DB_connection.js");
+const {tblCourses,tblUsers} = require("../DB_connection.js");
 const falseApi = require("../utils/falseApi")
 
 const getFalseApiToDB = async() => {
@@ -14,14 +14,14 @@ const getFalseApiToDB = async() => {
     courseArray.End_Date = falseApi[i].End_Date;
     courseArray.Image = falseApi[i].Image;
     courseArray.Duration = falseApi[i].Duration;
-     courseArray.Profesores = falseApi[i].Instructor;
+    courseArray.Profesores = falseApi[i].Instructor;
+    courseArray.Score = falseApi[i].Score
     console.log(falseApi[i].FK_Users)
     mapeados.push(courseArray);
   }
 
 
   for (const data of mapeados) {  
-    console.log(data.Profesores)
    await tblCourses.create({
         Title : data.Title,
         Description : data.Description,
@@ -30,10 +30,15 @@ const getFalseApiToDB = async() => {
         End_Date : data.End_Date,
         Image : data.Image,
         Duration : data.Duration,
-        PK_Users : data.Profesores
+        PK_Users : data.Profesores,
+        Score : data.Score
     })}
+    
+   const result =  tblCourses.findAll({
+    include: tblUsers
+})
 
-    return tblCourses.findAll()
+   return result
     }
     catch(error){
         return error.message
