@@ -1,4 +1,4 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes } = require('sequelize'); 
 
 /*
     Para los campos que permiten los valores NULOS sólo es para 
@@ -6,7 +6,6 @@ const { DataTypes } = require('sequelize');
 */
 
 module.exports = sequelize => {
-    'Courses',
     sequelize.define('tblCourses', {
         PK_Courses: {
             type: DataTypes.UUID,
@@ -46,6 +45,11 @@ module.exports = sequelize => {
         Duration: {
             type: DataTypes.INTEGER,
             allowNull: true
+        },
+        Active : {
+            type: DataTypes.BOOLEAN,
+            defaultValue : false,
+            allowNull:false
         }
     },
         { timestamps: false }

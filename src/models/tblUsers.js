@@ -32,6 +32,10 @@ module.exports = sequelize => {
         Register_Date: {
             type: DataTypes.DATEONLY,
             allowNull: true
+        },
+        Active : {
+            type: DataTypes.BOOLEAN,
+            defaultValue : false
         }
     },
         {timestamps: false}
