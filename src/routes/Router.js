@@ -1,5 +1,6 @@
 const {Router} = require("express");
 const CourseRouter = require("./CourseRouter");
+const UsersRouter = require("./UsersRoutes");
 
 
 const mainRouter = Router();    
@@ -14,5 +15,6 @@ catch(error){
 })
 
 mainRouter.use("/courses", CourseRouter)
+// mainRouter.use("/users", UsersRouter)
 
 module.exports = mainRouter;

@@ -14,9 +14,11 @@ const getFalseApiToDB = async() => {
     courseArray.End_Date = falseApi[i].End_Date;
     courseArray.Image = falseApi[i].Image;
     courseArray.Duration = falseApi[i].Duration;
+     courseArray.Profesores = falseApi[i].Instructor;
+    console.log(falseApi[i].FK_Users)
     mapeados.push(courseArray);
   }
-  console.log(mapeados)
+
 
   for (const data of mapeados) {  
    await tblCourses.create({
@@ -27,6 +29,7 @@ const getFalseApiToDB = async() => {
         End_Date : data.End_Date,
         Image : data.Image,
         Duration : data.Duration,
+        ProfesoresID: data.Profesores
     })}
 
     return tblCourses.findAll()
