@@ -2,26 +2,26 @@ const { DataTypes } = require('sequelize');
 
 
 module.exports = sequelize => {
-    sequelize.define('tblUsers', {
-        PK_User: {
+    sequelize.define('tblExams', {
+        PK_Exam: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             allowNull : false,
             autoIncrement : true
         },
-        Name: {
+        Title: {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Email: {
+        Description: {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Password: {
+        Start_Date: {
             type: DataTypes.STRING,
             allowNull: true
         },
-        UserType: {
+        End_Date: {
             type: DataTypes.ENUM(
                 'Admin',
                 'AdvUser',
@@ -30,15 +30,23 @@ module.exports = sequelize => {
             ),
             defaultValue: 'Student',
         },
-        Register_Date: {
+        Questions: {
             type: DataTypes.DATEONLY,
             allowNull: true
         },
-        Active : {
-            type: DataTypes.BOOLEAN,
-            defaultValue : true
-        }
-    },
+    //     FK_Lecture: {
+    //         type: DataTypes.INTEGER,
+    //         allowNull: true,
+    //         references: {
+    //             model: 'tblLectures',
+    //             key: 'PK_Lecture'
+    //         }
+
+    // ,
+
+    // }
+    
+        },
         {timestamps: false}
     );
 };

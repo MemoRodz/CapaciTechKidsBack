@@ -31,7 +31,8 @@ yarn-error.log*
 
 # package-lock.json
 package-lock.json
+.env
 
 # Dependency directories
 node_modules/
-jspm_packages/
+json_packages/

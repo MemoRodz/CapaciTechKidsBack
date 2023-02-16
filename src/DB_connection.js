@@ -2,6 +2,9 @@ require('dotenv').config();
 const { Sequelize, Op, BelongsTo} = require('sequelize');
 const modeltblUsers = require('./models/tblCourses');
 const modeltblCourses = require('./models/tblUsers');
+const modeltblLectures = require('./models/tblLectures');
+const modeltblExams = require('./models/tblExams');
+const modeltblQuestions = require('./models/tblQuestions');
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
@@ -27,8 +30,13 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
 modeltblUsers(sequelize);
 modeltblCourses(sequelize);
+modeltblLectures(sequelize);
+modeltblExams(sequelize);
+modeltblQuestions(sequelize);
 
-const { tblUsers, tblCourses } = sequelize.models;
+
+
+const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions } = sequelize.models;
 
 // Acá van las relaciones: 
 
@@ -38,8 +46,21 @@ const { tblUsers, tblCourses } = sequelize.models;
 
 
 tblCourses.belongsTo(tblUsers, {
-    foreignKey: "PK_Users"
+       foreignKey: "PK_User"
    });
+
+tblLectures.belongsTo(tblCourses, {
+      foreignKey: "PK_Courses"
+   });
+
+tblExams.belongsTo(tblLectures, {
+      foreignKey: "PK_Lectures"
+   });
+
+tblQuestions.belongsTo(tblExams, {
+      foreignKey: "PK_Exams"
+   });
+
 
 
 

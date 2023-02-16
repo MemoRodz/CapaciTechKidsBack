@@ -7,7 +7,7 @@ const { DataTypes } = require('sequelize');
 
 module.exports = sequelize => {
     sequelize.define('tblCourses', {
-        PK_Courses: {
+        PK_Course: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             allowNull : false,
@@ -54,7 +54,15 @@ module.exports = sequelize => {
         },
         Score : {
             type: DataTypes.INTEGER
-        }
+        },
+    //     FK_Instructor: {
+    //         type: DataTypes.INTEGER,
+    //         allowNull: false,
+    //         references: {
+    //             model: 'tblUsers',
+    //             key: 'PK_User'
+    //         }
+    // },
     },
         { timestamps: false }
     );
