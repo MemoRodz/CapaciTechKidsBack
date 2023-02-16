@@ -8,9 +8,10 @@ const { DataTypes } = require('sequelize');
 module.exports = sequelize => {
     sequelize.define('tblCourses', {
         PK_Courses: {
-            type: DataTypes.UUID,
-            defaultValue: DataTypes.UUIDV4,
-            primaryKey: true
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            allowNull : false,
+            autoIncrement : true
         },
         Title: {
             type: DataTypes.STRING,
