@@ -29,7 +29,7 @@ const getFalseApiToDB = async() => {
         End_Date : data.End_Date,
         Image : data.Image,
         Duration : data.Duration,
-        PK_Users : data.Profesores,
+        PK_User : data.Profesores,
         Score : data.Score
     })}
     
