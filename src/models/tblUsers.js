@@ -3,7 +3,7 @@ const { DataTypes } = require('sequelize');
 
 module.exports = sequelize => {
     sequelize.define('tblUsers', {
-        PK_Users: {
+        PK_User: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             allowNull : false,

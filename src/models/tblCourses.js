@@ -7,18 +7,11 @@ const { DataTypes } = require('sequelize');
 
 module.exports = sequelize => {
     sequelize.define('tblCourses', {
-<<<<<<< Updated upstream
-        PK_Courses: {
+        PK_Course: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             allowNull : false,
             autoIncrement : true
-=======
-        PK_Course: {
-            type: DataTypes.UUID,
-            defaultValue: DataTypes.UUIDV4,
-            primaryKey: true
->>>>>>> Stashed changes
         },
         Title: {
             type: DataTypes.STRING,
