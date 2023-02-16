@@ -3,9 +3,8 @@ const falseApi = require("../utils/falseApi")
 
 const getFalseApiToDB = async() => {
     try {
-       let id = 0 
  const mapeados = []
- for (let i = 0; i < falseApi.length-1; i++) {
+ for (let i = 0; i < falseApi.length; i++) {
     let courseArray = {};
     courseArray.Title = falseApi[i].Title;
     courseArray.Description = falseApi[i].Description;
