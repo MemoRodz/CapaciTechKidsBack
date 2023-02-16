@@ -21,16 +21,6 @@ module.exports = sequelize => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Category: {
-            type: DataTypes.ENUM(
-                'Design',
-                'Development',
-                'Business',
-                'Marketing',
-                'Other'
-            ),
-            defaultValue: 'Other',
-        },
         Start_Date: {
             type: DataTypes.DATEONLY,
             allowNull: true
@@ -55,14 +45,6 @@ module.exports = sequelize => {
         Score : {
             type: DataTypes.INTEGER
         },
-    //     FK_Instructor: {
-    //         type: DataTypes.INTEGER,
-    //         allowNull: false,
-    //         references: {
-    //             model: 'tblUsers',
-    //             key: 'PK_User'
-    //         }
-    // },
     },
         { timestamps: false }
     );

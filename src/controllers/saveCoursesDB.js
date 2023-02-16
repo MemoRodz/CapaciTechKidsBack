@@ -1,8 +1,10 @@
 const {tblCourses,tblUsers} = require("../DB_connection.js");
-const falseApi = require("../utils/falseApiCourses")
+const falseApi = require("../utils/falseApiCourses");
+const categoriesXCourses = require("./postCategoriesXCourse.js");
 
 const getFalseApiToDB = async() => {
     try {
+ let categorias = []
  const mapeados = []
  for (let i = 0; i < falseApi.length; i++) {
     let courseArray = {};
@@ -15,16 +17,16 @@ const getFalseApiToDB = async() => {
     courseArray.Duration = falseApi[i].Duration;
     courseArray.Profesores = falseApi[i].Instructor;
     courseArray.Score = falseApi[i].Score
-    console.log(falseApi[i].FK_Users)
     mapeados.push(courseArray);
   }
 
 
-  for (const data of mapeados) {  
+  for (const data of mapeados) { 
+    
+    categorias.push(data.Category)
    await tblCourses.create({
         Title : data.Title,
         Description : data.Description,
-        Category : data.Category,
         Start_Date: data.Start_Date,
         End_Date : data.End_Date,
         Image : data.Image,
@@ -32,11 +34,14 @@ const getFalseApiToDB = async() => {
         PK_User : data.Profesores,
         Score : data.Score
     })}
+
+    const allCourses = await tblCourses.findAll()
+   for (let i = 0; i < allCourses.length; i++) {
+        categoriesXCourses(allCourses[i].PK_Course, categorias[i])}
     
    const result =  tblCourses.findAll({
-    include: tblUsers
+    include: tblUsers //preguntar a chat como agregar otro include con tblCategories
 })
-
    return result
     }
     catch(error){

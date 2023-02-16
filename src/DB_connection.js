@@ -5,6 +5,7 @@ const modeltblCourses = require('./models/tblUsers');
 const modeltblLectures = require('./models/tblLectures');
 const modeltblExams = require('./models/tblExams');
 const modeltblQuestions = require('./models/tblQuestions');
+const modeltblCategories = require("./models/tblCategories");
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
@@ -33,10 +34,12 @@ modeltblCourses(sequelize);
 modeltblLectures(sequelize);
 modeltblExams(sequelize);
 modeltblQuestions(sequelize);
+modeltblCategories(sequelize);
 
 
 
-const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions } = sequelize.models;
+
+const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions , tblCategories } = sequelize.models;
 
 // Acá van las relaciones: 
 
@@ -44,6 +47,8 @@ const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions } = sequelize.
 // tblUsers.hasMany(tblCourses);
 // tblCourses.hasMany(tblUsers);
 
+tblCourses.belongsToMany(tblCategories, { through: "tblCatXCourses", unique:false });
+tblCategories.belongsToMany(tblCourses, { through: "tblCatXCourses", unique:false});
 
 tblCourses.belongsTo(tblUsers, {
        foreignKey: "PK_User"
