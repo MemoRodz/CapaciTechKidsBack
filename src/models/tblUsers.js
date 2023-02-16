@@ -4,21 +4,22 @@ const { DataTypes } = require('sequelize');
 module.exports = sequelize => {
     sequelize.define('tblUsers', {
         PK_Users: {
-            type: DataTypes.UUID,
-            defaultValue: DataTypes.UUIDV4,
-            primaryKey: true
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            allowNull : false,
+            autoIncrement : true
         },
         Name: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         Email: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         Password: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         UserType: {
             type: DataTypes.ENUM(
@@ -32,6 +33,10 @@ module.exports = sequelize => {
         Register_Date: {
             type: DataTypes.DATEONLY,
             allowNull: true
+        },
+        Active : {
+            type: DataTypes.BOOLEAN,
+            defaultValue : true
         }
     },
         {timestamps: false}
