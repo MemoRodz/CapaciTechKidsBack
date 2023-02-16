@@ -1,5 +1,5 @@
 const {tblCourses,tblUsers} = require("../DB_connection.js");
-const falseApi = require("../utils/falseApi")
+const falseApi = require("../utils/falseApiCourses")
 
 const getFalseApiToDB = async() => {
     try {
@@ -45,6 +45,9 @@ const getFalseApiToDB = async() => {
 }
 
 module.exports = getFalseApiToDB;
+
+
+
 /* [{Title: string,
 Description : string,
 Category : ENUM 'Design',
