@@ -41,7 +41,7 @@ module.exports = sequelize => {
         },
         Image:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         Duration: {
             type: DataTypes.INTEGER,
