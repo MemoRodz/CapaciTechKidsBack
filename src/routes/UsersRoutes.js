@@ -1,13 +1,12 @@
 const {Router} = require("express");
-const getFalseApiToDBUsers = require("../controllers/getFalseApitoDBUsers");
+const {tblCourses,tblUsers} = require("../DB_connection.js");
 
 
 const UsersRouter = Router();    
 
 UsersRouter.get("/", async(req,res) => {
 try{
-   const result = await getFalseApiToDBUsers()
-
+   const result = await tblUsers.findAll()
     res.status(200).json(result)
         }
 catch (error) {
