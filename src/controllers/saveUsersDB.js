@@ -5,7 +5,6 @@ const getFalseApiToDBUsers = async() => {
     try {
  let mapeados = []  
  for (let i = 0; i < falseApiUsers.length -1; i++) {
-    console.log(falseApiUsers[i])
     let courseArray = {};
     courseArray.Name = falseApiUsers[i].Name
     courseArray.Email = falseApiUsers[i].Email 
