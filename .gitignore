@@ -31,6 +31,7 @@ yarn-error.log*
 
 # package-lock.json
 package-lock.json
+.env
 
 # Dependency directories
 node_modules/
