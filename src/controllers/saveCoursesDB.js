@@ -1,11 +1,10 @@
 const {tblCourses,tblUsers} = require("../DB_connection.js");
-const falseApi = require("../utils/falseApi")
+const falseApi = require("../utils/falseApiCourses")
 
 const getFalseApiToDB = async() => {
     try {
-       let id = 0 
  const mapeados = []
- for (let i = 0; i < falseApi.length-1; i++) {
+ for (let i = 0; i < falseApi.length; i++) {
     let courseArray = {};
     courseArray.Title = falseApi[i].Title;
     courseArray.Description = falseApi[i].Description;
@@ -46,6 +45,9 @@ const getFalseApiToDB = async() => {
 }
 
 module.exports = getFalseApiToDB;
+
+
+
 /* [{Title: string,
 Description : string,
 Category : ENUM 'Design',

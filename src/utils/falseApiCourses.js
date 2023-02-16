@@ -76,7 +76,7 @@ let falseApi =
             Category :'Design',
             Start_Date : 2023-08-14,
             End_Date: 2023-08-15,
-            Image: "https://assets.stickpng.com/images/62c6bc0beee9410fe137d91e.png",
+            Image: "https://cdn.worldvectorlogo.com/logos/figma-5.svg",
             Duration: 28800,
             Instructor: 7,
             Score : 5
