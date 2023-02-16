@@ -1,3 +1,4 @@
+
 ## Presentación
 
 # Repositorio CapaciTechKids para Back
@@ -5,6 +6,21 @@
 * Diagrama entidad Relación:
 <br/>
     <img  src='./img/Version 00.jpeg' height='100px'>
+<br/>
+
+```mermaid
+graph LR;
+	profileDb[(Profiles)]
+	profileDb-->profileName;
+	repositorie[(Repositories)]
+	setting[(Settings)]
+	profileDb-->|profileName| repositorie;
+	repositorie-->Files;
+	setting-->|configurationType| profileName;
+	Stars-->|TypeStar| profileName;
+	Sponsors--> profileName;
+	Projects--> profileName;
+```
 
 
 # Colaboradores del proyecto:
@@ -13,7 +29,7 @@
 
 * [Brandon Reyes](https://github.com/Brareyesb15)
 
-* [Fabián Rizzi]()
+* [Fabián Rizzi](https://github.com/Fabian-Rizzi)
 
 * [Guillermo Rodríguez](https://github.com/MemoRodz)
 
