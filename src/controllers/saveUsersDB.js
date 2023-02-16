@@ -14,7 +14,6 @@ const getFalseApiToDBUsers = async() => {
     courseArray.Register_Date= falseApiUsers[i].Register_Date
     mapeados.push(courseArray)
   }
-  console.log(mapeados)
 
   for (const data of mapeados) {  
    await tblUsers.create({
