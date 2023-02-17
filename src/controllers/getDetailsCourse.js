@@ -1,12 +1,18 @@
-const {tblCourses,tblUsers} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCategories} = require("../DB_connection.js");
 
 
 
 const getDetails = async (id) => {
     try{
    return tblCourses.findByPk(id,{
-    include: tblUsers
-   });
+    include: [
+        { model:tblUsers,
+        
+        },
+        { model: tblCategories,
+          
+        },
+    ]})
     }
     catch(error){
     throw error
