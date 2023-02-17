@@ -5,7 +5,7 @@
 
 * Diagrama entidad Relación:
 <br/>
-    <img  src='./img/E-R Diagram CapaciTech Kids Ver 01.svg' height='500px' width='500px'>
+    <img  src='./img/E-R Diagram CapaciTech Kids Ver 01.svg' height='500px' width='1000px'>
 <br/>
 
 
