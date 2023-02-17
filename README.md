@@ -8,7 +8,41 @@
     <img  src='./img/E-R Diagram CapaciTech Kids Ver 01_1.svg' height='500px' width='1000px'>
 <br/>
 
-
+```mermaid
+erDiagram
+    USERS ||--|{ USERXCOURSES : PK_User
+    USERS {
+        integer PK_User
+		string Name
+        string Email
+        string Password
+		string UserType
+		date Register_date
+		boolean Active
+    }
+    COURSES ||--|{ USERXCOURSES : PK_Course
+    COURSES {
+        integer PK_Course
+        string Title
+		string Description
+		date Start_Date
+		date End_Date
+		string Image
+		integer Duration
+		boolean Active
+    }
+    USERXCOURSES {
+        integer PK_UserXCourse
+        integer FK_PKUser
+        integer FK_Course
+    }
+	COURSES }|--|{ COURSEXCATEGORIES :PK_Course
+	CATEGORIES }|--|{ COURSEXCATEGORIES : PK_Category
+	CATEGORIES {
+		integer PK_Category
+		string Name
+	}
+```
 
 
 # Colaboradores del proyecto:
