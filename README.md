@@ -21,8 +21,9 @@ classDiagram
 		+UserType: String
 		+Register_Date: Date
 		+Active: Boolean
+		-timestamps: False
     }
-    class Fish{
+    class tblCourses{
         -int sizeInFeet
         -canEat()
     }
