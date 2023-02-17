@@ -1,7 +1,8 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCatXCourses} = require("../DB_connection.js");
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
+const getCategory = require("../controllers/getCategory.js");
 
 
 
@@ -45,6 +46,26 @@ CourseRouter.post("/createPost", async(req,res) => {
      res.status(400).send(error.message)
          }
  })
+
+CourseRouter.get("/category",  async (req,res) => { 
+      
+      const {Category}= req.query;
+      
+      
+      try{
+       const result = await getCategory(Category)
+        
+       res.status(200).send(result)
+
+      }
+      catch(error) {
+        res.status(400).send(error.message)
+          
+        } 
+     
+        }
+      );
+
 
 
 module.exports = CourseRouter;
