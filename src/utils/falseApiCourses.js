@@ -8,7 +8,7 @@ let falseApi =
             Image: "https://stackify.com/wp-content/uploads/2018/10/JavaScript-Tutorials-for-Beginners-881x441.jpg",
             Duration: 21600,
             Instructor:  8,
-            Score : 5
+            Score : 10
 
         },
         {   
@@ -20,7 +20,7 @@ let falseApi =
             Image: "https://vaguefoundation.com/wp-content/uploads/2020/06/Connect-4.png",
             Duration: 259200,
             Instructor: 7,
-            Score : 3
+            Score : 7
         },
         {   
             Title: "Node: De cero a experto",
@@ -31,7 +31,7 @@ let falseApi =
             Image: "https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png",
             Duration: 36000,
             Instructor: 8,
-            Score : 4
+            Score : 9
             
         },
         {   
@@ -43,7 +43,7 @@ let falseApi =
             Image: "https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png",
             Duration: 54000,
             Instructor: 8,
-            Score : 5
+            Score : 8
             
         },
         {   
@@ -55,7 +55,7 @@ let falseApi =
             Image: "https://res.cloudinary.com/practicaldev/image/fetch/s--lyTFtvJ5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kncmnrczdkyunzqwa56o.png",
             Duration: 72000,
             Instructor: 7,
-            Score : 4
+            Score : 7
            
         },
         {   
@@ -67,7 +67,7 @@ let falseApi =
             Image: "https://agilescrum.com.mx/wp-content/uploads/2022/01/logo_AS_266x78-01.png",
             Duration: 14400,
             Instructor: 8,
-            Score : 5
+            Score : 6
             
         },
         {   
@@ -79,7 +79,7 @@ let falseApi =
             Image: "https://cdn.worldvectorlogo.com/logos/figma-5.svg",
             Duration: 28800,
             Instructor: 7,
-            Score : 5
+            Score : 8
             
         },
         {   
@@ -91,7 +91,7 @@ let falseApi =
             Image: "https://pythonforundergradengineers.com/posts/git/images/git_and_github_logo.png",
             Duration: 7200,
             Instructor: 8,
-            Score : 4
+            Score : 10
             
         },
         ]

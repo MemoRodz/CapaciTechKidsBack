@@ -17,21 +17,8 @@ module.exports = sequelize => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Start_Date: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        End_Date: {
-            type: DataTypes.ENUM(
-                'Admin',
-                'AdvUser',
-                'Instructor',
-                'Student'
-            ),
-            defaultValue: 'Student',
-        },
         Questions: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.ARRAY(DataTypes.STRING), // puede que termine siendo otra tabla/relación 
             allowNull: true
         },
     //     FK_Lecture: {
@@ -50,3 +37,10 @@ module.exports = sequelize => {
         {timestamps: false}
     );
 };
+
+type: DataTypes.ENUM(
+    'Admin',
+    'AdvUser',
+    'Instructor',
+    'Student'
+)

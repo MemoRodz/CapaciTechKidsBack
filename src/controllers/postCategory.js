@@ -23,7 +23,6 @@ const postFalseCourses = async() => {
         postCourse(cat);
     
     })
-  
 }
 
 module.exports = {postCourse,postFalseCourses}; 

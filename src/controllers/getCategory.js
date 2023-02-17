@@ -10,13 +10,17 @@ const getCategory = async (Category) => {
                 where: {
                     Name: Category} 
                 })
-       console.log(filtered.PK_Category)
-      return await tblCatXCourses.findAll({
+       console.log(filtered)
+
+      const courses = await tblCatXCourses.findAll({
+        attribute: "tblCoursePKCourse",
             where: {
                 tblCategoryPKCategory : filtered.PK_Category
             }
-    
+ 
 })
+    console.log(courses)
+    return courses.map(course => course.tblCoursePKCourse)
 }
 
 catch(error){
