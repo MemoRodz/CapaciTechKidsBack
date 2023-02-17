@@ -24,7 +24,7 @@ classDiagram
 		-timestamps() False
     }
 	tblUserXCourses <|-- tblUsers
-	note "Relation tblUsers 1 : N tblUserXCourses"
+	note for tblUsers "Relation tblUsers 1 : N tblUserXCourses"
     class tblCourses{
         +PK_Course: Integer
 		+Title: String
@@ -37,12 +37,13 @@ classDiagram
 		Score: Integer
         -timestamps()
     }
-	note "Relation tblCourses 1 : N tblUserXCourses"
+	note for tblCourses "Relation tblCourses 1 : N tblUserXCourses"
 	tblUserXCourses <|-- tblCourses
     class tblUserXCourses{
         +PK_UserXCourse: Integer
         +FK_PKUser: Integer
 		+FK_PKCourse: Integer
+		-timestamps() False
     }
 ```
 
