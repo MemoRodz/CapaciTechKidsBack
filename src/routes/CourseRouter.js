@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers,tblCatXCourses} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCategories} = require("../DB_connection.js");
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
 const getCategory = require("../controllers/getCategory.js");
@@ -12,7 +12,15 @@ CourseRouter.get("/", async(req,res) => {
     
 try{
     const result = await tblCourses.findAll({
-        include: tblUsers
+        
+            include: [
+                { model:tblUsers,
+                
+                },
+                { model: tblCategories,
+                  
+                },
+            ]
     });
     res.status(200).json(result)
         }
