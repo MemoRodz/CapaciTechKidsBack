@@ -43,9 +43,9 @@ const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions , tblCategorie
 
 // Acá van las relaciones: 
 
-// Relación de Usuarios tipo Students a cursos.
-// tblUsers.hasMany(tblCourses);
-// tblCourses.hasMany(tblUsers);
+// Relación de Usuarios tipo Users a Courses.
+tblUsers.belongsToMany(tblCourses, {through: "tblUserXCourses", unique:false});
+tblCourses.belongsToMany(tblUsers, {through: "tblUserXCourses", unique:false});
 
 tblCourses.belongsToMany(tblCategories, { through: "tblCatXCourses", unique:false });
 tblCategories.belongsToMany(tblCourses, { through: "tblCatXCourses", unique:false});
