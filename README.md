@@ -5,47 +5,10 @@
 
 * Diagrama entidad Relación:
 <br/>
-    <img  src='./img/Version 00.jpeg' height='100px'>
+    <img  src='./img/E-R Diagram CapaciTech Kids Ver 01.svg' height='50px'>
 <br/>
 
-```mermaid
----
-title: Diagrama E-R CapaciTech Kids
----
-classDiagram
-    class tblUsers{
-        +PK_User: Integer
-        +Name: String
-        +Email: String
-		+Password: String
-		+UserType: String
-		+Register_Date: DateOnly
-		+Active: Boolean
-		-timestamps() False
-    }
-	tblUserXCourses <|-- tblUsers
-	note for tblUsers "Relation tblUsers 1 : N tblUserXCourses"
-    class tblCourses{
-        +PK_Course: Integer
-		+Title: String
-		+Description: String
-		+Start_Date: DateOnly
-		+End_Date: DateOnly
-		+Image: String
-		+Duration: Integer
-		+Active: Boolean
-		Score: Integer
-        -timestamps()
-    }
-	note for tblCourses "Relation tblCourses 1 : N tblUserXCourses"
-	tblUserXCourses <|-- tblCourses
-    class tblUserXCourses{
-        +PK_UserXCourse: Integer
-        +FK_PKUser: Integer
-		+FK_PKCourse: Integer
-		-timestamps() False
-    }
-```
+
 
 
 # Colaboradores del proyecto:
