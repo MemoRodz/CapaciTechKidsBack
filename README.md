@@ -9,7 +9,6 @@
 <br/>
 
 ```mermaid
-graph LR;
 ---
 title: Animal example
 ---
