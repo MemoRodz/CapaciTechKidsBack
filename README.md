@@ -10,26 +10,39 @@
 
 ```mermaid
 ---
-title: Animal example
+title: Diagrama E-R CapaciTech Kids
 ---
 classDiagram
+	note "Relation tblUsers 1 : N tblUserXCourses"
     class tblUsers{
         +PK_User: Integer
         +Name: String
         +Email: String
 		+Password: String
 		+UserType: String
-		+Register_Date: Date
+		+Register_Date: DateOnly
 		+Active: Boolean
-		-timestamps: False
+		-timestamps() False
     }
+	tblUserXCourses <|-- tblUsers
     class tblCourses{
-        -int sizeInFeet
-        -canEat()
+        +PK_Course: Integer
+		+Title: String
+		+Description: String
+		+Start_Date: DateOnly
+		+End_Date: DateOnly
+		+Image: String
+		+Duration: Integer
+		+Active: Boolean
+		Score: Integer
+        -timestamps()
     }
-    class Zebra{
-        +bool is_wild
-        +run()
+	note "Relation tblCourses 1 : N tblUserXCourses"
+	tblUserXCourses <|-- tblCourses
+    class tblUserXCourses{
+        +PK_UserXCourse: Integer
+        +FK_PKUser: Integer
+		+FK_PKCourse: Integer
     }
 ```
 
