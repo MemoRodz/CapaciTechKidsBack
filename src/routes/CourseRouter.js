@@ -47,25 +47,21 @@ CourseRouter.post("/createPost", async(req,res) => {
          }
  })
 
-CourseRouter.get("/category",  async (req,res) => { 
-      
-      const {Category}= req.query;
-      
-      
-      try{
-       const result = await getCategory(Category)
-        
-       res.status(200).send(result)
-
-      }
-      catch(error) {
+ CourseRouter.get("/scores/:score", async(req,res)=>{
+    const {score} = req.params;
+try {
+        const result = await tblCourses.findAll({
+            attributes: ["Score"],
+            where: {
+                Score: score 
+            }
+        }) 
+    res.status(200).send(result)
+    }
+    catch(error){
         res.status(400).send(error.message)
-          
-        } 
-     
-        }
-      );
-
+    }
+})
 
 
 module.exports = CourseRouter;
