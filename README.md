@@ -10,38 +10,66 @@
 
 ```mermaid
 erDiagram
-    USERS ||--|{ USERXCOURSES : PK_User
     USERS {
         integer PK_User
 		string Name
         string Email
         string Password
 		string UserType
-		date Register_date
+		dateonly Register_date
 		boolean Active
     }
-    COURSES ||--|{ USERXCOURSES : PK_Course
+    USERS ||--|{ UserXCourses : PK_User
+    COURSES ||--|{ UserXCourses : PK_Course
     COURSES {
         integer PK_Course
         string Title
 		string Description
-		date Start_Date
-		date End_Date
+		dateonly Start_Date
+		dateonly End_Date
 		string Image
 		integer Duration
 		boolean Active
     }
-    USERXCOURSES {
-        integer PK_UserXCourse
-        integer FK_PKUser
-        integer FK_Course
-    }
-	COURSES }|--|{ COURSEXCATEGORIES :PK_Course
-	CATEGORIES }|--|{ COURSEXCATEGORIES : PK_Category
+	COURSES }|--|{ CourseXCategories : PK_Course
+	CATEGORIES }|--|{ CourseXCategories : PK_Category
 	CATEGORIES {
 		integer PK_Category
 		string Name
 	}
+	COURSE }|--|{ CourseXLectures : PK_Course
+	LECTURES }|--|{ CourseXLectures : PK_Lecture
+	LECTURES {
+		integer PK_Lecture
+		string Title
+		string Description
+		dateonly Pub_Date
+		integer Length
+	}
+	LECTURES }|--|{ LectureXVideos : PK_Lecture
+	VIDEOS }|--|{ LectureXVideos : PK_Video
+	VIDEOS {
+		integer PK_Video
+		string Name
+		integer Duration
+		string URL
+	}
+	LECTURES }|--|{ LectureXVideos : PK_Lecture
+	EXAMS }|--|{ LectureXVideos : PK_Exam
+	EXAMS {
+		integer PK_Exam
+		string Title
+		string Description
+	}
+	EXAMS }|--|{ ExamXQuestions : PK_Exam
+	QUESTIONS }|--|{ ExamXQuestions : PK_Question
+	QUESTIONS {
+		integer PK_Question
+		string Statement
+		string Options
+		string Answer
+	}
+
 ```
 
 
