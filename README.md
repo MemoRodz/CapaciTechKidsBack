@@ -37,7 +37,7 @@ erDiagram
 		integer PK_Category
 		string Name
 	}
-	COURSE }|--|{ CourseXLectures : PK_Course
+	COURSES }|--|{ CourseXLectures : PK_Course
 	LECTURES }|--|{ CourseXLectures : PK_Lecture
 	LECTURES {
 		integer PK_Lecture
