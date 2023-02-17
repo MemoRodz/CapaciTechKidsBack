@@ -13,7 +13,6 @@
 title: Diagrama E-R CapaciTech Kids
 ---
 classDiagram
-	note "Relation tblUsers 1 : N tblUserXCourses"
     class tblUsers{
         +PK_User: Integer
         +Name: String
@@ -25,6 +24,7 @@ classDiagram
 		-timestamps() False
     }
 	tblUserXCourses <|-- tblUsers
+	note "Relation tblUsers 1 : N tblUserXCourses"
     class tblCourses{
         +PK_Course: Integer
 		+Title: String
