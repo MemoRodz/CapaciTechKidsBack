@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCatXCourses} = require("../DB_connection.js");
 const getDetails = require("../controllers/getDetailsCourse")
 
 
@@ -31,6 +31,9 @@ CourseRouter.get("/detail/:id", async (req,res) =>{
          res.status(400).send(error.message)
              }
      })
+
+
+
 
 
 module.exports = CourseRouter;
