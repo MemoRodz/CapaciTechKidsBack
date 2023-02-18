@@ -1,4 +1,5 @@
 const {tblCourses,tblUsers} = require("../DB_connection.js");
+const categoriesXCourses = require("./postCategoriesXCourse.js");
 
 
 
@@ -6,7 +7,8 @@ const postCourse = async (Title,Description,Start_Date,End_Date,Professor,Catego
     const PK_User = Professor
 
     try{
-    return tblCourses.create({
+
+  await tblCourses.create({
         Title,
         Description,
         Start_Date,
@@ -18,7 +20,16 @@ const postCourse = async (Title,Description,Start_Date,End_Date,Professor,Catego
         Score,
         Category 
     }
-    )}
+    )
+
+   const last = await tblCourses.findAll()
+
+  await categoriesXCourses(last.length,Category)
+
+  return tblCourses.findByPk(last.length)
+
+
+}
     catch(error){
     throw error
     }
