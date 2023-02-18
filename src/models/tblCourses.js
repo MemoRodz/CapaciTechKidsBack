@@ -42,9 +42,6 @@ module.exports = sequelize => {
             defaultValue : false,
             allowNull:false
         },
-        Score : {
-            type: DataTypes.INTEGER
-        },
     },
         { timestamps: false }
     );
