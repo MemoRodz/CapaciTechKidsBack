@@ -71,10 +71,14 @@ tblQuestions.belongsTo(tblExams, {
 tblReviews.belongsTo(tblCourses,{
    foreignKey: "PK_Course"
 });
+tblCourses.hasMany(tblReviews, {
+   foreignKey: 'PK_Course'
+});
 
 tblReviews.belongsTo(tblUsers,{
    foreignKey: "PK_User"
 });
+
 
 
 
