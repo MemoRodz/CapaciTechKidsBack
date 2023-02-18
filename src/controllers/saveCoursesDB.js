@@ -16,7 +16,6 @@ const getFalseApiToDB = async() => {
     courseArray.Image = falseApi[i].Image;
     courseArray.Duration = falseApi[i].Duration;
     courseArray.Profesores = falseApi[i].Instructor;
-    courseArray.Score = falseApi[i].Score
     mapeados.push(courseArray);
   }
 
