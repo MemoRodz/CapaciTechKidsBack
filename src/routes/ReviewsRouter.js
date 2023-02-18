@@ -7,7 +7,18 @@ const ReviewsRouter = Router();
 ReviewsRouter.get("/", async(req,res) => {
     
 try{
-    const result = await tblReviews.findAll()
+    const result = await tblReviews.findAll({
+  include: [
+    { 
+      model: tblUsers,
+      attributes: ["Name"]
+    },
+    { 
+      model: tblCourses,
+      attributes: ["Title"]
+    }
+  ]
+});
 
     res.status(200).json(result)
         }
