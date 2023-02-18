@@ -1,8 +1,9 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers,tblCategories} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCategories, tblReviews} = require("../DB_connection.js");
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
 const getCategory = require("../controllers/getCategory.js");
+
 
 
 
@@ -20,8 +21,13 @@ try{
                 { model: tblCategories,
                   
                 },
+                {
+                  model :tblReviews,
+                  attributes: ["Score"]
+                }
             ]
     });
+
     res.status(200).json(result)
         }
 catch (error) {
