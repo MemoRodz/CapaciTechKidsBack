@@ -6,6 +6,7 @@ const modeltblLectures = require('./models/tblLectures');
 const modeltblExams = require('./models/tblExams');
 const modeltblQuestions = require('./models/tblQuestions');
 const modeltblCategories = require("./models/tblCategories");
+const modeltblReviews = require("./models/tblReviews");
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
@@ -35,11 +36,12 @@ modeltblLectures(sequelize);
 modeltblExams(sequelize);
 modeltblQuestions(sequelize);
 modeltblCategories(sequelize);
+modeltblReviews(sequelize);
 
 
 
 
-const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions , tblCategories } = sequelize.models;
+const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions , tblCategories, tblReviews} = sequelize.models;
 
 // Acá van las relaciones: 
 
@@ -51,7 +53,7 @@ tblCourses.belongsToMany(tblCategories, { through: "tblCatXCourses", unique:fals
 tblCategories.belongsToMany(tblCourses, { through: "tblCatXCourses", unique:false});
 
 tblCourses.belongsTo(tblUsers, {
-       foreignKey: "PK_User"
+       foreignKey: "PK_User"       //Tabla de relación de profesor con curso, es uno por cada curso, habrá otra de estudiantes con courses muchos a muchos.
    });
 
 tblLectures.belongsTo(tblCourses, {
@@ -65,6 +67,14 @@ tblExams.belongsTo(tblLectures, {
 tblQuestions.belongsTo(tblExams, {
       foreignKey: "PK_Exams"
    });
+
+tblReviews.belongsTo(tblCourses,{
+   foreignKey: "PK_Course"
+});
+
+tblReviews.belongsTo(tblUsers,{
+   foreignKey: "PK_User"
+});
 
 
 
