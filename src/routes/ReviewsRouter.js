@@ -1,4 +1,5 @@
 const {Router} = require("express");
+const getRelatedReviews = require("../controllers/getRelatedReviews.js");
 const {tblCourses,tblUsers,tblReviews} = require("../DB_connection.js");
 
 
@@ -27,8 +28,18 @@ catch (error) {
         }
 })
 
-const getScore = async(req,res) => {
-    //ruta por crear
-}
+ReviewsRouter.get("/related/:id", async (req,res) => {
+  const {id} = req.params;
+
+  try{
+    const result = await getRelatedReviews(id)
+
+    res.status(200).send(result)
+
+  }
+  catch (error) {
+    res.status(400).send(error.message)
+        }
+})
 
 module.exports = ReviewsRouter;
