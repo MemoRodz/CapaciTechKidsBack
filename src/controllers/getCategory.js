@@ -19,7 +19,7 @@ const getCategory = async (Category) => {
             }
  
 })
-    console.log(courses)
+    
     return courses.map(course => course.tblCoursePKCourse)
 }
 

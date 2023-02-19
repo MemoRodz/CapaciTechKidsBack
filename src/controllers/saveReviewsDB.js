@@ -6,7 +6,7 @@ const saveReviewsDB = async() => {
     try {
 
   for (const data of falseReviews) { 
-    console.log(data) 
+ 
    await tblReviews.create({
         Score : data.Score,
         Comment : data.Comment,
