@@ -21,6 +21,8 @@ try{
                 { model: tblCategories,
                   
                 },
+                {model: tblReviews,
+                }
             ]
     });
 
@@ -44,7 +46,7 @@ CourseRouter.get("/detail/:id", async (req,res) =>{
              }
      })
 
-CourseRouter.post("/createPost", async(req,res) => {
+CourseRouter.post("/createCourse", async(req,res) => {
     const {Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score} = req.body;
    console.log(Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score)
    try{
