@@ -6,6 +6,13 @@ const falseReviews = [{
     PK_User : 7
 },
 {
+    Score : 2,
+    Comment : "Malo",
+    Creation_Date: 2023-01-24,
+    PK_Course : 5,
+    PK_User : 4
+},
+{
     Score : 7,
     Comment : "bueno pero no el mejor",
     Creation_Date: 2023-01-24,
