@@ -27,4 +27,8 @@ catch (error) {
         }
 })
 
+const getScore = async(req,res) => {
+    //ruta por crear
+}
+
 module.exports = ReviewsRouter;

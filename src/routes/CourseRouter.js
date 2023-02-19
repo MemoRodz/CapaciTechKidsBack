@@ -21,10 +21,6 @@ try{
                 { model: tblCategories,
                   
                 },
-                {
-                  model :tblReviews,
-                  attributes: ["Score"]
-                }
             ]
     });
 
