@@ -14,6 +14,7 @@ const postCourse = async (Title,Description,Start_Date,End_Date,Professor,Catego
         Start_Date,
         End_Date,
         PK_User,
+        Score,
         Image,
         Duration,
         Active,
