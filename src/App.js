@@ -2,10 +2,13 @@ const mainRouter = require("./routes/Router.js")
 const express = require("express");
 const morgan = require("morgan"); // middleware que te da informacion por consola cuando se haga una solicitud. 
 const bodyParser = require ("body-parser")
+const cors = require("cors");
 
 
 
 const server= express();  
+
+server.use(cors());
 
 server.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', "*"); //Autorizo recibir solicitudes de este dominio

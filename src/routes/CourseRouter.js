@@ -21,9 +21,7 @@ try{
                 { model: tblCategories,
                   
                 },
-                {
-                  model :tblReviews,
-                  attributes: ["Score"]
+                {model: tblReviews,
                 }
             ]
     });
@@ -48,15 +46,16 @@ CourseRouter.get("/detail/:id", async (req,res) =>{
              }
      })
 
-CourseRouter.post("/createPost", async(req,res) => {
-    const {Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score} = req.body;
-   console.log(Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score)
+CourseRouter.post("/createCourse", async(req,res) => {
+    const {Title,Description,Professor,Category,Duration,Active} = req.body;
+   console.log(Title,Description,Professor,Category,Duration,Active)
    try{
-    const result = await postCourse(Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score)
+    const result = await postCourse(Title,Description,Professor,Category,Duration,Active)
     
      res.status(201).json(result)
          }
  catch (error) {
+    console.log(error.message)
      res.status(400).send(error.message)
          }
  })

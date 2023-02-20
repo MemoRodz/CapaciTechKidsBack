@@ -53,7 +53,7 @@ tblCourses.belongsToMany(tblCategories, { through: "tblCatXCourses", unique:fals
 tblCategories.belongsToMany(tblCourses, { through: "tblCatXCourses", unique:false});
 
 tblCourses.belongsTo(tblUsers, {
-       foreignKey: "PK_User"       //Tabla de relación de profesor con curso, es uno por cada curso, habrá otra de estudiantes con courses muchos a muchos.
+       foreignKey: "PK_User"      //Tabla de relación de profesor con curso, es uno por cada curso, habrá otra de estudiantes con courses muchos a muchos.
    });
 
 tblLectures.belongsTo(tblCourses, {
