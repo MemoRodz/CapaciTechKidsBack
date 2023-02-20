@@ -21,14 +21,6 @@ module.exports = sequelize => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Start_Date: {
-            type: DataTypes.DATEONLY,
-            allowNull: true
-        },
-        End_Date: {
-            type: DataTypes.DATEONLY,
-            allowNull: true
-        },
         Image:{
             type: DataTypes.STRING,
             allowNull: true
@@ -39,7 +31,6 @@ module.exports = sequelize => {
         },
         Active : {
             type: DataTypes.BOOLEAN,
-            defaultValue : false,
             allowNull:true
         },
         Score : {
