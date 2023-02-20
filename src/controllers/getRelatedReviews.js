@@ -7,8 +7,12 @@ const getRelatedReviews = async (id) => {
    return tblReviews.findAll({
     where : { 
         PK_Course : id
-
-    }
+    },
+    include: [
+        { model:tblUsers,
+         attributes : ["Name"]
+        
+        }]
    })}
 
     catch(error){
