@@ -19,7 +19,7 @@ module.exports = sequelize => {
             allowNull: true
         },
         Creation_Date: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.STRING,
             allowNull: true
         },
         
