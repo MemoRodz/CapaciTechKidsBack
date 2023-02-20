@@ -1,8 +1,9 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers,tblCatXCourses} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCategories, tblReviews} = require("../DB_connection.js");
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
 const getCategory = require("../controllers/getCategory.js");
+
 
 
 
@@ -12,8 +13,19 @@ CourseRouter.get("/", async(req,res) => {
     
 try{
     const result = await tblCourses.findAll({
-        include: tblUsers
+        
+            include: [
+                { model:tblUsers,
+                
+                },
+                { model: tblCategories,
+                  
+                },
+                {model: tblReviews,
+                }
+            ]
     });
+
     res.status(200).json(result)
         }
 catch (error) {
@@ -34,15 +46,16 @@ CourseRouter.get("/detail/:id", async (req,res) =>{
              }
      })
 
-CourseRouter.post("/createPost", async(req,res) => {
-    const {Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score} = req.body;
-   console.log(Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score)
+CourseRouter.post("/createCourse", async(req,res) => {
+    const {Title,Description,Professor,Category,Duration,Active} = req.body;
+   console.log(Title,Description,Professor,Category,Duration,Active)
    try{
-    const result = await postCourse(Title,Description,Start_Date,End_Date,Professor,Category,Image,Duration,Active,Score)
+    const result = await postCourse(Title,Description,Professor,Category,Duration,Active)
     
      res.status(201).json(result)
          }
  catch (error) {
+    console.log(error.message)
      res.status(400).send(error.message)
          }
  })

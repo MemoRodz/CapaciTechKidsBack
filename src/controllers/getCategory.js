@@ -3,7 +3,7 @@ const {tblCourses,tblUsers,tblCatXCourses,tblCategories} = require("../DB_connec
 
 
 const getCategory = async (Category) => {
-    console.log(Category)
+    
     try{
     const filtered =  await tblCategories.findOne( 
             { attribute: "PK_Category", 
@@ -19,7 +19,7 @@ const getCategory = async (Category) => {
             }
  
 })
-    console.log(courses)
+    
     return courses.map(course => course.tblCoursePKCourse)
 }
 
