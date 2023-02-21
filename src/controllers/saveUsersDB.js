@@ -5,7 +5,6 @@ const getFalseApiToDBUsers = async() => {
     try {
  let mapeados = []  
  for (let i = 0; i < falseApiUsers.length -1; i++) {
-    console.log(falseApiUsers[i])
     let courseArray = {};
     courseArray.Name = falseApiUsers[i].Name
     courseArray.Email = falseApiUsers[i].Email 
@@ -14,7 +13,6 @@ const getFalseApiToDBUsers = async() => {
     courseArray.Register_Date= falseApiUsers[i].Register_Date
     mapeados.push(courseArray)
   }
-  console.log(mapeados)
 
   for (const data of mapeados) {  
    await tblUsers.create({

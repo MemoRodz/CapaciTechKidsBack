@@ -7,10 +7,11 @@ const { DataTypes } = require('sequelize');
 
 module.exports = sequelize => {
     sequelize.define('tblCourses', {
-        PK_Courses: {
-            type: DataTypes.UUID,
-            defaultValue: DataTypes.UUIDV4,
-            primaryKey: true
+        PK_Course: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            allowNull : false,
+            autoIncrement : true
         },
         Title: {
             type: DataTypes.STRING,
@@ -20,27 +21,9 @@ module.exports = sequelize => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Category: {
-            type: DataTypes.ENUM(
-                'Design',
-                'Development',
-                'Business',
-                'Marketing',
-                'Other'
-            ),
-            defaultValue: 'Other',
-        },
-        Start_Date: {
-            type: DataTypes.DATEONLY,
-            allowNull: true
-        },
-        End_Date: {
-            type: DataTypes.DATEONLY,
-            allowNull: true
-        },
         Image:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         Duration: {
             type: DataTypes.INTEGER,
@@ -48,11 +31,11 @@ module.exports = sequelize => {
         },
         Active : {
             type: DataTypes.BOOLEAN,
-            defaultValue : false,
-            allowNull:false
+            allowNull:true
         },
         Score : {
-            type: DataTypes.INTEGER
+            type: DataTypes.INTEGER,
+            allowNull:true
         }
     },
         { timestamps: false }
