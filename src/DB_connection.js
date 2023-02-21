@@ -13,7 +13,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
 // postgres://DB_USER:DB_PASSWORD@DB_HOST/NOMBREBASEDEDATOS ESTRUCTURA DATOS SEQUELIZE
 
- const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_DB}`,
+ const sequelize = new Sequelize(DB_DEPLOY,
    // URL
    { 
    logging: false, 
@@ -78,6 +78,7 @@ tblCourses.hasMany(tblReviews, {
 tblReviews.belongsTo(tblUsers,{
    foreignKey: "PK_User"
 });
+
 
 
 
