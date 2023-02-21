@@ -2,25 +2,28 @@ const {tblCourses,tblUsers,tblCatXCourses,tblCategories} = require("../DB_connec
 
 
 
-const getCategory = async (Category) => {
+const getCategory = async (id) => {
     
     try{
-    const filtered =  await tblCategories.findOne( 
-            { attribute: "PK_Category", 
-                where: {
-                    Name: Category} 
-                })
-       console.log(filtered)
+        const {tblCategoryPKCategory} =  await tblCatXCourses.findOne({
+    
+                    where: {
+                        tblCoursePKCourse: id} 
+        })
 
-      const courses = await tblCatXCourses.findAll({
-        attribute: "tblCoursePKCourse",
-            where: {
-                tblCategoryPKCategory : filtered.PK_Category
-            }
+             return   tblCourses.findAll({
+                    include: [ {
+                        model: tblUsers
+                    },
+                      {model: tblCategories,
+                      where: {
+                        PK_Category : tblCategoryPKCategory
+                      }}
+                    ]
  
 })
     
-    return courses.map(course => course.tblCoursePKCourse)
+    return courses  
 }
 
 catch(error){
