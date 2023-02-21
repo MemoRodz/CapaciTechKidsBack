@@ -21,3 +21,4 @@ const getRelatedReviews = async (id) => {
 }
 
 module.exports = getRelatedReviews; 
+
