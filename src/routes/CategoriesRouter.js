@@ -15,13 +15,14 @@ catch (error) {
         }
 })
 
-CategoriesRouter.get("/co",  async (req,res) => { 
+CategoriesRouter.get("/co/:id",  async (req,res) => { 
       
-    const {Category}= req.query;
+    const {id}= req.params;
     
+
     
     try{
-     const result = await getCategory(Category)
+     const result = await getCategory(id)
       
      res.status(200).send(result)
 
