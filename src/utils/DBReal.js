@@ -367,7 +367,7 @@ let realDB =
       },
       {   
           Title: "programacion c++",
-          Description : "Te gustaría aprender a programar en C++? Si es así te invito a inscribirte en este curso, en el cuál aprenderás a programar en C++ desde cero, hacia temas más avanzados.",
+          Description : "Te gustaria aprender a programar en C++? Si es así te invito a inscribirte en este curso, en el cuál aprenderás a programar en C++ desde cero, hacia temas más avanzados.",
           Category :'Development',
           Image: "pendiente",
           Duration: 7200,
