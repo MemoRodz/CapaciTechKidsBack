@@ -83,6 +83,7 @@ tblReviews.belongsTo(tblUsers,{
 
 
 
+
 module.exports = {
    ...sequelize.models,
    sequelize,
