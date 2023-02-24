@@ -132,34 +132,24 @@ let realDB =
             ]  
         },
         {   
-            Title: "robotica para niños de 7 a 8",
-            Description : "aprende a elaborar robots con materiales reciclados de una manera facil y creativa",
+            Title: "Construye tu propio coche eléctrico casero",
+            Description : `¡Bienvenidos a nuestro curso de cómo hacer un coche eléctrico casero! ¿Alguna vez has soñado con construir tu propio coche eléctrico? ¡Pues ahora es tu oportunidad!
+
+            En este curso, aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche.
+            
+            Además, te enseñaremos los conceptos básicos de la electrónica, cómo construir un circuito eléctrico simple y cómo conectar el motor eléctrico y las baterías para hacer funcionar el coche.
+            
+            Pero no solo aprenderás cómo construir el coche eléctrico, sino también cómo personalizarlo para que se adapte a tus gustos y necesidades. ¡Podrás pintarlo y decorarlo a tu estilo!`,
             Category : ["Robótica", "Diseño"],
             Image: "pendiente",
             Duration: 7200,
             PK_User:  1,
-            video1 : "https://www.youtube.com/watch?v=_K1SBRGr5Z8&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&ab_channel=CoolThings",
-            video2 :"https://www.youtube.com/watch?v=NL5-FV28uRA&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=2&ab_channel=AmrMCI",
-            video3 : "https://www.youtube.com/watch?v=1HHFpzFOfko&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=3&ab_channel=DCBapon",
-            video4 : "https://www.youtube.com/watch?v=bc-xn3hCGwI&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=4&ab_channel=MuyFacilDeHacer",
-            video5 : "https://www.youtube.com/watch?v=rXBEu1T_6-Y&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=8&ab_channel=MuyFacilDeHacer" 
-            
+            // ruta única : 3. 
+            Lectures : [
+                {video1 : "https://youtu.be/_K1SBRGr5Z8", titulo : "Cómo Hacer un Coche Eléctrico Casero", descripcion: "aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."},
+                {video2 :"https://youtu.be/NL5-FV28uRA", titulo: "Continua la construcción de nuestro coche", descripcion : "aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."},
+                {video3 : "https://youtu.be/1HHFpzFOfko",titulo: "Ahora un coche de F1!!!!", descripción: " aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."}]   
         },
-        {   
-            Title: "robotica para niños de 7 a 8",
-            Description : "aprende a elaborar robots con materiales reciclados de una manera facil y creativa",
-            Category : ["Robótica", "Diseño"],
-            Image: "pendiente",
-            Duration: 7200,
-            PK_User:  1,
-            video1 : "https://www.youtube.com/watch?v=_K1SBRGr5Z8&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&ab_channel=CoolThings",
-            video2 :"https://www.youtube.com/watch?v=NL5-FV28uRA&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=2&ab_channel=AmrMCI",
-            video3 : "https://www.youtube.com/watch?v=1HHFpzFOfko&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=3&ab_channel=DCBapon",
-            video4 : "https://www.youtube.com/watch?v=bc-xn3hCGwI&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=4&ab_channel=MuyFacilDeHacer",
-            video5 : "https://www.youtube.com/watch?v=rXBEu1T_6-Y&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=8&ab_channel=MuyFacilDeHacer" 
-            
-        },
-        
         {   
             Title: "creacion de apps con app inventor",
             Description : "curso enfocado a cualquiera que quiera aprender a crear aplicaciones android solamente con bloques",
