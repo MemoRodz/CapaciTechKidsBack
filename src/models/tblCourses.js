@@ -37,7 +37,7 @@ module.exports = sequelize => {
         Score : {
             type: DataTypes.INTEGER,
             allowNull:true
-        }
+        },
     },
         { timestamps: false }
     );
