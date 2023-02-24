@@ -1,31 +1,148 @@
 let realDB = 
     [
 {   
-            Title: "programacion para niñas, niños y principiantes",
-            Description : "aprende programacion de una manera divertida utilizando python y minecraft",
+            Title: "Aprendiendo Python con Minecraft!",
+            Description : `¡Bienvenidos aventureros! ¿Alguna vez te has imaginado programando un mundo virtual a tu medida? ¡Pues tenemos una gran noticia para ti! En nuestro curso de programación de Python con Minecraft podrás aprender a crear tu propio mundo en este increíble juego.
+
+            "¿Cómo funciona? Utilizando el lenguaje de programación Python, podrás escribir tus propios códigos para controlar el comportamiento de los elementos del juego, como los personajes, los bloques y las herramientas. Además, aprenderás a crear estructuras, objetos y aventuras para compartir con tus amigos.
+            
+            ¡Pero eso no es todo! También podrás descubrir cómo utilizar Python para crear tus propios mods, que son modificaciones que puedes hacer en el juego para agregar nuevas funcionalidades, elementos y personajes. ¡Imagina poder crear tu propio dragón o construir un castillo con solo unas líneas de código!
+            
+            Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
             Category : ["Desarrollo", "Juegos"],
             Image: "pendiente",
             Duration: 7200,
             PK_User:  1,
-            video1 : "https://www.youtube.com/watch?v=Ur-7KhSxEOo&list=PLWIrMjU2nAaGLO3xiyp5klHLDKew5raYg&ab_channel=Pienso%2Cluegoexisto",
-            video2 :"https://www.youtube.com/watch?v=fZQ2f3ow0Lw&list=PLWIrMjU2nAaGLO3xiyp5klHLDKew5raYg&index=2&ab_channel=Pienso%2Cluegoexisto",
-            video3 : "https://www.youtube.com/watch?v=Os2HZ1RB26c&list=PLWIrMjU2nAaGLO3xiyp5klHLDKew5raYg&index=3&ab_channel=Pienso%2Cluegoexisto",
-            video4 : "https://www.youtube.com/watch?v=V1KrK-1wZis&list=PLWIrMjU2nAaGLO3xiyp5klHLDKew5raYg&index=4&ab_channel=Pienso%2Cluegoexisto",
-            video5 : "https://www.youtube.com/watch?v=PwRdQbt6L40&list=PLWIrMjU2nAaGLO3xiyp5klHLDKew5raYg&index=5&ab_channel=Pienso%2Cluegoexisto" 
+            //ruta recomendada : 1  esto seguramente será una tabla especial de rutas. 
+            // edades : 10 años en adelante
+            Lectures : [
+            {video1 : "https://youtu.be/Ur-7KhSxEOo", titulo : "Estructura de comandos", descripcion: "Hoy les mostramos la estructura general de los comandos en python"},
+            {video2 :"https://youtu.be/fZQ2f3ow0Lw", titulo: "Coordenadas y posiciones", descripcion : "Hoy usamos instrucciones basicas pero empezamos a familiarizarnos con las coordenadas y posiciones en el juego"},
+            {video3 : "https://youtu.be/Os2HZ1RB26c",titulo: "Variables, inglés y matematicas", descripción: "Hoy hablamos de que son las variables, como ocuparlas y las usamos para resolver problemas en el area de cultivo , usamos ingles, matematicas y programacion"},
+            {video4 : "https://youtu.be/V1KrK-1wZis",titulo:"Listas y comentarios", descripción: "Hoy jugamos y aprendemos que son las listas y comentarios"}]
+            // COMO SERÁ LA ESTRUCTURA? LA FUNCION MAPEA CADA LECTURE EN LA CREACION DE COURSE, Y LO METE EN LA TABLA DE
+            // VIDEOS EN LA QUE CADA VIDEO TIENE UN CURSO RELACIONADO, CON TODA SU INFO.  
+        },
+        {   
+            Title: "Aprendiendo Python con Minecraft 2!",
+            Description : `¡Bienvenidos aventureros! Acá tenemos la segunda parte de Aprendiendo Python con Minecraft! ¿Alguna vez te has imaginado programando un mundo virtual a tu medida? ¡Pues tenemos una gran noticia para ti! En nuestro curso de programación de Python con Minecraft podrás aprender a crear tu propio mundo en este increíble juego.
+
+            ¿Cómo funciona? Utilizando el lenguaje de programación Python, podrás escribir tus propios códigos para controlar el comportamiento de los elementos del juego, como los personajes, los bloques y las herramientas. Además, aprenderás a crear estructuras, objetos y aventuras para compartir con tus amigos.
+            
+            ¡Pero eso no es todo! También podrás descubrir cómo utilizar Python para crear tus propios mods, que son modificaciones que puedes hacer en el juego para agregar nuevas funcionalidades, elementos y personajes. ¡Imagina poder crear tu propio dragón o construir un castillo con solo unas líneas de código!
+            
+            Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
+            Category : ["Desarrollo", "Juegos"],
+            Image: "pendiente",
+            Duration: 7200,
+            PK_User:  1,
+            //ruta recomendada : 1
+            Lectures : [
+                {video1 : "https://youtu.be/PwRdQbt6L40", titulo : "Ciclos: bucles for y anidados", descripcion: "Hola amigos, hoy hablamos de como poder repetir un grupo de instrucciones de manera sencilla, en vez de copiar y pegar, usamos el ciclo for para repetir un grupo de instrucciones"},
+                {video2 :"https://youtu.be/9Nh2W_LWJPQ", titulo: "Booleanos, if y else", descripcion : "Hola amigos en este video, les hablamos de operaciones condicionales, valores booleanos y operaciones booleanas, es decir como modificar su programa con situaciones verdaderas o falsas, nos devertiremos mucho!"},
+                {video3 : "https://youtu.be/kUdkCZ5gBgA",titulo: "Funciones", descripción: "Hoy hablamos de functiones, como definirlas y como usarlas, y nos despedimos de este curso tristemente :("}]
             
         },
         {   
-            Title: "aprende programacion con roblox studio",
-            Description : "aprenderas programacion en lenguaje lua dentro del entorno de roblox studio",
+            Title: "Aprende a programar tus propios juegos en Roblox con Lua 1",
+            Description : `¡Bienvenidos a nuestro curso de programación en Roblox Studio! En este curso, aprenderás a utilizar el lenguaje de programación Lua para crear tus propios juegos y experiencias dentro de Roblox.
+
+            ¿Qué es Lua? Es un lenguaje de programación utilizado para crear aplicaciones y videojuegos. Y en nuestro curso, te enseñaremos cómo utilizarlo para crear tus propias aventuras y juegos en Roblox.
+            
+            En este curso, te enseñaremos los conceptos básicos de programación, como variables, condicionales y bucles. Luego, te enseñaremos cómo utilizarlos para crear tus propios objetos y personajes dentro de Roblox. ¡Podrás crear tus propios mundos virtuales y llenarlos con tus propias creaciones!
+            
+            Además, aprenderás cómo compartir tus juegos y experiencias con tus amigos y otros usuarios de Roblox. ¡Podrás mostrarles todo lo que has aprendido en nuestro curso y crear una comunidad en línea alrededor de tus juegos!
+            
+            ¿Y qué mejor lugar para aprender programación en Lua que dentro de Roblox Studio? Es un entorno de desarrollo integrado especialmente diseñado para crear juegos en Roblox. ¡Así que únete a nosotros en esta aventura de aprendizaje y descubre el increíble mundo de la programación en Roblox Studio!`,
             Category : ["Juegos","Desarrollo"],
             Image: "pendiente",
             Duration: 7200,
             PK_User:  1,
-            video1 : "https://www.youtube.com/watch?v=hbdVqHGdJrw&list=PLcLC2I7iifCl4n4WMOLSdvu6kGdR__e7G&ab_channel=MiCuadernodeVideojuegos",
-            video2 :"https://www.youtube.com/watch?v=gdoIOiwDNaU&list=PLcLC2I7iifCl4n4WMOLSdvu6kGdR__e7G&index=2&ab_channel=MiCuadernodeVideojuegos",
-            video3 : "https://www.youtube.com/watch?v=15wgssDtnA8&list=PLcLC2I7iifCl4n4WMOLSdvu6kGdR__e7G&index=3&ab_channel=MiCuadernodeVideojuegos",
-            video4 : "https://www.youtube.com/watch?v=S2Su2H6xRDg&list=PLcLC2I7iifCl4n4WMOLSdvu6kGdR__e7G&index=4&ab_channel=MiCuadernodeVideojuegos",
-            video5 : "https://www.youtube.com/watch?v=F9uUaYUSWT0&list=PLcLC2I7iifCl4n4WMOLSdvu6kGdR__e7G&index=5&ab_channel=MiCuadernodeVideojuegos" 
+            // ruta recomendada 2. 
+            // edad de 10 en adelante. 
+            Lectures : [
+                {video1 : "https://youtu.be/gdoIOiwDNaU", titulo : "Presentación del curso", descripcion: "Hola amigos, Bienvenidos al curso de programación en Roblox estudio!!!!"},
+                {video2 :"https://youtu.be/15wgssDtnA8", titulo: "Mi Primer Script en Lua (Roblox Studio)", descripcion : "En esta primera lección del curso de programación con Roblox Studio vamos a crear nuestro primer script en Lua que añadiremos a un objeto de juego."},
+                {video3 : "https://youtu.be/S2Su2H6xRDg",titulo: "Programación en Roblox Studio: Números y Operadores Aritméticos", descripción: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos los tipos de números más utilizados y los distintos operadores aritméticos."},
+                {video4 : "https://youtu.be/F9uUaYUSWT0", titulo : "DOCUMENTA tu CÓDIGO en LUA (comentarios en Roblox Studio)", descripcion: "Nueva lección del curso de programación en Roblox Studio con Lua. Estudiaremos el uso de comentarios para documentar y facilitar la lectura de nuestro código."},
+                {video5 :"https://youtu.be/DYGiY8dizUI", titulo: "Cómo usar VARIABLES 💻 en Roblox Studio 🎮 para mejorar tus videojuegos", descripcion : "Una de las más importantes lecciones de nuestro curso de programación de videojuegos en Roblox Studio. Veremos como usar variables en LUA para almacenar los datos de nuestros juegos, siendo uno de los CONCEPTOS FUNDAMENTALES de la programación."},
+                {video6 : "https://youtu.be/gSgQy_VNcpQ",titulo: "Programación en Roblox Studio: Optimiza tu Código con Funciones (EXPLICADO)", descripción: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos las funciones y su uso para optimizar el código de nuestros videojuegos."},
+                {video7 : "https://youtu.be/OLdA1kjee1g", titulo : "Cómo usar Cadenas de Texto (STRINGS) ⛓ en LUA para Roblox Studio", descripcion: "En esta lección estudiamos los strings o cadenas de texto (un tipo de variable), también veremos sus métodos más utilizados para programar videojuegos en Roblox Studio."},
+                {video8 :"https://youtu.be/xVW03x2LIkQ", titulo: "Programación en Roblox Studio: Otros tipos de variable", descripcion : "Nueva lección de nuestro curso intermedio de Roblox Studio donde analizaremos el uso de booleanos, arrays y tablas (diccionarios)"},
+                {video9: "https://youtu.be/ksb0MMjkeZI",titulo: "Programación en Roblox Studio: Condicionales", descripción: "En esta lección del curso de programación con Roblox Studio vamos a aprender a utilizar condicionales para controlar el flujo de ejecución de nuestros scripts."},
+                {video10 : "https://youtu.be/D5lDjGjNPY0", titulo : "Programación en Roblox Studio: Bucles For", descripcion: "En esta nueva lección del curso de programación con Roblox Studio vamos a aprender a utilizar los bucles For para repetir código dentro de nuestros scripts."}]
+           
+            
+        },
+        {   
+            Title: "Aprende a programar tus propios juegos en Roblox con Lua 2",
+            Description : `Continuamos con nuestro curso de programación en Roblox Studio! En este curso, aprenderás a utilizar el lenguaje de programación Lua para crear tus propios juegos y experiencias dentro de Roblox.
+
+            ¿Qué es Lua? Es un lenguaje de programación utilizado para crear aplicaciones y videojuegos. Y en nuestro curso, te enseñaremos cómo utilizarlo para crear tus propias aventuras y juegos en Roblox.
+            
+            En este curso, te enseñaremos los conceptos básicos de programación, como variables, condicionales y bucles. Luego, te enseñaremos cómo utilizarlos para crear tus propios objetos y personajes dentro de Roblox. ¡Podrás crear tus propios mundos virtuales y llenarlos con tus propias creaciones!
+            
+            Además, aprenderás cómo compartir tus juegos y experiencias con tus amigos y otros usuarios de Roblox. ¡Podrás mostrarles todo lo que has aprendido en nuestro curso y crear una comunidad en línea alrededor de tus juegos!
+            
+            ¿Y qué mejor lugar para aprender programación en Lua que dentro de Roblox Studio? Es un entorno de desarrollo integrado especialmente diseñado para crear juegos en Roblox. ¡Así que únete a nosotros en esta aventura de aprendizaje y descubre el increíble mundo de la programación en Roblox Studio!`,
+            Category : ["Juegos","Desarrollo"],
+            Image: "pendiente",
+            Duration: 7200,
+            PK_User:  1,
+            // ruta recomendada 2. 
+            // edad de 12 en adelante. 
+            Lectures : [
+                {video1 : "https://youtu.be/7L4-EnhSoAc", titulo : "Programación en Roblox Studio: Bucles While", descripcion: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos la sintaxis de bucles While en Lua y su uso para la programación de videojuegos."},
+                {video2 :"https://youtu.be/VeYD-sU_vvU", titulo: "Programación en Roblox Studio: Programación Orientada a Objetos I", descripcion : "Nueva lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos de forma muy sencilla las bases de la Programación Orientada a Objetos (POO) para uso en videojuegos"},
+                {video3 : "https://youtu.be/QrlpEWYkucc",titulo: "Programación en Roblox Studio: Programación Orientada a Objetos II", descripción: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección vemos algunos aspectos prácticos de Programación Orientada a Objetos para su uso en Roblox Studio."},
+                {video4 : "https://youtu.be/zaSpXvJ1n3Q", titulo : "Roblox Studio: Aprende Cómo Crear Objetos de Juego con Código (Instancias)", descripcion: "Nueva lección de nuestro curso intermedio de Roblox Studio donde aprenderemos a instanciar una clase mediante código para crear objetos de juego."},
+                {video5 :"https://youtu.be/fvmhkPboUhc", titulo: "Programación en Roblox Studio: Eventos", descripcion : "Nueva lección de nuestro curso intermedio de Roblox Studio donde aprenderemos que son los eventos de Roblox y a usarlos correctamente para conectar funciones a distintas situaciones en el juego."},
+                {video6 : "https://youtu.be/ErDBA21W1KI",titulo: "Programación en Roblox Studio: Clase Instance", descripción: "Nueva lección de nuestro curso intermedio de Roblox Studio donde analizaremos la clase base Instance de la que heredan el resto de clases en Roblox Studio."},
+                {video7 : "https://youtu.be/DxflX99hABg", titulo : "Programación en Roblox Studio: Clase Instance (parte 2)", descripcion: "Segunda parte de la lección sobre la clase Instance de Roblox Studio. Veremos aspectos prácticos de uso para identificar objetos de la jerarquía mediante el uso de métodos de dicha clase."},
+                {video8 :"https://youtu.be/3wqhu_Fyx64", titulo: "Programación en Roblox Studio: LocalScript vs Script", descripcion : "Nueva lección de nuestro curso de Roblox Studio. Aquí veremos las diferencias entre Scripts y LocalScript en Roblox."},
+            ]  
+        },
+        {   
+            Title: "Desarrolla tu propio videojuego en Roblox Studio",
+            Description : `¡Bienvenidos a nuestro curso de desarrollo de videojuegos en Roblox Studio! En este curso, aprenderás a crear tu propio videojuego dentro del increíble mundo de Roblox.
+
+            ¿Has imaginado alguna vez crear tu propio videojuego? ¡Pues ahora es tu oportunidad! En nuestro curso, te enseñaremos cómo utilizar las herramientas de programación y diseño de Roblox Studio para crear tu propio juego.
+            
+            Utilizaremos todo lo que aprendimos en los dos cursos anterior sobre Roblox y Lua para crear nuestros propios videojuegos, desde su planificación hasta el final!`,
+            Category : ["Juegos","Desarrollo"],
+            Image: "pendiente",
+            Duration: 7200,
+            PK_User:  1,
+            // ruta recomendada 2. 
+            // edad de 12 en adelante. 
+            Lectures : [
+                {video1 : "https://youtu.be/okku7EYkql4", titulo : "Buscar y escribir ideas para diseño de videojuegos", descripcion: "En este video veremos algunas estrategias y consejos para buscar ideas para nuestros videojuegos. También mencionamos cuales son los puntos principales a tratar en un GDD o Documento de Diseño de Juego"},
+                {video2 :"https://youtu.be/O9XZeRiCukQ", titulo: "Desarrollamos un juego para Roblox Studio: Planificación", descripcion : "En este video se hace un análisis básico de los distintos objetos y conceptos que formarán el videojuego en Roblox Studio que vamos a desarrollar en las siguientes lecciones."},
+                {video3 : "https://youtu.be/KOJovAhTkRM",titulo: "Desarrollamos un juego para Roblox Studio: Terreno", descripción: " En este video aprenderemos como crear un terreno para nuestro videojuego gracias a las herramientas que nos proporciona Roblox Studio."},
+                {video4 : "https://youtu.be/jxe2vNBjNbc", titulo : "Desarrollamos un juego para Roblox Studio: Tablero (interfaz de usuario)", descripcion: "En este video aprenderemos como crear un tablero para nuestro videojuego que nos permita llevar un control de los logros del jugador durante la partida."},
+                {video5 :"https://youtu.be/QkMKnWAOlvY", titulo: "Desarrollamos un juego para Roblox Studio: Items (I)", descripcion : "En este video aprenderemos como crear objetos que pueden ser recolectados para nuestro videojuego, en nuestro caso serán diamantes."},
+                {video6 : "https://youtu.be/g0kHECpmjYM",titulo: "Desarrollamos un juego para Roblox Studio: Items (II)", descripción: "En este video aprenderemos como crear objetos que pueden ser recolectados para nuestro videojuego, en nuestro caso serán monedas de oro."},
+                {video7 : "https://youtu.be/lMqYt4LkNy4", titulo : "Desarrollamos un juego para Roblox Studio: Tools (I)", descripcion: "En este video aprenderemos como crear tools que puedan ser utilizadas en nuestro videojuegos para implementar nuevas mecánicas de juego."},
+                {video8 :"https://youtu.be/GoOuu_TTiuo", titulo: "Desarrollamos un juego para Roblox Studio: Tools (II)", descripcion : "Es la segunda parte de nuestro video anterior sobre creación de tools que puedan ser utilizadas en nuestro videojuegos para implementar nuevas mecánicas de juego"},
+                {video9 : "https://youtu.be/TeqXbOaNlwg", titulo : "Desarrollamos un juego para Roblox Studio: Programando Items", descripcion: "En este capítulo aprenderemos como programar el item de moneda que creamos previamente en nuestra lección sobre diseño de items. De esta manera podremos extender nuestro videojuego con una mecánica de recolección."},
+                {video10 :"https://youtu.be/NU5nK-jbzPE", titulo: "Desarrollamos un juego para Roblox Studio: Programando la Economía", descripcion : "En esta aprenderemos a programar una nueva mecánica de intercambio de items recolectados por puntuación de juego."},
+                {video11 : "https://youtu.be/KOJovAhTkRM",titulo: "💻 Cómo programar Mecánicas de Mejora en ROBLOX STUDIO 🎮 (con Lua)", descripción: "veremos como programar una sencilla mecánica de compra de mejoras dentro del juego. Para ello usaremos un intercambio de mejora por puntuación recibida al recoger nuestro item-moneda."},
+                {video12 : "https://youtu.be/p6ZTwVrQATA", titulo : "Mecánicas de Mejora en ROBLOX STUDIO 🎮 (Parte 2)", descripcion: "Este vídeo es la segunda parte de nuestra lección donde programamos una mecánica de compra de mejoras dentro del juego. Para ello usaremos un intercambio de mejora por puntuación recibida al recoger nuestro item-moneda."},
+                {video13  : "https://youtu.be/XKHwj_f_lOI", titulo : "🏁 Terminando nuestro Videojuego 👾 con ROBLOX STUDIO.", descripcion: "Último vídeo de nuestra serie donde programamos un videojuego completo con Roblox Studio. En este vídeo damos los últimos pasos para tener listo nuestro videojuego, para ello ajustamos el terreno y situamos todos los elementos de juego."}
+            ]  
+        },
+        {   
+            Title: "robotica para niños de 7 a 8",
+            Description : "aprende a elaborar robots con materiales reciclados de una manera facil y creativa",
+            Category : ["Robótica", "Diseño"],
+            Image: "pendiente",
+            Duration: 7200,
+            PK_User:  1,
+            video1 : "https://www.youtube.com/watch?v=_K1SBRGr5Z8&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&ab_channel=CoolThings",
+            video2 :"https://www.youtube.com/watch?v=NL5-FV28uRA&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=2&ab_channel=AmrMCI",
+            video3 : "https://www.youtube.com/watch?v=1HHFpzFOfko&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=3&ab_channel=DCBapon",
+            video4 : "https://www.youtube.com/watch?v=bc-xn3hCGwI&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=4&ab_channel=MuyFacilDeHacer",
+            video5 : "https://www.youtube.com/watch?v=rXBEu1T_6-Y&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=8&ab_channel=MuyFacilDeHacer" 
             
         },
         {   
@@ -42,6 +159,7 @@ let realDB =
             video5 : "https://www.youtube.com/watch?v=rXBEu1T_6-Y&list=PL8IrbYISdFUpmlSerlbA7DAvt2Hco-Guq&index=8&ab_channel=MuyFacilDeHacer" 
             
         },
+        
         {   
             Title: "creacion de apps con app inventor",
             Description : "curso enfocado a cualquiera que quiera aprender a crear aplicaciones android solamente con bloques",
