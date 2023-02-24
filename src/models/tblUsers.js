@@ -18,7 +18,7 @@ module.exports = sequelize => {
             allowNull: true
         },
         Password: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING,   // dejaremos password para cuando la autenticación sea local. 
             allowNull: true
         },
         UserType: {
@@ -32,11 +32,17 @@ module.exports = sequelize => {
         },
         Register_Date: {
             type: DataTypes.DATEONLY,
-            allowNull: true
+            defaultValue: sequelize.literal('CURRENT_DATE'),
+            allowNull: false
         },
         Active : {
             type: DataTypes.BOOLEAN,
             defaultValue : true
+        },
+        Image: {
+            type: DataTypes.STRING,
+            // defaultValue: Imagen cloudinary por defecto. 
+            allowNull : true
         }
     },
         {timestamps: false}
