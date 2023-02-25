@@ -5,23 +5,21 @@ const UsersRouter = require("../routes/UsersRoutes.js");
 
 
 const register = async (user) => {
-    console.log(user)
+
+    let inverify = {}
     try{
-    const verify = await tblUsers.findOne({
+   let verify = await tblUsers.findOne({
         where : {
             Email : user.email
         }
     })
+
     
-  return  verify ? verify : await tblUsers.create({
-            Name : user.name,
-            Email : user.email,
-            Image : user.picture
-        })
- 
-}
+    return verify 
+    ? verify = Object.assign({}, user, verify.dataValues) 
+    : (inverify = await tblUsers.create({Email: user.email}), Object.assign({}, user, inverify.dataValues));
 
-
+    }
 catch(error){
           return error.message;
         
