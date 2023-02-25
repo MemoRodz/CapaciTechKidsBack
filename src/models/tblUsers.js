@@ -9,18 +9,12 @@ module.exports = sequelize => {
             allowNull : false,
             autoIncrement : true
         },
-        Name: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
+       
         Email: {
             type: DataTypes.STRING,
             allowNull: true
         },
-        Password: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
+      
         UserType: {
             type: DataTypes.ENUM(
                 'Admin',
@@ -32,12 +26,14 @@ module.exports = sequelize => {
         },
         Register_Date: {
             type: DataTypes.DATEONLY,
-            allowNull: true
+            defaultValue: sequelize.literal('CURRENT_DATE'),
+            allowNull: false
         },
         Active : {
             type: DataTypes.BOOLEAN,
             defaultValue : true
-        }
+        },
+       
     },
         {timestamps: false}
     );
