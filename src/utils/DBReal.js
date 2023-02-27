@@ -303,7 +303,7 @@ let realDB =
             
             Aprenderás a dar vida a tus ideas y a convertirlas en juegos interactivos y emocionantes que puedes compartir con tus amigos. Además, también aprenderás a personalizar y mejorar tus juegos con gráficos y sonidos divertidos.`,
             Category :["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/27.jpg",
+            Image: "    https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/27.jpg",
             Duration: 7200,
             PK_User:  1,
             // ruta 7
