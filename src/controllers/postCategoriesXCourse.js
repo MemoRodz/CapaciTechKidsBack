@@ -5,7 +5,6 @@ const {tblCourses,tblUsers,tblCatXCourses, tblCategories} = require("../DB_conne
 
 
 const categoriesXCourses = async(id,array) => {
-
     const categoriesPks = await Promise.all(array.map(async (nombreCat) => {
         const result = await tblCategories.findOne({
           attributes: ["PK_Category"],
@@ -15,7 +14,6 @@ const categoriesXCourses = async(id,array) => {
         });
         return result;
       }));
-
 categoriesPks.forEach(cat => tblCatXCourses.create({
     tblCategoryPKCategory: cat.PK_Category,
     tblCoursePKCourse : id

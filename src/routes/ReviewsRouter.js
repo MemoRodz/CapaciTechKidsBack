@@ -12,7 +12,7 @@ try{
   include: [
     { 
       model: tblUsers,
-      attributes: ["Name"]
+      attributes: ["Email"]
     },
     { 
       model: tblCourses,

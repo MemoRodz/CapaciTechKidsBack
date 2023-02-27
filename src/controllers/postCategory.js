@@ -10,7 +10,7 @@ const postCourse = async (Name) => {
 
     try{
     return tblCategories.create({
-        Name
+        Name 
     }
     )}
     catch(error){
@@ -23,6 +23,6 @@ const postFalseCourses = async() => {
         postCourse(cat);
     
     })
-}
+};
 
 module.exports = {postCourse,postFalseCourses}; 

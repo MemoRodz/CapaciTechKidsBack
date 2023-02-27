@@ -18,7 +18,7 @@ module.exports = sequelize => {
             allowNull: true
         },
         Description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: true
         },
         Image:{
@@ -30,13 +30,14 @@ module.exports = sequelize => {
             allowNull: true
         },
         Active : {
-            type: DataTypes.BOOLEAN,
-            allowNull:true
+            type: DataTypes.BOOLEAN,   
+            defaultValue : true, 
+            allowNull: true
         },
         Score : {
             type: DataTypes.INTEGER,
             allowNull:true
-        }
+        },
     },
         { timestamps: false }
     );
