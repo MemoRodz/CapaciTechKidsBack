@@ -28,10 +28,11 @@ let falseApiUsers =
         
     },
     {
-        Name: "Sandro Malca",
-        Email: "smalcan.anka@gmail.com",
-        Password: "ec1f1b979703fec10992bb4ec078d5f850d682b7dd43f07fe37e955498bffd21",
-        UserType: "AdvUser",
+    Name: "Sandro Malca",
+    Email: "smalca0697@gmail.com",
+    Password: "ec1f1b979703fec10992bb4ec078d5f850d682b7dd43f07fe37e955498bffd21",
+    UserType: "AdvUser",
+    UserType: "Instructor",
        
     },
     {
