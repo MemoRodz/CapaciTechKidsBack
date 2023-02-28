@@ -40,5 +40,35 @@ UsersRouter.post("/registro", async(req,res) => {
     }
 } )
 
+UsersRouter.get("/advusers", async(req,res) => {
+    try {
+        const result = await tblUsers.findAll({
+            attributes: ["PK_User","Name"],
+            where: {
+                UserType: "AdvUser" 
+            }
+        }) 
+    res.status(200).send(result)
+    }
+    catch(error){
+        res.status(400).send(error.message)
+    }
+})
+
+UsersRouter.get("/students", async(req,res) => {
+    try {
+        const result = await tblUsers.findAll({
+            attributes: ["PK_User","Name"],
+            where: {
+                UserType: "Student" 
+            }
+        }) 
+    res.status(200).send(result)
+    }
+    catch(error){
+        res.status(400).send(error.message)
+    }
+})
+
 
 module.exports = UsersRouter;
