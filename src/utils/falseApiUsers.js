@@ -71,8 +71,8 @@ let falseApiUsers =
     },
     {
         Name: "Gabriela Montecinos",
-        Email: "70f5ee06d278890f777da2cb20adb26d5aa09d99df4acf5362e45a0646452dfd",
-        Password: "gaby_montecinos@outlook.com",
+        Email: "gaby_montecinos@outlook.com",
+        Password: "70f5ee06d278890f777da2cb20adb26d5aa09d99df4acf5362e45a0646452dfd",
         UserType: "Student",
         
     },
