@@ -11,6 +11,7 @@ const getFalseApiToDBUsers = async() => {
     courseArray.Password = falseApiUsers[i].Password
     courseArray.UserType = falseApiUsers[i].UserType;
     courseArray.Register_Date= falseApiUsers[i].Register_Date
+    courseArray.Active = falseApiUsers[i].Active
     mapeados.push(courseArray)
   }
 
@@ -21,6 +22,7 @@ const getFalseApiToDBUsers = async() => {
         Password : data.Password,
         UserType: data.UserType,
         Register_Date : data.Register_Date,
+        Active: data.Active
     })}
 
     return tblUsers.findAll()
