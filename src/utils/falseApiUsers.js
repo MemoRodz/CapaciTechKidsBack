@@ -38,8 +38,8 @@ let falseApiUsers =
         Name: "Giuliana Schiebelbein",
         Email: "giulianaschiebelbein2@gmail.com",
         Password: "005b436c0d89456771f51ae0c704157a462cc7433f1b4b61c7f534a0a60b9584",
-        UserType: "Instructor",
-        
+        UserType: "Student",
+        Active: false,
     },
     {
         Name: "Ricardo Ariel Maya",
@@ -52,7 +52,7 @@ let falseApiUsers =
         Name: "Fabian Rizzi",
         Email: "faberizzi92@gmail.com",
         Password: "61223848f7dac6a0c27a799570bb698a7f913f3eb9a67165e74e32ee63998f61",
-        UserType: "Instructor",
+        UserType: "AdvUser",
        
     },
     {
