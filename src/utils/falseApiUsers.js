@@ -24,7 +24,7 @@ let falseApiUsers =
         Name: "Brandon Reyes",
         Email: "brareyes115@gmail.com",
         Password: "1832e43612903ca5b5c3688c1e3aa8c4e037453595d8d0d6bb32a1c67fcc1d15",
-        UserType: "AdvUser",
+        UserType: "Instructor",
         
     },
     {
@@ -38,8 +38,8 @@ let falseApiUsers =
         Name: "Giuliana Schiebelbein",
         Email: "giulianaschiebelbein2@gmail.com",
         Password: "005b436c0d89456771f51ae0c704157a462cc7433f1b4b61c7f534a0a60b9584",
-        UserType: "Student",
-        Active: false,
+        UserType: "Instructor",
+        
     },
     {
         Name: "Ricardo Ariel Maya",
@@ -52,7 +52,7 @@ let falseApiUsers =
         Name: "Fabian Rizzi",
         Email: "faberizzi92@gmail.com",
         Password: "61223848f7dac6a0c27a799570bb698a7f913f3eb9a67165e74e32ee63998f61",
-        UserType: "AdvUser",
+        UserType: "Instructor",
        
     },
     {
@@ -71,8 +71,8 @@ let falseApiUsers =
     },
     {
         Name: "Gabriela Montecinos",
-        Email: "gaby_montecinos@outlook.com",
-        Password: "70f5ee06d278890f777da2cb20adb26d5aa09d99df4acf5362e45a0646452dfd",
+        Email: "70f5ee06d278890f777da2cb20adb26d5aa09d99df4acf5362e45a0646452dfd",
+        Password: "gaby_montecinos@outlook.com",
         UserType: "Student",
         
     },
