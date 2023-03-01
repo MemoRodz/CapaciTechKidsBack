@@ -83,7 +83,6 @@ catch (error) {
 
 CourseRouter.get("/detail/:id", async (req,res) =>{
     const {id} = req.params;
-   
     try{
         const result = await getDetails(id)
        

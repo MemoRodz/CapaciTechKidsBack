@@ -24,7 +24,6 @@ server.use(express.json());
 
 server.use(mainRouter); // te permite modularizar tus routes.
 
-module.exports = server; 
-
+module.exports = {server,express}; 
 
 

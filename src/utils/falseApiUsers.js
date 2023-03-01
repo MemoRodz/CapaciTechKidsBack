@@ -24,7 +24,7 @@ let falseApiUsers =
         Name: "Brandon Reyes",
         Email: "brareyes115@gmail.com",
         Password: "1832e43612903ca5b5c3688c1e3aa8c4e037453595d8d0d6bb32a1c67fcc1d15",
-        UserType: "AdvUser",
+        UserType: "Instructor",
         
     },
     {
