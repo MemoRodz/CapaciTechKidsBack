@@ -18,12 +18,11 @@ module.exports = sequelize => {
             type: DataTypes.STRING,
             allowNull: true
         },
-        // Creation_Date: {
-        //     type: DataTypes.DATEONLY,
-        //     defaultValue: sequelize.literal('CURRENT_DATE'),
-        //     allowNull: false
-        // },
-        
-    },{ timestamps: false }
+
+        Creation_Date: {
+            type: DataTypes.DATEONLY,
+            defaultValue: DataTypes.NOW
+        },
+    },{ timestamps: true }
     )
 };
