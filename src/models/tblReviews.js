@@ -19,10 +19,10 @@ module.exports = sequelize => {
             allowNull: true
         },
         Creation_Date: {
-            type: DataTypes.STRING,
-            allowNull: true
+            type: DataTypes.DATEONLY,
+            defaultValue: DataTypes.NOW
         },
         
-    },{ timestamps: false }
+    },{ timestamps: true }
     )
 };

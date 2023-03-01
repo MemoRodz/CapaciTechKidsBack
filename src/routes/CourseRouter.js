@@ -32,11 +32,64 @@ catch (error) {
     res.status(400).send(error.message)
         }
 })
+
+
+CourseRouter.get("/fromuser/:id", async(req,res) => {
+    const {id} = req.params;
+try{
+    const result = await tblCourses.findAll({
+        where: {Active: true, PK_User: id},
+            include: [
+                { model:tblUsers,
+                
+                },
+                { model: tblCategories,
+                  
+                },
+                {model: tblReviews,
+                }
+            ]
+    });
+
+    res.status(200).json(result)
+        }
+catch (error) {
+    res.status(400).send(error.message)
+        }
+})
+
+
+
+
 CourseRouter.get("/deleted", async(req,res) => {
     
 try{
     const result = await tblCourses.findAll({
         where: {Active: false},
+            include: [
+                { model:tblUsers,
+                
+                },
+                { model: tblCategories,
+                  
+                },
+                {model: tblReviews,
+                }
+            ]
+    });
+
+    res.status(200).json(result)
+        }
+catch (error) {
+    res.status(400).send(error.message)
+        }
+})
+
+CourseRouter.get("/deleted/fromuser/:id", async(req,res) => {
+    const { id } = req.params;
+try{
+    const result = await tblCourses.findAll({
+        where: {Active: false, PK_User: id},
             include: [
                 { model:tblUsers,
                 
