@@ -11,8 +11,8 @@ let realDB =
             Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
             Category : ["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/12.jpg",
-            Duration: 60,
-            PK_User:  1,
+            Duration: 7200,
+            PK_User:  8,
             //ruta recomendada : 1  esto seguramente será una tabla especial de rutas. 
             // edades : 10 años en adelante
             Lectures: [ 1,
