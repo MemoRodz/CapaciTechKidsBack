@@ -20,7 +20,9 @@ let falseApiUsers =
     {
         Name: "Brandon Reyes",
         Email: "brareyes115@gmail.com",
-        UserType: "AdvUser",
+
+        UserType: "Instructor",
+
         
     },
     {
@@ -32,8 +34,10 @@ let falseApiUsers =
     {
         Name: "Giuliana Schiebelbein",
         Email: "giulianaschiebelbein2@gmail.com",
+
         UserType: "Student",
         Active: false,
+
     },
     {
         Name: "Ricardo Ariel Maya",
@@ -44,6 +48,7 @@ let falseApiUsers =
     {
         Name: "Fabian Rizzi",
         Email: "faberizzi92@gmail.com",
+
         UserType: "Instructor",
        
     },
@@ -61,7 +66,10 @@ let falseApiUsers =
     },
     {
         Name: "Gabriela Montecinos",
+
         Email: "gaby_montecinos@outlook.com",
+
+
         UserType: "Student",
         
     },
