@@ -118,6 +118,13 @@ let falseApiUsers =
         UserType: "Student",
         
     },
+    {
+        Name: "CapaciTech Kids",
+        Email: "capacitechkids@gmail.com",
+        Password: "0e6f1e4fbd1436dc473b64d727fe504a9017686f0c7d4f02e06b680b561a70ec",
+        UserType: "AdvUser",
+        
+    },
     ]
 
 module.exports = falseApiUsers;
