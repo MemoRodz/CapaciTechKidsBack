@@ -28,7 +28,7 @@ autoIncrement: true
     
   },
   NoVideo: {
-    type:DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull : true
   }
         // FK_Course: {
