@@ -7,7 +7,7 @@ const saveLectures = async () => {
     try {
       for (const data of lectures) {
   const extraerVideo = Object.entries(data)[1];
-   console.log(data.id,data.descripcion)
+   //console.log(data.id,data.descripcion)
         await tblLectures.create({
           Title: data.titulo,
           Description: data.descripcion,
