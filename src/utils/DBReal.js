@@ -11,11 +11,11 @@ let realDB =
             Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
             Category : ["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/12.jpg",
-            Duration: 7200,
+            Duration: 70,
             PK_User:  8,
             //ruta recomendada : 1  esto seguramente será una tabla especial de rutas. 
             // edades : 10 años en adelante
-            Lectures : [
+            Lectures: [ 1,
             {video1 : "https://youtu.be/Ur-7KhSxEOo", titulo : "Estructura de comandos", descripcion: "Hoy les mostramos la estructura general de los comandos en python"},
             {video2 :"https://youtu.be/fZQ2f3ow0Lw", titulo: "Coordenadas y posiciones", descripcion : "Hoy usamos instrucciones basicas pero empezamos a familiarizarnos con las coordenadas y posiciones en el juego"},
             {video3 : "https://youtu.be/Os2HZ1RB26c",titulo: "Variables, inglés y matematicas", descripción: "Hoy hablamos de que son las variables, como ocuparlas y las usamos para resolver problemas en el area de cultivo , usamos ingles, matematicas y programacion"},
@@ -34,10 +34,10 @@ let realDB =
             Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
             Category : ["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/12.jpg",
-            Duration: 7200,
+            Duration: 70,
             PK_User:  1,
             //ruta recomendada : 1
-            Lectures : [
+            Lectures : [2,
                 {video1 : "https://youtu.be/PwRdQbt6L40", titulo : "Ciclos: bucles for y anidados", descripcion: "Hola amigos, hoy hablamos de como poder repetir un grupo de instrucciones de manera sencilla, en vez de copiar y pegar, usamos el ciclo for para repetir un grupo de instrucciones"},
                 {video2 :"https://youtu.be/9Nh2W_LWJPQ", titulo: "Booleanos, if y else", descripcion : "Hola amigos en este video, les hablamos de operaciones condicionales, valores booleanos y operaciones booleanas, es decir como modificar su programa con situaciones verdaderas o falsas, nos devertiremos mucho!"},
                 {video3 : "https://youtu.be/kUdkCZ5gBgA",titulo: "Funciones", descripción: "Hoy hablamos de functiones, como definirlas y como usarlas, y nos despedimos de este curso tristemente :("}]
@@ -56,11 +56,11 @@ let realDB =
             ¿Y qué mejor lugar para aprender programación en Lua que dentro de Roblox Studio? Es un entorno de desarrollo integrado especialmente diseñado para crear juegos en Roblox. ¡Así que únete a nosotros en esta aventura de aprendizaje y descubre el increíble mundo de la programación en Roblox Studio!`,
             Category : ["Juegos","Desarrollo"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165309/CAPACITECHKIDS/images/users/banner_curses/2.png",
-            Duration: 7200,
+            Duration: 130,
             PK_User:  1,
             // ruta recomendada 2. 
             // edad de 10 en adelante. 
-            Lectures : [
+            Lectures : [3,
                 {video1 : "https://youtu.be/gdoIOiwDNaU", titulo : "Presentación del curso", descripcion: "Hola amigos, Bienvenidos al curso de programación en Roblox estudio!!!!"},
                 {video2 :"https://youtu.be/15wgssDtnA8", titulo: "Mi Primer Script en Lua (Roblox Studio)", descripcion : "En esta primera lección del curso de programación con Roblox Studio vamos a crear nuestro primer script en Lua que añadiremos a un objeto de juego."},
                 {video3 : "https://youtu.be/S2Su2H6xRDg",titulo: "Programación en Roblox Studio: Números y Operadores Aritméticos", descripción: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos los tipos de números más utilizados y los distintos operadores aritméticos."},
@@ -87,11 +87,11 @@ let realDB =
             ¿Y qué mejor lugar para aprender programación en Lua que dentro de Roblox Studio? Es un entorno de desarrollo integrado especialmente diseñado para crear juegos en Roblox. ¡Así que únete a nosotros en esta aventura de aprendizaje y descubre el increíble mundo de la programación en Roblox Studio!`,
             Category : ["Juegos","Desarrollo"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165309/CAPACITECHKIDS/images/users/banner_curses/2.png",
-            Duration: 7200,
+            Duration: 120,
             PK_User:  1,
             // ruta recomendada 2. 
             // edad de 12 en adelante. 
-            Lectures : [
+            Lectures : [4,
                 {video1 : "https://youtu.be/7L4-EnhSoAc", titulo : "Programación en Roblox Studio: Bucles While", descripcion: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos la sintaxis de bucles While en Lua y su uso para la programación de videojuegos."},
                 {video2 :"https://youtu.be/VeYD-sU_vvU", titulo: "Programación en Roblox Studio: Programación Orientada a Objetos I", descripcion : "Nueva lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos de forma muy sencilla las bases de la Programación Orientada a Objetos (POO) para uso en videojuegos"},
                 {video3 : "https://youtu.be/QrlpEWYkucc",titulo: "Programación en Roblox Studio: Programación Orientada a Objetos II", descripción: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección vemos algunos aspectos prácticos de Programación Orientada a Objetos para su uso en Roblox Studio."},
@@ -111,11 +111,11 @@ let realDB =
             Utilizaremos todo lo que aprendimos en los dos cursos anterior sobre Roblox y Lua para crear nuestros propios videojuegos, desde su planificación hasta el final!`,
             Category : ["Juegos","Desarrollo"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/18.jpg",
-            Duration: 7200,
+            Duration: 130,
             PK_User:  1,
             // ruta recomendada 2. 
             // edad de 12 en adelante. 
-            Lectures : [
+            Lectures : [5,
                 {video1 : "https://youtu.be/okku7EYkql4", titulo : "Buscar y escribir ideas para diseño de videojuegos", descripcion: "En este video veremos algunas estrategias y consejos para buscar ideas para nuestros videojuegos. También mencionamos cuales son los puntos principales a tratar en un GDD o Documento de Diseño de Juego"},
                 {video2 :"https://youtu.be/O9XZeRiCukQ", titulo: "Desarrollamos un juego para Roblox Studio: Planificación", descripcion : "En este video se hace un análisis básico de los distintos objetos y conceptos que formarán el videojuego en Roblox Studio que vamos a desarrollar en las siguientes lecciones."},
                 {video3 : "https://youtu.be/KOJovAhTkRM",titulo: "Desarrollamos un juego para Roblox Studio: Terreno", descripción: " En este video aprenderemos como crear un terreno para nuestro videojuego gracias a las herramientas que nos proporciona Roblox Studio."},
@@ -142,11 +142,11 @@ let realDB =
             Pero no solo aprenderás cómo construir el coche eléctrico, sino también cómo personalizarlo para que se adapte a tus gustos y necesidades. ¡Podrás pintarlo y decorarlo a tu estilo!`,
             Category : ["Robótica", "Diseño"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168640/CAPACITECHKIDS/images/users/banner_curses/19.jpg",
-            Duration: 7200,
+            Duration: 50,
             PK_User:  1,
             // ruta única : 3. 
             // edad : +8
-            Lectures : [
+            Lectures : [6,
                 {video1 : "https://youtu.be/_K1SBRGr5Z8", titulo : "Cómo Hacer un Coche Eléctrico Casero", descripcion: "aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."},
                 {video2 :"https://youtu.be/NL5-FV28uRA", titulo: "Continua la construcción de nuestro coche", descripcion : "aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."},
                 {video3 : "https://youtu.be/1HHFpzFOfko",titulo: "Ahora un coche de F1!!!!", descripción: " aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."}]   
@@ -161,11 +161,11 @@ let realDB =
             ¡Y lo mejor de todo es que no necesitas tener conocimientos previos en programación! Este curso está diseñado para principiantes y te guiará paso a paso en el proceso de creación de tus propios juegos.`,
             Category : ["Juegos","Desarrollo"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165300/CAPACITECHKIDS/images/users/banner_curses/5.jpg",
-            Duration: 7200,
+            Duration: 80,
             PK_User:  1,
             // ruta 4 
             // 10 años o más 
-            Lectures : [
+            Lectures : [7,
                 {video1 : "https://youtu.be/YjWIfsCkXz0", titulo : "[Parte 1] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "¿Siempre has querido desarrollar videojuegos pero crees que no tienes los conocimientos necesarios de programación? ¡Con GDevelop puedes crear tus propios juegos y de forma gratuita sin ser un programador experto!."},
                 {video2 :"https://youtu.be/6Dna4ZOzDoQ", titulo: "[Parte 2] Curso básico para desarrollar videojuegos con GDevelop", descripcion : "En este vídeo te explico las partes básicas del programa GDevelop. ¡Te será útil para desenvolverte bien el resto del curso!"},
                 {video3 : "https://youtu.be/RTIssq7B6iw",titulo: " [Parte 3] Curso básico para desarrollar videojuegos con GDevelop", descripción: "En este vídeo aprenderás cómo se colocan los principales objetos (sprites, tiled sprites y textos) en la escena de tu videojuego"},
@@ -184,11 +184,11 @@ let realDB =
             ¡Y lo mejor de todo es que no necesitas tener conocimientos previos en programación! Este curso está diseñado para principiantes y te guiará paso a paso en el proceso de creación de tus propios juegos.`,
             Category : ["Juegos","Desarrollo"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165300/CAPACITECHKIDS/images/users/banner_curses/5.jpg",
-            Duration: 7200,
+            Duration: 60,
             PK_User:  1,
             // ruta 4 
             // 10 años o más 
-            Lectures : [
+            Lectures : [8,
                 {video1 : "https://youtu.be/9DFOQcWQGLM", titulo : "[Parte 7] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "En esta edición te explico cómo se utilizan los timers (temporizadores) y cómo eliminar objetos en tiempo de ejecución (destruir enemigos)."},
                 {video2 :"https://youtu.be/EdcaK77cErM", titulo: "[Parte 8] Curso básico para desarrollar videojuegos con GDevelop", descripcion : "En este vídeo te muestro cómo manejar variables globales para controlar la puntuación y las vidas de tus videojuegos!"},
                 {video3 : "https://youtu.be/YzRQuDLc3_Y",titulo: " [Parte 9] Curso básico para desarrollar videojuegos con GDevelop", descripción: "¡Te explico cómo puedes moverte entre escenas desde la hoja de eventos! ¡También perfeccionaremos el juego modificando los polígonos de colisión!"},
@@ -229,11 +229,11 @@ let realDB =
             En este curso, aprenderás cómo programar Meet Edison, el robot compatible con LEGO más económico del mercado, te mostraremos cómo construir diferentes estructuras con LEGO  y cómo personalizarlas para que se adapten a tus necesidades y deseos. ¡Podrás crear y programar tu propio robot de una forma creativa y entretenida!`,
             Category : ["Robótica","Desarrollo","Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165301/CAPACITECHKIDS/images/users/banner_curses/3.jpg",
-            Duration: 7200,
+            Duration: 100,
             PK_User:  1,
             // ruta 5 
             // 10 años
-            Lectures : [
+            Lectures : [9,
                 {video1 : "https://youtu.be/W0C_TDWd8Mo", titulo : "Promo Meet Edison Robot - Valteam Tech", descripcion: "Meet Edison es el robot compatible con LEGO más económico del mercado, que te permitirá aprender a programar sin tener conocimientos avanzados y te ayudará a inventar cosas nuevas cada día de una forma divertida y entretenida."},
                 {video2 :"https://youtu.be/5JK_f56WJQ0", titulo: "Meet Edison Clase 01 Robotica Educativa - Introduccion a Meet Edison", descripcion : "En esta clase vas a conocer el funcionamiento básico del robot meet edison. Meet Edison es un robot diseñado para aprender electrónica programación y robótica desde los 5 años de edad"},
                 {video3 : "https://youtu.be/f5IC-TSXm9w",titulo: "Meet Edison Clase 02 Robotica Educativa - Robot controlado por aplausos", descripción: "En esta clase vamos a configurar el robot controlado por aplausos."},
@@ -249,11 +249,11 @@ let realDB =
             Al final del curso, tendrás la capacidad de dibujar en Photoshop de una forma creativa y profesional. ¡Únete a nosotros y comienza tu aventura en la ilustración digital!   `,
             Category :["Diseño"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/9.png",
-            Duration: 7200,
+            Duration: 80,
             PK_User:  1,
             // ruta 6 
             // 10 años
-            Lectures : [
+            Lectures : [10,
                 {video1 :"https://youtu.be/uCLa_elbn64", titulo: "👶PHOTOSHOP tutorial español BASICO principiantes, como RETOCAR, EDITAR fotos y photoshopear una foto", descripcion : "Aprende a photoshopear tus fotos. ¿Quieres saber como retocar y editar una foto? En este vídeo te muestro las herramientas básicas de Photoshop en español para principiantes y te preparo para crear retoques de calidad o miniatura de youtube de forma rápida y fácil."},
                 {video2 : "https://youtu.be/grs38CSDpTs", titulo : "✏️ DIBUJAR en PHOTOSHOP con TABLETA GRAFICA 🖥️", descripcion: "Aprende HOY a DIBUJAR en PHOTOSHOP con TABLETA GRAFICA. Te enseño como configurar photoshop para dibujar con tableta y hablamos sobre los los pinceles que podemos usar. ¡TODO MUY FÁCIL, BÁSICO, PASO A PASO Y DESDE CERO!"},
                 {video3 : "https://youtu.be/xp0iDyVb9Ts",titulo: "👁️ Como ANIMAR en PHOTOSHOP DESDE CERO 👀", descripción: "Aprende a ANIMAR en PHOTOSHOP con TABLETA GRAFICA y DESDE CERO. Aprovecha la linea de tiempo y crea animaciones cuadro a cuadro aprovechando todas las ventajas que ofrece Ps. ¡¡Hoy te enseñaré COMO HACER una ANIMACIÓN 2D en PHOTOSHOP!!"},
@@ -269,11 +269,11 @@ let realDB =
                 Al final del curso, tendrás la capacidad de dibujar en Photoshop de una forma creativa y profesional. ¡Únete a nosotros y comienza tu aventura en la ilustración digital!   `,
                 Category :["Diseño"],
                 Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/9.png",
-                Duration: 7200,
+                Duration: 120,
                 PK_User:  1,
                 // ruta 6 
                 // 10 años
-                Lectures : [
+                Lectures : [11,
                     {video1 :"https://youtu.be/5CT7Lw673-g", titulo: "✅ 3 Formas de Como EXPORTAR en After Effects (🚀 Super RAPIDO!)", descripcion : "Descubre como exportar en After Effects de forma rápida usando 3 diferentes técnicas (la tercer forma es MUY POCO CONOCIDA y es la más rápida!)"},
                     {video2 : "https://youtu.be/NtOQ3p2XHuw", titulo : "📱 Como USAR una TABLETA GRAFICA para DIBUJAR ✍", descripcion: "Aprende como usar una tableta grafica para dibujar y como configurar una tableta grafica wacom. Vamos a instalar los drivers o controladores para habilitar la tableta digital. Y te enseñaré como dibujar con tableta grafica con o sin pantalla en photoshop. "},
                     {video3 : "https://youtu.be/Y-EL7zFiLGM",titulo: "🤑 La TABLETA MAS BARATA para dibujar - Huion H420X ✍", descripción: "La tableta mas barata para dibujar es la Huion H420X. Es la tableta grafica mas barata del mundo, pero la pregunta es, puede hacerle frente al resto de tabletas? Sin duda la tableta grafica calidad / precio merece la pena. La tableta grafica para principiantes es ideal."},
@@ -304,11 +304,11 @@ let realDB =
             Aprenderás a dar vida a tus ideas y a convertirlas en juegos interactivos y emocionantes que puedes compartir con tus amigos. Además, también aprenderás a personalizar y mejorar tus juegos con gráficos y sonidos divertidos.`,
             Category :["Juegos","Desarrollo"],
             Image: "    https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/27.jpg",
-            Duration: 7200,
+            Duration: 50,
             PK_User:  1,
             // ruta 7
             // 7 años 
-            Lectures : [
+            Lectures : [12,
                 {video1 :"https://youtu.be/4RMQR_TQjyA", titulo: "🚀 Curso de Scratch para niños | Introducción | Lección 1", descripcion : "🏫👾  Aprende a crear con Scratch de la mano de Beep, Wonder y Learny 🤖"},
                 {video2 : "https://youtu.be/MajZFv4nFfk", titulo : " Curso de Scratch para niños: | Qué puedes lograr | Lección 2", descripcion: "👾 ¡Descubre todo lo que puedes lograr con Scratch!🤖 "},
                 {video3 : "https://youtu.be/7ebD6TocB9Q",titulo: "🚀 Curso de Scratch para niños | Cómo crear y verificar tu cuenta | Lección 3", descripción: "👾  Descubre cómo crear tu cuenta verificada 🎮⚡️"},
@@ -342,11 +342,11 @@ let realDB =
             Aprenderás a dar vida a tus ideas y a convertirlas en juegos interactivos y emocionantes que puedes compartir con tus amigos. Además, también aprenderás a personalizar y mejorar tus juegos con gráficos y sonidos divertidos.`,
             Category :["Juegos","Desarrollo"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/27.jpg",
-            Duration: 7200,
+            Duration: 50,
             PK_User:  1,
             // ruta 7
             // 7 años 
-            Lectures : [
+            Lectures : [13,
                 {video1 :"https://youtu.be/Wz-GCJDCJs8", titulo: "🚀 Curso de Scratch para niños: Cómo crear un ritmo | Lección 21", descripcion : "👾 ¿Quieres aprender sobre los sonidos de instrumentos musicales en Scratch? Comenzaremos por los tambores. Utilizaremos bloques de código amarillo, naranja y magenta 🤖"},
                 {video2 : "https://youtu.be/oGBOWLAKJhY", titulo : "🚀 Curso de Scratch para niños: Cómo animar un instrumento | Lección 22", descripcion: "👾 Ya te imaginarás que todos los objetos pueden ser animados, y llevar disfraces en Scratch, no solamente los personajes. En esta lección aprenderás cómo animar un instrumento y utilizarás los bloques de código amarillo, naranja, magenta, y morado 🤖"},
                 {video3 : "https://youtu.be/eBHfUEiH_0k",titulo: "🚀 Curso de Scratch para niños: Cómo crear una melodía | Lección 23", descripción: "👾 Ya sabes cambiar disfraces, agregar pausas y crear ritmos, ¡es hora de crear una melodía! Aprende cómo realizarlo junto a Wonder y Beep. Utilizarás bloques de código amarillo, magenta y naranja🤖"},
@@ -376,11 +376,11 @@ let realDB =
             Description : "¡Únete a nuestra emocionante aventura de programación! En este curso, te enseñaremos cómo programar tus propios mods de Minecraft usando Python. ¡Podrás construir tu propio mundo de Minecraft y hacer que cobre vida con tus habilidades de programación! ¡Aprenderás a crear herramientas personalizadas, animaciones y mucho más! ¡No pierdas esta oportunidad única de aprender mientras te diviertes con Minecraft y Python!.",
             Category :["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/16.jpg",
-            Duration: 7200,
+            Duration: 140,
             PK_User:  1,
             // ruta 8
             // 12 años
-            Lectures : [
+            Lectures : [14,
                 {video1 :"https://youtu.be/kBLZ_jaNwkI", titulo: "Configuración de Servidor para programar con Minecraft y Python", descripcion : "Tutorial paso a paso sobre como configurar un Servidor de Minecraft para aprender a programar con Python. "},
                 {video2 : "https://youtu.be/-KjiiWSlCsc", titulo : "Principales comandos del server", descripcion: "Segundo video del curso de Python con Minecraft donde veremos los principales comandos para usar en el servidor "},
                 {video3 : "https://youtu.be/Hhprsczj5o8",titulo: "Propiedades del Servidor", descripción: "Tercer video del curso de Python con Minecraft donde veremos como modificar las propiedades del servidor y crear mundos diferentes. "},
@@ -394,11 +394,11 @@ let realDB =
             Description : "¡Únete a nuestra emocionante aventura de programación! En este curso, te enseñaremos cómo programar tus propios mods de Minecraft usando Python. ¡Podrás construir tu propio mundo de Minecraft y hacer que cobre vida con tus habilidades de programación! ¡Aprenderás a crear herramientas personalizadas, animaciones y mucho más! ¡No pierdas esta oportunidad única de aprender mientras te diviertes con Minecraft y Python!.",
             Category :["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/16.jpg",
-            Duration: 7200,
+            Duration: 130,
             PK_User:  1,
             // ruta 8
             // 12 años
-            Lectures : [
+            Lectures : [15,
                 {video1 :"https://youtu.be/FXqFo_JfW0o", titulo: "Concatenar integers con strings", descripcion : "En estos ejemplos veremos como concatenar strings. Concatenar significa unir. También veremos como concatenar strings con ints. Los números integrales primero se necesitan convertir a strings con la función str()"},
                 {video2 : "https://youtu.be/DqKHjHUKXx0", titulo : "Teletransportarse y time.sleep()", descripcion: "En este video haremos un programa que nos teletransportará a 3 posiciones diferentes haciendo una pausa entre ellas. "},
                 {video3 : "https://youtu.be/p1a6NxQFODs",titulo: "Construir bloque con código mc.setBlock() ", descripción: "En este video haremos un programa que construirá bloques o voxeles con código. "},
@@ -412,11 +412,11 @@ let realDB =
             Description : "¿Te gustaría crear tus propios robots, juegos electrónicos o sistemas automatizados? ¡Entonces este curso de programación de Arduino es perfecto para ti! Aprenderás a programar con lenguaje de bloques y a trabajar con componentes electrónicos, todo mientras te diviertes y descubres un mundo nuevo de posibilidades tecnológicas. ¡Únete a nosotros y conviértete en un verdadero creador!",
             Category :["Desarrollo","Otros","Electrónica"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/14.jpg",
-            Duration: 7200,
+            Duration: 90,
             PK_User:  1,
             // ruta 9 
             // años 12
-            Lectures : [
+            Lectures : [16,
                 {video1 :"https://youtu.be/UaYclsj-jxY", titulo: "Programación de Arduino para niños con Tinkercad - Clase 1", descripcion : "En este video el Profe Lalo nos ayuda utilizando la plataforma de Tinkercad de Autodesk, es una plataforma online y gratuita con la que les vamos ayudar a aprender a programar en SCRATCH, un lenguaje de bloques muy sencillo con lo que podrán controlar proyectos muy padres. "},
                 {video2 : "https://youtu.be/1rWj8ZyzXQs", titulo : "Programación de Arduino para niños con Tinkercad - Clase 2", descripcion: "En este video el Profe Lalo nos ayuda utilizando la plataforma de Tinkercad de Autodesk, es una plataforma online y gratuita con la que les vamos ayudar a aprender a programar en SCRATCH, un lenguaje de bloques muy sencillo con lo que podrán controlar proyectos muy padres."},
                 {video3 : "https://youtu.be/bmx7IMYxIdg",titulo: "Programación de Arduino con Tinkercad - Clase 3: Sensores digitales", descripción: "En este video el Profe Lalo nos ayuda utilizando la plataforma de Tinkercad de Autodesk, es una plataforma online y gratuita con la que les vamos ayudar a aprender a programar en SCRATCH, un lenguaje de bloques muy sencillo con lo que podrán controlar proyectos muy padres "},
@@ -430,11 +430,11 @@ let realDB =
             Description : "¿Te gustaría crear tus propios robots, juegos electrónicos o sistemas automatizados? ¡Entonces este curso de programación de Arduino es perfecto para ti! Aprenderás a programar con lenguaje de bloques y a trabajar con componentes electrónicos, todo mientras te diviertes y descubres un mundo nuevo de posibilidades tecnológicas. ¡Únete a nosotros y conviértete en un verdadero creador!",
             Category :["Desarrollo","Otros","Electrónica"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/14.jpg",
-            Duration: 7200,
+            Duration: 100,
             PK_User:  1,
             // ruta 9 
             // años 12
-            Lectures : [
+            Lectures : [17,
                 {video1 :"https://youtu.be/hy3cUyeoTNU", titulo: "Programación de Arduino con Tinkercad - Clase 7: ¿Cómo programar sensores analógicos en Arduino?", descripcion : "En este video el Profe Lalo nos ayuda utilizando la plataforma de Tinkercad de Autodesk, para programar un Arduino para tomar decisiones dependiendo de señales analógicas. "},
                 {video2 : "https://youtu.be/xUNL1zkGQvw", titulo : "Programación de Arduino con Tinkercad - Clase 8: Control de velocidad de motores con PWM en Arduino", descripcion: "En este video el Profe Lalo nos ayuda utilizando la plataforma de Tinkercad de Autodesk, para programar un Arduino y controlar la velocidad de un motor DC."},
                 {video3 : "https://youtu.be/58ccTmgLOtQ",titulo: "Programación de Arduino con Tinkercad - Clase 9: Control de motores para robots con Arduino", descripción: "En este video el Profe Lalo nos ayuda utilizando la plataforma de Tinkercad de Autodesk, para controlar un par de motores utilizando el puente H L293D y nuestro Arduino, una aplicación muy útil para controlar el movimiento de nuestros robots. "},
@@ -487,11 +487,11 @@ let realDB =
           Description : "¡Bienvenidos al mundo de la Inteligencia Artificial! ¿Alguna vez has imaginado cómo sería tener una máquina que pudiera pensar, aprender y tomar decisiones por sí sola? La Inteligencia Artificial es la tecnología que lo hace posible. Con esta emocionante herramienta, podemos enseñar a las computadoras a hacer todo tipo de cosas, desde identificar objetos hasta jugar juegos y conversar contigo como un amigo. ¡Acompáñanos en esta aventura para descubrir la magia de la Inteligencia Artificial!",
           Category :["Inteligencia Artificial"],
           Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/17.jpg",
-          Duration: 7200,
+          Duration: 60,
           PK_User:  1,
           // ruta 10 
           // 10 años
-          Lectures : [
+          Lectures : [18,
             {video1 :"https://youtu.be/HHbjIVjRMZg", titulo: "1. Bienvenidos al Curso de Inteligencia Artificial para Niños!", descripcion : "Bienvenidos a este curso introductorio de Machine Learning For Kids! (Inteligencia Artificial para Niños) "},
             {video2 : "https://youtu.be/bC1nSJhaFCI", titulo : "2. Contenido del Curso de Inteligencia Artificial para Niños", descripcion: "En este vídeo te doy un pantallazo de todo lo que veremos en el curso de Inteligencia Artificial para Niños. Veremos distintos proyectos, interactivos en Scratch en los cuales iremos plasmando diferentes ideas del Machine Learning."},
             {video3 : "https://youtu.be/uleQ1X7GOpk",titulo: "3. Introducción a Scratch: Curso de Inteligencia Artificial para Niños", descripción: "Empezamos con la plataforma Scratch para la creación de todo nuestro código y demás. En este vídeo damos los primeros pasos para crear una cuenta y entender un poco la interfaz de la creación de un proyecto. "},
@@ -505,11 +505,11 @@ let realDB =
           Description : "¿Te gustaría crear un robot que pueda ayudarte con tus tareas diarias? ¡La programación y la Inteligencia Artificial te permiten hacerlo! Aprender a programar te permite enseñar a las computadoras a hacer todo lo que quieras, desde jugar juegos hasta crear aplicaciones y programas. Y con la Inteligencia Artificial, puedes crear robots y asistentes virtuales que puedan aprender de tus hábitos y hacer recomendaciones para ti. ¡Únete a nosotros en este emocionante viaje de programación e Inteligencia Artificial y crea tu propia tecnología del futuro!",
           Category :["Inteligencia Artificial","Desarrollo", "Otros"],
           Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/17.jpg",
-          Duration: 7200,
+          Duration: 60,
           PK_User:  1,
           // ruta 10
           // 10 años 
-          Lectures : [
+          Lectures : [19,
             {video1 :"https://youtu.be/yxsegtTWk2A", titulo: "Introducción a la programación para niños", descripcion : "Introducción a la programación para niños "},
             {video2 : "https://youtu.be/rzQpTJxvCPY", titulo : "Introducción a la programación para niños - Segunda parte", descripcion: "¿Te gustaría crear un robot que pueda ayudarte con tus tareas diarias? ¡La programación y la Inteligencia Artificial te permiten hacerlo! Aprender a programar te permite enseñar a las computadoras a hacer todo lo que quieras, desde jugar juegos hasta crear aplicaciones y programas. Y con la Inteligencia Artificial, puedes crear robots y asistentes virtuales que puedan aprender de tus hábitos y hacer recomendaciones para ti. ¡Únete a nosotros en este emocionante viaje de programación e Inteligencia Artificial y crea tu propia tecnología del futuro!"},
             {video3 : "https://youtu.be/Nl23BFbMuqw",titulo: "3. ¿Cómo instalar PictoBlox?", descripción: "¿Cómo instalar PictoBlox?"},
@@ -527,11 +527,11 @@ let realDB =
           Description : "¿Te imaginas un mundo lleno de robots inteligentes que nos ayuden en nuestra vida diaria? ¡Con este libro podrás aprender los conceptos básicos de la robótica y descubrir cómo funcionan estos increíbles inventos! Desde los diferentes tipos de robots hasta cómo se programan para realizar tareas, este libro es la guía perfecta para cualquier joven interesado en la tecnología. ¡Prepárate para explorar el emocionante mundo de la robótica!",
           Category :["Robótica"],
           Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168640/CAPACITECHKIDS/images/users/banner_curses/19.jpg",
-          Duration: 7200,
+          Duration: 80,
           PK_User:  1,
           // ruta 11 
           // 8 años
-          Lectures : [
+          Lectures : [20,
             {video1 :"https://youtu.be/xvzg-oTZ7wM", titulo: "¿Qué es un ROBOT? 🤖💥", descripcion : "¿Qué es un ROBOT? Un robot es un sistema programable.🤖 Encontrar una definición que abarque todo de un robot es en realidad un problema difícil, incluso para los expertos en robótica de clase mundial."},
             {video2 : "https://youtu.be/z5IqRReRKtA", titulo : "¿Cuáles son las partes de un ROBOT? 🤖", descripcion: "¿Cuáles son las partes de un ROBOT? 🤖Si queremos responder rápidamente cuáles son las partes de un robot podemos simplificar que son 3: El controlador, los actuadores y los sensores."},
             {video3 : "https://youtu.be/4Q3vfQKaCQI",titulo: "HISTORIA DE LA ROBÓTICA 🤖 | Los datos más ASOMBROSOS", descripción: "La historia de la Robótica con los datos más asombrosos. Para adentrarnos en la historia de la robótica, primero hablamos de la definición de “robot”, quién fue el inventor de la palabra, cuál fue el primer robot de la historia, quién es el padre de la robótica."},
@@ -631,11 +631,11 @@ let realDB =
           Description : "En este curso, te enseñaremos todo lo que necesitas saber para empezar a crear tus propios juegos, desde cero! Aprenderás los conceptos básicos de programación y diseño de juegos mientras te diviertes creando tus propios mundos virtuales. ¡Únete a nosotros en esta emocionante aventura de desarrollo de videojuegos!",
           Category :["Desarrollo","Juegos"],
           Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/24.jpg",
-          Duration: 7200,
+          Duration: 150,
           PK_User:  1,
           // ruta 14
           // edad 14 
-          Lectures : [
+          Lectures : [21,
             {video1 :"https://youtu.be/khnpOtZ6rvY", titulo: "Instalación de Unity.", descripcion : "¿Estás pensando en iniciarte en el desarrollo de videojuegos? En esta serie te voy a explicar lo que necesitas saber sobre manejo de Unity y C#, pasando por todos los conceptos básicos para sentirte cómodo en la creación de tus primeros juegos."},
             {video2 : "https://youtu.be/cgsYarfBmhQ", titulo : "Primeros pasos en el editor de Unity.", descripcion: "primeros pasos utilizando el editor de Unity."},
             {video3 : "https://youtu.be/zVUGeZMh-LA",titulo: "Programación en C#.", descripción: "primeros pasos en programación en C# para Unity"},
@@ -653,11 +653,11 @@ let realDB =
           Description : "¡Bienvenidos al emocionante mundo del pixel art! En este curso de dibujo, aprenderás a crear imágenes detalladas y vibrantes utilizando pequeños bloques de colores llamados píxeles. Desde personajes de videojuegos hasta paisajes fantásticos, el pixel art es una forma única y emocionante de crear arte en la era digital. ¡Ven y únete a nosotros para descubrir cómo dar vida a tus ideas en una pantalla de pixeles!",
           Category :["Diseño","Juegos"],
           Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193523/CAPACITECHKIDS/images/users/banner_curses/28.jpg",
-          Duration: 7200,
+          Duration: 30,
           PK_User:  1,
           // ruta 15 
           // 8 años
-          Lectures : [
+          Lectures : [22,
             {video1 :"https://youtu.be/GRiDC_pzCPQ", titulo: "Crea tu héroe a píxel!", descripcion : "Os enseño trucos y técnicas para crear a vuestro héroe de píxel."},
             {video2 : "https://youtu.be/P1bYwIkQaNQ", titulo : "Consejos y técnicas", descripcion: "Repasamos técnicas, trucos y consejos para mejorar nuestros sprites a píxel"},
             {video3 : "https://youtu.be/ghzPjG56a-k",titulo: "tu primer arbol", descripción: "En este capitulo aprendemos a hacer tu primer árbol, que podes usarlo para un juego de plataformas, un RPG o un juego de peleas entre otros tantos."},
@@ -668,11 +668,11 @@ let realDB =
           Description : "Con Excel para niños, podrás descubrir cómo manejar hojas de cálculo de manera fácil y entretenida. Aprenderás a organizar información, hacer cálculos matemáticos y crear gráficas coloridas y llamativas. ¡No te pierdas esta aventura de números y datos!",
           Category :["Escritorio","Otros"],
           Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193523/CAPACITECHKIDS/images/users/banner_curses/29.png",
-          Duration: 7200,
+          Duration: 90,
           PK_User:  1,
           // ruta 12 
           // 8 años
-          Lectures : [
+          Lectures : [23,
             {video1 :"https://youtu.be/mCzvjn0Mmn0", titulo: "Modifica formas y representa porcentajes en una gráfica de barras en Excel", descripcion : "Grafica porcentajes en una gráfica de barras en Microsoft Excel, modifica en una gráfica 3D las barras por pirámides, conos o cilindros"},
             {video2 : "https://youtu.be/zsJWh4xugbw", titulo : "Aprende a insertar un gráfico de barras en Excel", descripcion: "Aprende a insertar una gráfica de barras en Microsoft Excel"},
             {video3 : "https://youtu.be/4gF8zQQNcxs",titulo: "Aprende a usar fórmulas promedio máximo mínimo en Excel", descripción: "Aprende a utilizar las fórmulas para calcular promedio, máximo y mínimo de un rango de manera fácil en Microsoft Excel. En esta clase de computación aplicamos fórmulas para calcular promedio, máximo y mínimo"},
@@ -689,11 +689,11 @@ let realDB =
         Description : "¿Quieres aprender a programar y crear tus propias aplicaciones móviles? ¡Este curso es para ti! Con App Inventor, una herramienta gratuita y fácil de usar, podrás crear tus propias apps de manera divertida y sencilla. Aprenderás a programar paso a paso mientras creas juegos, calculadoras, reproductores de música y mucho más. ¡Ven y conviértete en un programador de apps en poco tiempo!",
         Category :["Movil", "Juegos"],
         Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/4.png",
-        Duration: 7200,
+        Duration: 60,
         PK_User:  1,
         // ruta 13
         // 7 años
-        Lectures : [
+        Lectures : [24,
             {video1 :"https://youtu.be/eNVN55ysdFo", titulo: "El emulador de App Inventor.", descripcion : "En este video podrás conocer qué es el emulador de apps que te ofrece app inventor y para qué sirve."},
             {video2 : "https://youtu.be/F5jNeah0zV0", titulo : "Curso jóvenes y niños creando apps", descripcion: "Nuestro curso de niños y jóvenes creando apps, ayuda a los participantes a desarrollar sus habilidades tecnológicas de una manera lúdica, dinámica y agradable; creando aplicaciones como ésta un traductor."},
             {video3 : "https://youtu.be/5sDSLQxIgeY",titulo: "Video pantalla celular", descripción: "En esta ocasión no me veo en pantalla ya estoy grabando el video de la pantalla de mi celular, el objetivo el video es que veas lo que pasa en tu teléfono celular con las aplicaciones que estaremos desarrollando en el curso niños y jóvenes creando apps que inicia en este mes de julio, en el cual podrás tener a partir de la segunda sesión productos terminados como este que ves en pantalla."},
@@ -711,11 +711,11 @@ let realDB =
     Description : "¿Quieres aprender a programar y crear tus propias aplicaciones móviles? ¡Este curso es para ti! Con App Inventor, una herramienta gratuita y fácil de usar, podrás crear tus propias apps de manera divertida y sencilla. Aprenderás a programar paso a paso mientras creas juegos, calculadoras, reproductores de música y mucho más. ¡Ven y conviértete en un programador de apps en poco tiempo!",
     Category :["Movil", "Juegos"],
     Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/4.png",
-    Duration: 7200,
+    Duration: 70,
     PK_User:  1,
     // ruta 13
     // 7 años
-    Lectures : [
+    Lectures : [25,
         {video1 :"https://youtu.be/eKymIHPiplw", titulo: "Curso de programación para niños app inventor (casilla de verificación app inventor) fácil", descripcion : "las casillas de verificación permiten seleccionar alguna opción de una lista de opciones, en este ejemplo vemos como podemos colocar dichas casillas pero además podemos realizar actividades acorde al resultado de la casilla, en este video te llevamos paso a paso para poder realizar dichas actividades y recuerda, pronto subiremos listas de reproducción en las cuales desarrollaremos aplicaciones funcionales que podrás desarrollar."},
         {video2 : "https://youtu.be/yqYifv0SmhU", titulo : "Curso de programación en app inventor agregar audios y sonidos.", descripcion: "App inventor es una herramienta ideal para poder iniciarte en el mundo de la programación de apps, es muy noble en cuanto a todas las herramientas que tiene y te permite generar aplicaciones con un controles muy interesantes como es el caso del uso de los audios y sonidos que podemos agregar, conoce esta y muchas otras herramientas en nuestros videos."},
         {video3 : "https://youtu.be/i8dBKY50MzU",titulo: "Curso de app inventor. ¡Crea un contador de pasos! Podómetro Cuenta tus próximos 1000 pasos", descripción: "Con unas sencillas funciones puedes desarrollar rápidamente un podómetro que cuenta los pasos, la distancia o incluso el tiempo que tardas en dar un recorrido, recuerda que en nuestros cursos en línea y presenciales podemos darte aun más y mejores herramientas."},
