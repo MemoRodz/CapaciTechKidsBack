@@ -1,6 +1,7 @@
 const {Router} = require("express");
 const getRelatedReviews = require("../controllers/getRelatedReviews.js");
 const {tblCourses,tblUsers,tblReviews} = require("../DB_connection.js");
+const postReview = require("../controllers/postReview.js")
 
 
 const ReviewsRouter = Router();    
@@ -27,6 +28,22 @@ catch (error) {
     res.status(400).send(error.message)
         }
 })
+
+
+
+ReviewsRouter.post("/", async (req, res) => { 
+  const { Score, Comment, PK_Course, PK_User,  } = req.body;
+
+try {
+  const result = await postReview(Score, Comment, PK_Course, PK_User );
+  res.status(201).json(result);
+}
+catch (error) {
+  console.log(error.message);
+  res.status(400).send(error.message)
+}
+})
+
 
 ReviewsRouter.get("/related/:id", async (req,res) => {
   const {id} = req.params;
