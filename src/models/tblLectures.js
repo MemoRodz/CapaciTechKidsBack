@@ -2,6 +2,7 @@ const { DataTypes } = require('sequelize');
 
 
 module.exports = sequelize => {
+
     sequelize.define('tblLectures', {
   PK_Lecture: {
     type: DataTypes.INTEGER,
