@@ -7,13 +7,16 @@ const saveLectures = async () => {
     try {
       for (const data of lectures) {
   const extraerVideo = Object.entries(data)[1];
-   console.log(data.id,data.descripcion)
+  const numero = parseInt(extraerVideo[0].slice(5,extraerVideo[0].length))
+
+
+
         await tblLectures.create({
           Title: data.titulo,
           Description: data.descripcion,
           PK_Courses: data.id,
           Video : extraerVideo[1],
-          NoVideo : extraerVideo[0]
+          NoVideo : numero
         });
       }
     } catch (error) {
