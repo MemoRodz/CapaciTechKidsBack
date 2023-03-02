@@ -201,14 +201,14 @@ CourseRouter.put("/detail/:id/activate", async (req,res) =>{
 
 CourseRouter.post("/createCourse", async(req,res) => {
     const {Title,Description,Professor,Category,Duration,Active} = req.body;
-   console.log(Title,Description,Professor,Category,Duration,Active)
+   //console.log(Title,Description,Professor,Category,Duration,Active)
    try{
     const result = await postCourse(Title,Description,Professor,Category,Duration,Active)
     
      res.status(201).json(result)
          }
  catch (error) {
-    console.log(error.message)
+    //console.log(error.message)
      res.status(400).send(error.message)
          }
  })

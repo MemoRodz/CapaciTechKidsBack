@@ -7,10 +7,8 @@ const saveLectures = async () => {
     try {
       for (const data of lectures) {
   const extraerVideo = Object.entries(data)[1];
+
   const numero = parseInt(extraerVideo[0].slice(5,extraerVideo[0].length))
-
-
-
         await tblLectures.create({
           Title: data.titulo,
           Description: data.descripcion,

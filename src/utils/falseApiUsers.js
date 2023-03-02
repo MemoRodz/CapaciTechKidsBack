@@ -66,10 +66,7 @@ let falseApiUsers =
     },
     {
         Name: "Gabriela Montecinos",
-
         Email: "gaby_montecinos@outlook.com",
-
-
         UserType: "Student",
         
     },
@@ -110,6 +107,7 @@ let falseApiUsers =
         
     },
     {
+
         Name: "CapaciTech Admin",
         Email: "capacitechkids@gmail.com",
         UserType: "AdvUser",
