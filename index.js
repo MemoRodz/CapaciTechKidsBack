@@ -2,6 +2,7 @@ require('dotenv').config();
 const {server,express} = require("./src/App");
 const { postFalseCourses } = require('./src/controllers/postCategory');
 const getFalseApiToDB = require('./src/controllers/saveCoursesDB');
+const saveLectures = require('./src/controllers/saveLectures');
 const saveReviewsDB = require('./src/controllers/saveReviewsDB');
 const getFalseApiToDBUsers = require("./src/controllers/saveUsersDB")
 const PORT = process.env.PORT
@@ -12,6 +13,7 @@ sequelize.sync({ force: true }).then(async () => {
     await postFalseCourses();
     await getFalseApiToDB();
     await saveReviewsDB()
+    await saveLectures()
     
 })
 

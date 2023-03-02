@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers,tblCategories, tblReviews} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblCategories, tblReviews,tblLectures} = require("../DB_connection.js");
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
 const getCategory = require("../controllers/getCategory.js");
@@ -32,7 +32,17 @@ catch (error) {
     res.status(400).send(error.message)
         }
 })
-
+CourseRouter.get("/lectures", async(req,res) => {
+    
+    try{
+        const result = await tblLectures.findAll()
+    
+        res.status(200).json(result)
+            }
+    catch (error) {
+        res.status(400).send(error.message)
+            }
+    })
 
 CourseRouter.get("/fromuser/:id", async(req,res) => {
     const {id} = req.params;

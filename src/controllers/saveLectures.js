@@ -1,25 +1,24 @@
 const {tblCourses,tblUsers,tblLectures} = require("../DB_connection.js");
-const realDB = require("../utils/DBReal.js");
+const  lectures = require("../utils/DBLectures.js");
 const categoriesXCourses = require("./postCategoriesXCourse.js");
 
 
-const getFalseApiToDB = async() => {
- 
-try {
-
-    await tblCourses.bulkCreate(realDB)
-
-    const allCourses = await tblCourses.findAll()
-   for (let i = 0; i < allCourses.length; i++) {
-        categoriesXCourses(allCourses[i].PK_Course, realDB[i].Category)}
-
-        
-    
-  
+const saveLectures = async () => {
+    try {
+      for (const data of lectures) {
+  const extraerVideo = Object.entries(data)[1];
+   console.log(data.id,data.descripcion)
+        await tblLectures.create({
+          Title: data.titulo,
+          Description: data.descripcion,
+          PK_Courses: data.id,
+          Video : extraerVideo[1],
+          NoVideo : extraerVideo[0]
+        });
+      }
+    } catch (error) {
+      return error.message;
     }
-    catch(error){
-        return error.message
-    }
-}
+  };
 
-module.exports = getFalseApiToDB;
+module.exports = saveLectures;
