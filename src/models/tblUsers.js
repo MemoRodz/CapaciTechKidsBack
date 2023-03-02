@@ -14,10 +14,14 @@ module.exports = sequelize => {
             type: DataTypes.STRING,
             allowNull: true
         },
+
+        Name: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
       
         UserType: {
             type: DataTypes.ENUM(
-                'Admin',
                 'AdvUser',
                 'Instructor',
                 'Student'
@@ -33,6 +37,10 @@ module.exports = sequelize => {
             type: DataTypes.BOOLEAN,
             defaultValue : true
         },
+        Image: {
+            type: DataTypes.STRING,
+            allowNull : true
+        }
        
     },
         {timestamps: false}
