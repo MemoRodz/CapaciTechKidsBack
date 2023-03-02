@@ -71,8 +71,8 @@ let falseApiUsers =
     },
     {
         Name: "Gabriela Montecinos",
-        Email: "70f5ee06d278890f777da2cb20adb26d5aa09d99df4acf5362e45a0646452dfd",
-        Password: "gaby_montecinos@outlook.com",
+        Email: "gaby_montecinos@outlook.com",
+        Password: "70f5ee06d278890f777da2cb20adb26d5aa09d99df4acf5362e45a0646452dfd",
         UserType: "Student",
         
     },
@@ -119,7 +119,7 @@ let falseApiUsers =
         
     },
     {
-        Name: "CapaciTech Kids",
+        Name: "CapaciTechKids",
         Email: "capacitechkids@gmail.com",
         Password: "0e6f1e4fbd1436dc473b64d727fe504a9017686f0c7d4f02e06b680b561a70ec",
         UserType: "AdvUser",
