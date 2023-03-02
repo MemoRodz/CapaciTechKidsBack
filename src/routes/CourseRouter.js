@@ -156,6 +156,23 @@ CourseRouter.get("/detail/:id", async (req,res) =>{
              }
      })
 
+     CourseRouter.get("/lectures/:id", async (req,res) =>{
+        const {id} = req.params;
+        try{
+            const result = await tblLectures.findAll(
+                {where : {
+                    PK_Courses : id
+                }
+                }
+            )
+           
+             res.status(200).json(result)
+                 }
+         catch (error) {
+             res.status(400).send(error.message)
+                 }
+         })
+    
 CourseRouter.put("/detail/:id/delete", async (req,res) =>{
     const {id} = req.params;
    
