@@ -3,6 +3,7 @@ const {tblCourses,tblUsers} = require("../DB_connection.js");
 const register = require("../controllers/registerUser.js")
 const UsersRouter = Router();    
 const getUserDetails = require("../controllers/getUserDetails")
+const putUser = require("../controllers/putUser")
 
 UsersRouter.get("/", async(req,res) => {
 try{
@@ -119,6 +120,19 @@ UsersRouter.get("/:id/activate", async(req,res) => {
         res.status(400).send(error.message)
              }
      })
+
+     UsersRouter.put("/putusers", async(req,res) => {
+        const user = req.body;
+        console.log(user)
+        
+        try{
+            const result = await putUser(user)
+            res.status(200).json(result)
+                 }
+         catch (error) {
+            res.status(400).send(error.message)
+                 }
+         })
 
 
 module.exports = UsersRouter;
