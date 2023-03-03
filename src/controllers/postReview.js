@@ -16,8 +16,6 @@ const postReview = async (Score, Comment, PK_Course, PK_User) => {
     }
     )
 
-   const last = await tblReviews.findAll()
-
 //   await categoriesXReviews(last.length,Category)
 
 }

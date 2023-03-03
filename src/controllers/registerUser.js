@@ -6,7 +6,7 @@ const UsersRouter = require("../routes/UsersRoutes.js");
 
 const register = async (user) => {
     const {email,name,picture} = user
-console.log(user)
+//console.log(user)
     try{
    let verify = await tblUsers.findOne({
         where : {

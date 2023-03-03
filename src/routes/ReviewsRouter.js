@@ -32,10 +32,12 @@ catch (error) {
 
 
 ReviewsRouter.post("/", async (req, res) => { 
-  const { Score, Comment, PK_Course, PK_User,  } = req.body;
+  const { Score, Comment, PK_Course, PK_User } = req.body;
+  console.log(Score, Comment, PK_Course, PK_User )
 
 try {
   const result = await postReview(Score, Comment, PK_Course, PK_User );
+  console.log(result)
   res.status(201).json(result);
 }
 catch (error) {

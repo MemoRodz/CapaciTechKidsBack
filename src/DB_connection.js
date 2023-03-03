@@ -45,13 +45,11 @@ const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions , tblCategorie
 
 // Acá van las relaciones: 
 
-// Relación de Usuarios tipo Students a cursos.
-// tblUsers.hasMany(tblCourses);
-// tblCourses.hasMany(tblUsers);
-
+// Relación de Courses con Categories.
 tblCourses.belongsToMany(tblCategories, { through: "tblCatXCourses", unique:false });
 tblCategories.belongsToMany(tblCourses, { through: "tblCatXCourses", unique:false});
 
+// Relación de Users con Courses.
 tblCourses.belongsTo(tblUsers, {
        foreignKey: "PK_User"      //Tabla de relación de profesor con curso, es uno por cada curso, habrá otra de estudiantes con courses muchos a muchos.
    });
@@ -60,6 +58,7 @@ tblLectures.belongsTo(tblCourses, {
       foreignKey: "PK_Courses"
    });
 
+// Relación de Exams con Questions.
 tblExams.belongsTo(tblLectures, {
       foreignKey: "PK_Lectures"
    });

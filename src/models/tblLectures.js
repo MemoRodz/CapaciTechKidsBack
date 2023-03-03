@@ -2,6 +2,7 @@ const { DataTypes } = require('sequelize');
 
 
 module.exports = sequelize => {
+
     sequelize.define('tblLectures', {
   PK_Lecture: {
     type: DataTypes.INTEGER,
@@ -27,7 +28,7 @@ autoIncrement: true
     
   },
   NoVideo: {
-    type:DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull : true
   }
         // FK_Course: {
