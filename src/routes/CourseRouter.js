@@ -10,7 +10,6 @@ const getCategory = require("../controllers/getCategory.js");
 const CourseRouter = Router();    
 
 CourseRouter.get("/", async(req,res) => {
-    
 try{
     const result = await tblCourses.findAll({
         where: {Active: true},
