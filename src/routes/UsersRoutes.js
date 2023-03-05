@@ -68,7 +68,7 @@ UsersRouter.get("/advusers", async(req,res) => {
 UsersRouter.get("/students", async(req,res) => {
     try {
         const result = await tblUsers.findAll({
-            attributes: ["PK_User","Name", "Email", "Register_Date", "Active"],
+            attributes: ["PK_User","Name", "Email", "Register_Date", "Active", "UserType"],
             where: {
                 UserType: "Student" 
             }
