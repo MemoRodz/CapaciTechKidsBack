@@ -6,13 +6,20 @@ const getUserDetails = require("../controllers/getUserDetails")
 const putUser = require("../controllers/putUser")
 
 UsersRouter.get("/", async(req,res) => {
-try{
-   const result = await tblUsers.findAll()
-    res.status(200).json(result)
-        }
-catch (error) {
-    res.status(400).send(error.message)
-        }   
+    try{
+        const result = await tblUsers.findAll({
+            where: {Active: true, UserType:"Instructor"},
+                include: [
+                    { model:tblCourses,     
+                    }
+                ]
+        });
+    
+        res.status(200).json(result)
+            }
+    catch (error) {
+        res.status(400).send(error.message)
+            } 
 })
 
 
@@ -133,6 +140,23 @@ UsersRouter.get("/:id/activate", async(req,res) => {
             res.status(400).send(error.message)
                  }
          })
+
+        UsersRouter.get("/instructorstudents", async(req,res) => {
+        try{
+            const result = await tblUsers.findAll({
+                where: {Active: true, UserType:"Instructor"},
+                    include: [
+                        { model:tblCourses,     
+                        }
+                    ]
+            });
+        
+            res.status(200).json(result)
+                }
+        catch (error) {
+            res.status(400).send(error.message)
+                }
+        })
 
 
 module.exports = UsersRouter;
