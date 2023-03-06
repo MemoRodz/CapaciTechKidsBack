@@ -1,16 +1,16 @@
-const {tblCourses,tblUsers} = require("../DB_connection.js");
+const {tblCourses,tblUsers, tblUsersXCourses} = require("../DB_connection.js");
 const categoriesXCourses = require("./postCategoriesXCourse.js");
 
 
 
-const postCoursexStudent = async (user) => {
-
+const postCoursexStudent = async (course,student) => {
+  
 
     try{
 // primero verifique si existe esta relación, si no existe entonces que la incluya. 
   await tblUsersXCourses.create({
-    tblCoursePKCourse: user.PK_Course,
-    tblUserPKUser : user.PK_User
+    tblCoursePKCourse: course,
+    tblUserPKUser : student
    }) 
 }
     catch(error){
