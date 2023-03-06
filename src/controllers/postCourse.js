@@ -3,7 +3,7 @@ const categoriesXCourses = require("./postCategoriesXCourse.js");
 
 
 
-const postCourse = async (Title,Description,Professor,Category,Duration,Active) => {
+const postCourse = async (Title,Description,Professor,Category,Duration,Active,Image) => {
     const PK_User = Professor
 
     try{
@@ -14,7 +14,8 @@ const postCourse = async (Title,Description,Professor,Category,Duration,Active) 
         PK_User,
         Duration,
         Active,
-        Category 
+        Category,
+        Image
     }
     )
 

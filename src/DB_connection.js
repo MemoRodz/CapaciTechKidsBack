@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Sequelize, Op, BelongsTo } = require('sequelize');
-const modeltblUsers = require('./models/tblCourses');
-const modeltblCourses = require('./models/tblUsers');
+const modeltblUsers = require('./models/tblUsers');
+const modeltblCourses = require('./models/tblCourses');
 const modeltblLectures = require('./models/tblLectures');
 const modeltblExams = require('./models/tblExams');
 const modeltblQuestions = require('./models/tblQuestions');
@@ -13,20 +13,20 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
 // postgres://DB_USER:DB_PASSWORD@DB_HOST/NOMBREBASEDEDATOS ESTRUCTURA DATOS SEQUELIZE
 
-//  const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_DB}`,
-//    // URL
-//    { 
-//    logging: false, 
-//    native: false 
-// }
-// );
-
-const sequelize = new Sequelize(DB_DEPLOY,
-   {
-      logging: false,
-      native: false
-   }
+ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_DB}`,
+   // URL
+   { 
+   logging: false, 
+   native: false 
+}
 );
+
+// const sequelize = new Sequelize(DB_DEPLOY,
+//    {
+//       logging: false,
+//       native: false
+//    }
+// );
 
 //Acá irán las funciones de los modelos. ej: modelStudents(sequelize)
 
@@ -54,10 +54,8 @@ tblCourses.belongsToMany(tblCategories, { through: "tblCatXCourses", unique: fal
 tblCategories.belongsToMany(tblCourses, { through: "tblCatXCourses", unique: false });
 
 
-// Relación de Users con Courses.
-tblCourses.belongsTo(tblUsers, {
-   foreignKey: "PK_User"      //Tabla de relación de profesor con curso, es uno por cada curso, habrá otra de estudiantes con courses muchos a muchos.
-});
+tblCourses.belongsToMany(tblUsers, { through: "tblUsersXCourses", unique: false });
+tblUsers.belongsToMany(tblCourses, { through: "tblUsersXCourses", unique: false });
 
 tblLectures.belongsTo(tblCourses, {
    foreignKey: "PK_Courses"

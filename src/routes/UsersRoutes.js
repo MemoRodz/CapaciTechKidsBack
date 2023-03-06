@@ -15,6 +15,42 @@ catch (error) {
         }   
 })
 
+UsersRouter.get("/profescursos", async(req,res) => {
+     
+    try{
+        const result = await tblUsers.findAll({
+            where: {Active: true, UserType:"Instructor"},
+                include: [
+                    { model:tblCourses,     
+                    }
+                ]
+        });
+    
+        res.status(200).json(result)
+            }
+    catch (error) {
+        res.status(400).send(error.message)
+            }   
+})
+UsersRouter.get("/user/:id", async(req,res) => {
+    const {id} = req.params
+    try{
+        const result = await tblUsers.findByPk(id,{
+            where: {Active: true},
+                include: [
+                    { model:tblCourses,     
+                    }
+                ]
+        });
+    
+        res.status(200).json(result)
+            }
+    catch (error) {
+        res.status(400).send(error.message)
+            }   
+})
+
+
 
 UsersRouter.get("/instructors", async(req,res) => {
     try {
@@ -61,7 +97,7 @@ UsersRouter.get("/advusers", async(req,res) => {
 UsersRouter.get("/students", async(req,res) => {
     try {
         const result = await tblUsers.findAll({
-            attributes: ["PK_User","Name", "Email", "Register_Date", "Active"],
+            attributes: ["PK_User","Name", "Email", "Register_Date", "Active", "UserType"],
             where: {
                 UserType: "Student" 
             }
@@ -133,6 +169,10 @@ UsersRouter.get("/:id/activate", async(req,res) => {
             res.status(400).send(error.message)
                  }
          })
+
+        UsersRouter.get("/instru", async(req,res) => {
+       
+        })
 
 
 module.exports = UsersRouter;

@@ -1,6 +1,7 @@
 require('dotenv').config();
 const {server,express} = require("./src/App");
 const { postFalseCourses } = require('./src/controllers/postCategory');
+const relaciones = require('./src/controllers/Relaciones');
 const getFalseApiToDB = require('./src/controllers/saveCoursesDB');
 const saveLectures = require('./src/controllers/saveLectures');
 const saveReviewsDB = require('./src/controllers/saveReviewsDB');
@@ -12,8 +13,10 @@ sequelize.sync({ force: true }).then(async () => {
     await getFalseApiToDBUsers();
     await postFalseCourses();
     await getFalseApiToDB();
+    await relaciones();
     await saveReviewsDB()
     await saveLectures()
+    
     
 })
 
