@@ -38,6 +38,11 @@ module.exports = sequelize => {
             type: DataTypes.INTEGER,
             allowNull:true
         },
+        PK_User : {
+            type: DataTypes.INTEGER,
+            allowNull:true
+        }
+        
     },
         { timestamps: false }
     );
