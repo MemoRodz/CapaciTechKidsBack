@@ -377,7 +377,7 @@ let realDB =
             Category :["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047840/CAPACITECHKIDS/images/users/banner_curses/pejrlqjo93vumcnxbamw.png",
             Duration: 140,
-            PK_User:  1,
+            PK_User:  8,
             // ruta 8
             // 12 años
             Lectures : [14,

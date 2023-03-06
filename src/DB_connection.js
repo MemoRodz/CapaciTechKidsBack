@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Sequelize, Op, BelongsTo } = require('sequelize');
-const modeltblUsers = require('./models/tblCourses');
-const modeltblCourses = require('./models/tblUsers');
+const modeltblUsers = require('./models/tblUsers');
+const modeltblCourses = require('./models/tblCourses');
 const modeltblLectures = require('./models/tblLectures');
 const modeltblExams = require('./models/tblExams');
 const modeltblQuestions = require('./models/tblQuestions');
