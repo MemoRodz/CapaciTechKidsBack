@@ -3,6 +3,7 @@ const {tblCourses,tblUsers,tblCategories, tblReviews,tblLectures} = require("../
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
 const getCategory = require("../controllers/getCategory.js");
+const postCoursexStudent = require("../controllers/postCoursexStudent.js")
 
 
 
@@ -10,7 +11,6 @@ const getCategory = require("../controllers/getCategory.js");
 const CourseRouter = Router();    
 
 CourseRouter.get("/", async(req,res) => {
-    
 try{
     const result = await tblCourses.findAll({
         where: {Active: true},
@@ -67,6 +67,23 @@ catch (error) {
     res.status(400).send(error.message)
         }
 })
+
+CourseRouter.post("/coursexstudent", async(req,res) => {
+    const {course,student} = req.query;
+   //console.log(Title,Description,Professor,Category,Duration,Active)
+   try{
+    const result = await postCoursexStudent(course,student)
+    
+     res.status(201).json(result)
+         }
+ catch (error) {
+    //console.log(error.message)
+     res.status(400).send(error.message)
+         }
+ })
+
+
+ // http://localhost:3001/fav/delete?id=${id}&userID=${userID}
 
 
 
@@ -200,10 +217,10 @@ CourseRouter.put("/detail/:id/activate", async (req,res) =>{
      })
 
 CourseRouter.post("/createCourse", async(req,res) => {
-    const {Title,Description,Professor,Category,Duration,Active} = req.body;
+    const {Title,Description,Professor,Category,Duration,Active,Image} = req.body;
    //console.log(Title,Description,Professor,Category,Duration,Active)
    try{
-    const result = await postCourse(Title,Description,Professor,Category,Duration,Active)
+    const result = await postCourse(Title,Description,Professor,Category,Duration,Active,Image)
     
      res.status(201).json(result)
          }
