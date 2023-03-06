@@ -10,7 +10,7 @@ let realDB =
             
             Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
             Category : ["Desarrollo", "Juegos"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/12.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047837/CAPACITECHKIDS/images/users/banner_curses/tezpjw27hcwazdwt939z.png",
             Duration: 70,
             PK_User:  8,
             //ruta recomendada : 1  esto seguramente será una tabla especial de rutas. 
@@ -33,7 +33,7 @@ let realDB =
             
             Nuestro curso está diseñado especialmente para niños y jóvenes, por lo que no necesitas tener conocimientos previos de programación para participar. ¡Así que ven y únete a la aventura!`,
             Category : ["Desarrollo", "Juegos"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/12.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047837/CAPACITECHKIDS/images/users/banner_curses/tezpjw27hcwazdwt939z.png",
             Duration: 70,
             PK_User:  1,
             //ruta recomendada : 1
@@ -55,7 +55,7 @@ let realDB =
             
             ¿Y qué mejor lugar para aprender programación en Lua que dentro de Roblox Studio? Es un entorno de desarrollo integrado especialmente diseñado para crear juegos en Roblox. ¡Así que únete a nosotros en esta aventura de aprendizaje y descubre el increíble mundo de la programación en Roblox Studio!`,
             Category : ["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165309/CAPACITECHKIDS/images/users/banner_curses/2.png",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047839/CAPACITECHKIDS/images/users/banner_curses/stcgjiscx6h2gduzpwiu.png",
             Duration: 130,
             PK_User:  1,
             // ruta recomendada 2. 
@@ -86,7 +86,7 @@ let realDB =
             
             ¿Y qué mejor lugar para aprender programación en Lua que dentro de Roblox Studio? Es un entorno de desarrollo integrado especialmente diseñado para crear juegos en Roblox. ¡Así que únete a nosotros en esta aventura de aprendizaje y descubre el increíble mundo de la programación en Roblox Studio!`,
             Category : ["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165309/CAPACITECHKIDS/images/users/banner_curses/2.png",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047839/CAPACITECHKIDS/images/users/banner_curses/stcgjiscx6h2gduzpwiu.png",
             Duration: 120,
             PK_User:  1,
             // ruta recomendada 2. 
@@ -110,7 +110,7 @@ let realDB =
             
             Utilizaremos todo lo que aprendimos en los dos cursos anterior sobre Roblox y Lua para crear nuestros propios videojuegos, desde su planificación hasta el final!`,
             Category : ["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/18.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047847/CAPACITECHKIDS/images/users/banner_curses/euwumskcvjq5a6ite01y.png",
             Duration: 130,
             PK_User:  1,
             // ruta recomendada 2. 
@@ -141,7 +141,7 @@ let realDB =
             
             Pero no solo aprenderás cómo construir el coche eléctrico, sino también cómo personalizarlo para que se adapte a tus gustos y necesidades. ¡Podrás pintarlo y decorarlo a tu estilo!`,
             Category : ["Robótica", "Diseño"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168640/CAPACITECHKIDS/images/users/banner_curses/19.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047841/CAPACITECHKIDS/images/users/banner_curses/rdvunzhk55vu9vvgwnxg.png",
             Duration: 50,
             PK_User:  1,
             // ruta única : 3. 
@@ -160,7 +160,7 @@ let realDB =
 
             ¡Y lo mejor de todo es que no necesitas tener conocimientos previos en programación! Este curso está diseñado para principiantes y te guiará paso a paso en el proceso de creación de tus propios juegos.`,
             Category : ["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165300/CAPACITECHKIDS/images/users/banner_curses/5.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047834/CAPACITECHKIDS/images/users/banner_curses/pzqbsamghre1rmszjqsd.png",
             Duration: 80,
             PK_User:  1,
             // ruta 4 
@@ -183,7 +183,7 @@ let realDB =
 
             ¡Y lo mejor de todo es que no necesitas tener conocimientos previos en programación! Este curso está diseñado para principiantes y te guiará paso a paso en el proceso de creación de tus propios juegos.`,
             Category : ["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165300/CAPACITECHKIDS/images/users/banner_curses/5.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047834/CAPACITECHKIDS/images/users/banner_curses/pzqbsamghre1rmszjqsd.png",
             Duration: 60,
             PK_User:  1,
             // ruta 4 
@@ -228,7 +228,7 @@ let realDB =
 
             En este curso, aprenderás cómo programar Meet Edison, el robot compatible con LEGO más económico del mercado, te mostraremos cómo construir diferentes estructuras con LEGO  y cómo personalizarlas para que se adapten a tus necesidades y deseos. ¡Podrás crear y programar tu propio robot de una forma creativa y entretenida!`,
             Category : ["Robótica","Desarrollo","Juegos"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165301/CAPACITECHKIDS/images/users/banner_curses/3.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047834/CAPACITECHKIDS/images/users/banner_curses/wmmt6qimn6ga1vwcwphi.png",
             Duration: 100,
             PK_User:  1,
             // ruta 5 
@@ -248,7 +248,7 @@ let realDB =
             En este curso, aprenderás cómo utilizar las herramientas de dibujo y de pintura de Photoshop para crear dibujos increíbles. Te enseñaremos los conceptos básicos de la ilustración digital, como la selección de colores, la creación de capas y la utilización de herramientas de dibujo.
             Al final del curso, tendrás la capacidad de dibujar en Photoshop de una forma creativa y profesional. ¡Únete a nosotros y comienza tu aventura en la ilustración digital!   `,
             Category :["Diseño"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/9.png",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047838/CAPACITECHKIDS/images/users/banner_curses/vewvlnzyjzifrmpbiuuj.png",
             Duration: 80,
             PK_User:  1,
             // ruta 6 
@@ -268,7 +268,7 @@ let realDB =
                 En este curso, aprenderás cómo utilizar las herramientas de dibujo y de pintura de Photoshop para crear dibujos increíbles. Te enseñaremos los conceptos básicos de la ilustración digital, como la selección de colores, la creación de capas y la utilización de herramientas de dibujo.
                 Al final del curso, tendrás la capacidad de dibujar en Photoshop de una forma creativa y profesional. ¡Únete a nosotros y comienza tu aventura en la ilustración digital!   `,
                 Category :["Diseño"],
-                Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/9.png",
+                Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047838/CAPACITECHKIDS/images/users/banner_curses/vewvlnzyjzifrmpbiuuj.png",
                 Duration: 120,
                 PK_User:  1,
                 // ruta 6 
@@ -303,7 +303,7 @@ let realDB =
             
             Aprenderás a dar vida a tus ideas y a convertirlas en juegos interactivos y emocionantes que puedes compartir con tus amigos. Además, también aprenderás a personalizar y mejorar tus juegos con gráficos y sonidos divertidos.`,
             Category :["Juegos","Desarrollo"],
-            Image: "    https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/27.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047843/CAPACITECHKIDS/images/users/banner_curses/fesatpbso75w4q4mq0yf.png",
             Duration: 50,
             PK_User:  1,
             // ruta 7
@@ -341,7 +341,7 @@ let realDB =
             
             Aprenderás a dar vida a tus ideas y a convertirlas en juegos interactivos y emocionantes que puedes compartir con tus amigos. Además, también aprenderás a personalizar y mejorar tus juegos con gráficos y sonidos divertidos.`,
             Category :["Juegos","Desarrollo"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/27.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047843/CAPACITECHKIDS/images/users/banner_curses/fesatpbso75w4q4mq0yf.png",
             Duration: 50,
             PK_User:  1,
             // ruta 7
@@ -375,7 +375,7 @@ let realDB =
             Title: "¡Aprende a programar mientras juegas con Minecraft y Python!",
             Description : "¡Únete a nuestra emocionante aventura de programación! En este curso, te enseñaremos cómo programar tus propios mods de Minecraft usando Python. ¡Podrás construir tu propio mundo de Minecraft y hacer que cobre vida con tus habilidades de programación! ¡Aprenderás a crear herramientas personalizadas, animaciones y mucho más! ¡No pierdas esta oportunidad única de aprender mientras te diviertes con Minecraft y Python!.",
             Category :["Desarrollo", "Juegos"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/16.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047840/CAPACITECHKIDS/images/users/banner_curses/pejrlqjo93vumcnxbamw.png",
             Duration: 140,
             PK_User:  1,
             // ruta 8
@@ -393,7 +393,7 @@ let realDB =
             Title: "¡Aprende a programar mientras juegas con Minecraft y Python 2!",
             Description : "¡Únete a nuestra emocionante aventura de programación! En este curso, te enseñaremos cómo programar tus propios mods de Minecraft usando Python. ¡Podrás construir tu propio mundo de Minecraft y hacer que cobre vida con tus habilidades de programación! ¡Aprenderás a crear herramientas personalizadas, animaciones y mucho más! ¡No pierdas esta oportunidad única de aprender mientras te diviertes con Minecraft y Python!.",
             Category :["Desarrollo", "Juegos"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/16.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047840/CAPACITECHKIDS/images/users/banner_curses/pejrlqjo93vumcnxbamw.png",
             Duration: 130,
             PK_User:  1,
             // ruta 8
@@ -411,7 +411,7 @@ let realDB =
             Title: "Aprende a programar tus propias creaciones con Arduino",
             Description : "¿Te gustaría crear tus propios robots, juegos electrónicos o sistemas automatizados? ¡Entonces este curso de programación de Arduino es perfecto para ti! Aprenderás a programar con lenguaje de bloques y a trabajar con componentes electrónicos, todo mientras te diviertes y descubres un mundo nuevo de posibilidades tecnológicas. ¡Únete a nosotros y conviértete en un verdadero creador!",
             Category :["Desarrollo","Otros","Electrónica"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/14.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047838/CAPACITECHKIDS/images/users/banner_curses/vpeloyxlrqxhquok6xp8.png",
             Duration: 90,
             PK_User:  1,
             // ruta 9 
@@ -429,7 +429,7 @@ let realDB =
             Title: "Aprende a programar tus propias creaciones con Arduino 2",
             Description : "¿Te gustaría crear tus propios robots, juegos electrónicos o sistemas automatizados? ¡Entonces este curso de programación de Arduino es perfecto para ti! Aprenderás a programar con lenguaje de bloques y a trabajar con componentes electrónicos, todo mientras te diviertes y descubres un mundo nuevo de posibilidades tecnológicas. ¡Únete a nosotros y conviértete en un verdadero creador!",
             Category :["Desarrollo","Otros","Electrónica"],
-            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168638/CAPACITECHKIDS/images/users/banner_curses/14.jpg",
+            Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047838/CAPACITECHKIDS/images/users/banner_curses/vpeloyxlrqxhquok6xp8.png",
             Duration: 100,
             PK_User:  1,
             // ruta 9 
@@ -486,7 +486,7 @@ let realDB =
           Title: "¡Descubre la Magia de la Inteligencia Artificial!",
           Description : "¡Bienvenidos al mundo de la Inteligencia Artificial! ¿Alguna vez has imaginado cómo sería tener una máquina que pudiera pensar, aprender y tomar decisiones por sí sola? La Inteligencia Artificial es la tecnología que lo hace posible. Con esta emocionante herramienta, podemos enseñar a las computadoras a hacer todo tipo de cosas, desde identificar objetos hasta jugar juegos y conversar contigo como un amigo. ¡Acompáñanos en esta aventura para descubrir la magia de la Inteligencia Artificial!",
           Category :["Inteligencia Artificial"],
-          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/17.jpg",
+          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047843/CAPACITECHKIDS/images/users/banner_curses/kovlyver4p2wbgxypcbq.png",
           Duration: 60,
           PK_User:  1,
           // ruta 10 
@@ -504,7 +504,7 @@ let realDB =
           Title: "¡Aprende a Programar y Crea Tu Propia Inteligencia Artificial!",
           Description : "¿Te gustaría crear un robot que pueda ayudarte con tus tareas diarias? ¡La programación y la Inteligencia Artificial te permiten hacerlo! Aprender a programar te permite enseñar a las computadoras a hacer todo lo que quieras, desde jugar juegos hasta crear aplicaciones y programas. Y con la Inteligencia Artificial, puedes crear robots y asistentes virtuales que puedan aprender de tus hábitos y hacer recomendaciones para ti. ¡Únete a nosotros en este emocionante viaje de programación e Inteligencia Artificial y crea tu propia tecnología del futuro!",
           Category :["Inteligencia Artificial","Desarrollo", "Otros"],
-          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168639/CAPACITECHKIDS/images/users/banner_curses/17.jpg",
+          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047843/CAPACITECHKIDS/images/users/banner_curses/kovlyver4p2wbgxypcbq.png",
           Duration: 60,
           PK_User:  1,
           // ruta 10
@@ -526,7 +526,7 @@ let realDB =
           Title: "¡Aprende sobre robótica!",
           Description : "¿Te imaginas un mundo lleno de robots inteligentes que nos ayuden en nuestra vida diaria? ¡Con este libro podrás aprender los conceptos básicos de la robótica y descubrir cómo funcionan estos increíbles inventos! Desde los diferentes tipos de robots hasta cómo se programan para realizar tareas, este libro es la guía perfecta para cualquier joven interesado en la tecnología. ¡Prepárate para explorar el emocionante mundo de la robótica!",
           Category :["Robótica"],
-          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677168640/CAPACITECHKIDS/images/users/banner_curses/19.jpg",
+          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047841/CAPACITECHKIDS/images/users/banner_curses/rdvunzhk55vu9vvgwnxg.png",
           Duration: 80,
           PK_User:  1,
           // ruta 11 
@@ -630,7 +630,7 @@ let realDB =
           Title: "¡Aprende a crear tus propios videojuegos con Unity y C#! ",
           Description : "En este curso, te enseñaremos todo lo que necesitas saber para empezar a crear tus propios juegos, desde cero! Aprenderás los conceptos básicos de programación y diseño de juegos mientras te diviertes creando tus propios mundos virtuales. ¡Únete a nosotros en esta emocionante aventura de desarrollo de videojuegos!",
           Category :["Desarrollo","Juegos"],
-          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193522/CAPACITECHKIDS/images/users/banner_curses/24.jpg",
+          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047848/CAPACITECHKIDS/images/users/banner_curses/miwzklsbmcnvk59ug8zb.png",
           Duration: 150,
           PK_User:  1,
           // ruta 14
@@ -652,7 +652,7 @@ let realDB =
           Title: "Aprende a dibujar pixel art: crea tus propias obras de arte en bloques de colores!",
           Description : "¡Bienvenidos al emocionante mundo del pixel art! En este curso de dibujo, aprenderás a crear imágenes detalladas y vibrantes utilizando pequeños bloques de colores llamados píxeles. Desde personajes de videojuegos hasta paisajes fantásticos, el pixel art es una forma única y emocionante de crear arte en la era digital. ¡Ven y únete a nosotros para descubrir cómo dar vida a tus ideas en una pantalla de pixeles!",
           Category :["Diseño","Juegos"],
-          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193523/CAPACITECHKIDS/images/users/banner_curses/28.jpg",
+          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047845/CAPACITECHKIDS/images/users/banner_curses/vsap86jzuls2opr7gsfk.png",
           Duration: 30,
           PK_User:  1,
           // ruta 15 
@@ -667,7 +667,7 @@ let realDB =
           Title: " ¡Aprende Excel de manera divertida!",
           Description : "Con Excel para niños, podrás descubrir cómo manejar hojas de cálculo de manera fácil y entretenida. Aprenderás a organizar información, hacer cálculos matemáticos y crear gráficas coloridas y llamativas. ¡No te pierdas esta aventura de números y datos!",
           Category :["Escritorio","Otros"],
-          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677193523/CAPACITECHKIDS/images/users/banner_curses/29.png",
+          Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047844/CAPACITECHKIDS/images/users/banner_curses/y7hq9sybkpmvklxmot40.png",
           Duration: 90,
           PK_User:  1,
           // ruta 12 
@@ -688,7 +688,7 @@ let realDB =
         Title: "Aprende a crear tus propias apps con App Inventor",
         Description : "¿Quieres aprender a programar y crear tus propias aplicaciones móviles? ¡Este curso es para ti! Con App Inventor, una herramienta gratuita y fácil de usar, podrás crear tus propias apps de manera divertida y sencilla. Aprenderás a programar paso a paso mientras creas juegos, calculadoras, reproductores de música y mucho más. ¡Ven y conviértete en un programador de apps en poco tiempo!",
         Category :["Movil", "Juegos"],
-        Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/4.png",
+        Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047838/CAPACITECHKIDS/images/users/banner_curses/o5qnyvotuvsspwxw867t.png",
         Duration: 60,
         PK_User:  1,
         // ruta 13
@@ -710,7 +710,7 @@ let realDB =
     { Title: "Aprende a crear tus propias apps con App Inventor 2",
     Description : "¿Quieres aprender a programar y crear tus propias aplicaciones móviles? ¡Este curso es para ti! Con App Inventor, una herramienta gratuita y fácil de usar, podrás crear tus propias apps de manera divertida y sencilla. Aprenderás a programar paso a paso mientras creas juegos, calculadoras, reproductores de música y mucho más. ¡Ven y conviértete en un programador de apps en poco tiempo!",
     Category :["Movil", "Juegos"],
-    Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1677165304/CAPACITECHKIDS/images/users/banner_curses/4.png",
+    Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047838/CAPACITECHKIDS/images/users/banner_curses/o5qnyvotuvsspwxw867t.png",
     Duration: 70,
     PK_User:  1,
     // ruta 13
