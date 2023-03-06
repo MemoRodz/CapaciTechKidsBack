@@ -1,7 +1,7 @@
 const { tblUsers } = require("../DB_connection.js");
 
 const putUser = async (user) => {
-  const { PK_User, Name, Image, } = user;
+  const { PK_User, Name, Image, UserType} = user;
  
 
   try {
@@ -20,6 +20,7 @@ const putUser = async (user) => {
     // Actualizar los datos del usuario con los valores proporcionados en user
     foundUser.Name = Name || foundUser.Name;
     foundUser.Image = Image || foundUser.Image;
+    foundUser.UserType = UserType || foundUser.UserType;
 
     // Guardar los cambios en la base de datos
     await foundUser.save();
