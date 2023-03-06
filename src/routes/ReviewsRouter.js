@@ -62,7 +62,7 @@ ReviewsRouter.get("/related/:id", async (req,res) => {
 })
 
 
-ReviewsRouter.get("/avge/related/:id", async (req, res) => {
+ReviewsRouter.get("/avg/related/:id", async (req, res) => {
   const {id} = req.params;
   try {
     const result = await getScores(id)
