@@ -152,7 +152,7 @@ UsersRouter.get("/:id", async(req,res) => {
              }
      })
 
-UsersRouter.get("/:id/delete", async(req,res) => {
+UsersRouter.put("/:id/delete", async(req,res) => {
     const {id} = req.params;
     try{
         const result = await tblUsers.update({Active: false}, {where: {PK_User: id}})
@@ -163,7 +163,7 @@ UsersRouter.get("/:id/delete", async(req,res) => {
              }
      })
 
-UsersRouter.get("/:id/activate", async(req,res) => {
+UsersRouter.put("/:id/activate", async(req,res) => {
     const {id} = req.params;
     try{
         const result = await tblUsers.update({Active: true}, {where: {PK_User: id}})
