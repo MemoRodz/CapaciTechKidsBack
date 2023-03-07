@@ -35,7 +35,7 @@ const postCourse = async (Title,Description,Professor,Category,Duration,Active,I
           });
           c++
         }
-  postCoursexStudent(last.length,PK_User)
+  postCoursexStudent(last.length,PK_User) 
 
 }
     catch(error){
