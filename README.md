@@ -22,10 +22,10 @@
     <img  src='./img/mckupdntpg.png' height='480px' width='640px'>
 <br />
     <p align="center">Nosotros</p>
-    <img  src='./img/mckupuspg.png' height='500px' width='1000px'>
+    <img  src='./img/mckupuspg.png' height='480px' width='640px'>
 <br />
     <p align="center">Ingresa</p>
-    <img  src='./img/mckuploginpg.png' height='500px' width='1000px'>
+    <img  src='./img/mckuploginpg.png' height='480px' width='640px'>
 <br />
 
 <hr />
