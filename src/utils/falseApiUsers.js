@@ -101,16 +101,16 @@ let falseApiUsers =
         
     },
     {
-        Name: "Patricio Garcia",
-        Email: "pato.garcia@yahoo.com",
-        UserType: "Student",
-        
-    },
-    {
 
         Name: "CapaciTech Admin",
         Email: "capacitechkids@gmail.com",
         UserType: "AdvUser",
+        
+    },
+    {
+        Name: "Patricio Garcia",
+        Email: "pato.garcia@yahoo.com",
+        UserType: "Student",
         
     },
     ]
