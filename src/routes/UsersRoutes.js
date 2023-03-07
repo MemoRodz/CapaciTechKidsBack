@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblUsersXLectures} = require("../DB_connection.js");
 const register = require("../controllers/registerUser.js")
 const UsersRouter = Router();    
 const getUserDetails = require("../controllers/getUserDetails")
@@ -13,6 +13,23 @@ try{
 catch (error) {
     res.status(400).send(error.message)
         }   
+})
+
+UsersRouter.post("/userslectures", async (req,res) => {
+    const {student,lecture} = req.query;
+
+try{
+ const result =  await tblUsersXLectures.create({
+    tblLecturePKLecture: lecture,
+    tblUserPKUser : student
+   }) 
+ 
+  res.status(201).json(result)
+      }
+catch (error) {
+
+  res.status(400).send(error.message)
+      }
 })
 
 UsersRouter.get("/profescursos", async(req,res) => {

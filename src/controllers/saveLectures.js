@@ -1,7 +1,5 @@
 const {tblCourses,tblUsers,tblLectures} = require("../DB_connection.js");
 const  lectures = require("../utils/DBLectures.js");
-const categoriesXCourses = require("./postCategoriesXCourse.js");
-
 
 const saveLectures = async () => {
     try {

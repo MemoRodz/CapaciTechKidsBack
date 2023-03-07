@@ -61,14 +61,17 @@ tblLectures.belongsTo(tblCourses, {
    foreignKey: "PK_Courses"
 });
 
-// Relación de Exams con Questions.
-tblExams.belongsTo(tblLectures, {
-   foreignKey: "PK_Lectures"
-});
+tblLectures.belongsToMany(tblUsers, { through: "tblUsersXLectures", unique: false });
+tblUsers.belongsToMany(tblLectures, { through: "tblUsersXLectures", unique: false });
 
-tblQuestions.belongsTo(tblExams, {
-   foreignKey: "PK_Exams"
-});
+// // Relación de Exams con Questions.
+// tblExams.belongsTo(tblLectures, {
+//    foreignKey: "PK_Lectures"
+// });
+
+// tblQuestions.belongsTo(tblExams, {
+//    foreignKey: "PK_Exams"
+// });
 
 tblReviews.belongsTo(tblCourses, {
    foreignKey: "PK_Course"
