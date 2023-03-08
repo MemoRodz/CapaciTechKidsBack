@@ -7,16 +7,18 @@ const saveLectures = require('./src/controllers/saveLectures');
 const saveReviewsDB = require('./src/controllers/saveReviewsDB');
 const getFalseApiToDBUsers = require("./src/controllers/saveUsersDB")
 const PORT = process.env.PORT
-const { sequelize } = require("./src/DB_connection")
+
+const {sequelize} = require ("./src/DB_connection")
 
 sequelize.sync({ force: false }).then(async () => {
-  //await getFalseApiToDBUsers();
-  //await postFalseCourses();
-  //await getFalseApiToDB();
-  //await relaciones();
-  //await saveReviewsDB()
-  //await saveLectures()
-})
+    // await getFalseApiToDBUsers();
+    // await postFalseCourses();
+    // await getFalseApiToDB();
+    // await relaciones();
+    // await saveReviewsDB()
+    // await saveLectures()
+    
+
 
 
 // This is your test secret API key.
