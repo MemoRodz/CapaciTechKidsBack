@@ -34,10 +34,6 @@ module.exports = sequelize => {
             defaultValue : true, 
             allowNull: true
         },
-        Score : {
-            type: DataTypes.INTEGER,
-            allowNull:true
-        },
         PK_User : {
             type: DataTypes.INTEGER,
             allowNull:true

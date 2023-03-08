@@ -21,7 +21,7 @@ const getFalseApiToDBUsers = async() => {
         Name : data.Name,
         Email : data.Email,
         //Password : data.Password,
-        //UserType: data.UserType,
+        UserType: data.UserType,
         Register_Date : data.Register_Date,
         Active: data.Active,
         Image:data.Image
