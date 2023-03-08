@@ -3,7 +3,8 @@ const {tblCourses,tblUsers,tblCategories, tblReviews,tblLectures} = require("../
 const getDetails = require("../controllers/getDetailsCourse");
 const postCourse = require("../controllers/postCourse.js");
 const getCategory = require("../controllers/getCategory.js");
-const postCoursexStudent = require("../controllers/postCoursexStudent.js")
+const postCoursexStudent = require("../controllers/postCoursexStudent.js");
+const postCoursexStudent2 = require("../controllers/postCoursexStudent2.js");
 
 
 
@@ -70,9 +71,25 @@ catch (error) {
 
 CourseRouter.post("/coursexstudent", async(req,res) => {
     const {course,student} = req.query;
+    console.log(course,student)
    //console.log(Title,Description,Professor,Category,Duration,Active)
    try{
     const result = await postCoursexStudent(course,student)
+    
+     res.status(201).json(result)
+         }
+ catch (error) {
+    //console.log(error.message)
+     res.status(400).send(error.message)
+         }
+ })
+
+ CourseRouter.post("/coursexstudent2", async(req,res) => {
+    const {course,student} = req.query;
+    console.log(course,student)
+   //console.log(Title,Description,Professor,Category,Duration,Active)
+   try{
+    const result = await postCoursexStudent2(course,student)
     
      res.status(201).json(result)
          }
