@@ -17,7 +17,7 @@ sequelize.sync({ force: false }).then(async () => {
     // await relaciones();
     // await saveReviewsDB()
     // await saveLectures()
-    
+}
 
 
 
