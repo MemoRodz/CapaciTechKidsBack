@@ -7,7 +7,6 @@ const modeltblExams = require('./models/tblExams');
 const modeltblQuestions = require('./models/tblQuestions');
 const modeltblCategories = require("./models/tblCategories");
 const modeltblReviews = require("./models/tblReviews");
-
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 
 
@@ -41,7 +40,8 @@ modeltblReviews(sequelize);
 
 
 
-const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions, tblCategories, tblReviews } = sequelize.models;
+
+const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions, tblCategories, tblReviews,tblRoutes } = sequelize.models;
 
 // Acá van las relaciones: 
 
@@ -76,6 +76,7 @@ tblUsers.belongsToMany(tblLectures, { through: "tblUsersXLectures", unique: fals
 tblReviews.belongsTo(tblCourses, {
    foreignKey: "PK_Course"
 });
+
 tblCourses.hasMany(tblReviews, {
    foreignKey: 'PK_Course'
 });
