@@ -10,6 +10,7 @@ const PORT = process.env.PORT
 
 const {sequelize} = require ("./src/DB_connection")
 
+
 sequelize.sync({ force: false }).then(async () => {
     // await getFalseApiToDBUsers();
     // await postFalseCourses();
@@ -17,8 +18,7 @@ sequelize.sync({ force: false }).then(async () => {
     // await relaciones();
     // await saveReviewsDB()
     // await saveLectures()
-    
-
+})
 
 
 // This is your test secret API key.
