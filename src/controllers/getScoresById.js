@@ -6,21 +6,20 @@ const {tblCourses,tblUsers,tblCategories, tblReviews, sequelize} = require("../D
 
 const getScores = async (id) => {
     try{
-   return tblCourses.findByPk(id,{   // Fuuncion en construcción 
-    
-    include: [
-        { model: tblReviews,
-            attributes: [
-                [
-                    
-                  Sequelize.fn("AVG", Sequelize.col("tblReviews.Score")),
-                  "average_score",
-                ],
-              ],
-        },
-
+   return tblCourses.findByPk(id, {
+    attributes: [
+        [
+            Sequelize.fn("AVG", Sequelize.col("tblReviews.Score")),
+            "average_score",
+        ],
     ],
-    group: ["tblCourses.PK_Course", "tblReviews.PK_Review"],
+    include: [
+        {
+            model: tblReviews,
+            attributes: [],
+        },
+    ],
+    group: ["tblCourses.PK_Course"],
 })
     }
     catch(error){

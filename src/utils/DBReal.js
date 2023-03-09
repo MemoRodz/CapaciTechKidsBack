@@ -12,7 +12,7 @@ let realDB =
             Category : ["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047837/CAPACITECHKIDS/images/users/banner_curses/tezpjw27hcwazdwt939z.png",
             Duration: 70,
-            PK_User:  1,
+            PK_User:  17,
             //ruta recomendada : 1  esto seguramente será una tabla especial de rutas. 
             // edades : 10 años en adelante
             Lectures: [ 1,
@@ -94,10 +94,10 @@ let realDB =
             Lectures : [4,
                 {video1 : "https://youtu.be/7L4-EnhSoAc", titulo : "Programación en Roblox Studio: Bucles While", descripcion: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos la sintaxis de bucles While en Lua y su uso para la programación de videojuegos."},
                 {video2 :"https://youtu.be/VeYD-sU_vvU", titulo: "Programación en Roblox Studio: Programación Orientada a Objetos I", descripcion : "Nueva lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección estudiamos de forma muy sencilla las bases de la Programación Orientada a Objetos (POO) para uso en videojuegos"},
-                {video3 : "https://youtu.be/QrlpEWYkucc",titulo: "Programación en Roblox Studio: Programación Orientada a Objetos II", descripción: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección vemos algunos aspectos prácticos de Programación Orientada a Objetos para su uso en Roblox Studio."},
+                {video3 : "https://youtu.be/QrlpEWYkucc",titulo: "Programación en Roblox Studio: Programación Orientada a Objetos II", descripcion: "Lección de nuestro curso de programación en Roblox Studio con Lua. En esta lección vemos algunos aspectos prácticos de Programación Orientada a Objetos para su uso en Roblox Studio."},
                 {video4 : "https://youtu.be/zaSpXvJ1n3Q", titulo : "Roblox Studio: Aprende Cómo Crear Objetos de Juego con Código (Instancias)", descripcion: "Nueva lección de nuestro curso intermedio de Roblox Studio donde aprenderemos a instanciar una clase mediante código para crear objetos de juego."},
                 {video5 :"https://youtu.be/fvmhkPboUhc", titulo: "Programación en Roblox Studio: Eventos", descripcion : "Nueva lección de nuestro curso intermedio de Roblox Studio donde aprenderemos que son los eventos de Roblox y a usarlos correctamente para conectar funciones a distintas situaciones en el juego."},
-                {video6 : "https://youtu.be/ErDBA21W1KI",titulo: "Programación en Roblox Studio: Clase Instance", descripción: "Nueva lección de nuestro curso intermedio de Roblox Studio donde analizaremos la clase base Instance de la que heredan el resto de clases en Roblox Studio."},
+                {video6 : "https://youtu.be/ErDBA21W1KI",titulo: "Programación en Roblox Studio: Clase Instance", descripcion: "Nueva lección de nuestro curso intermedio de Roblox Studio donde analizaremos la clase base Instance de la que heredan el resto de clases en Roblox Studio."},
                 {video7 : "https://youtu.be/DxflX99hABg", titulo : "Programación en Roblox Studio: Clase Instance (parte 2)", descripcion: "Segunda parte de la lección sobre la clase Instance de Roblox Studio. Veremos aspectos prácticos de uso para identificar objetos de la jerarquía mediante el uso de métodos de dicha clase."},
                 {video8 :"https://youtu.be/3wqhu_Fyx64", titulo: "Programación en Roblox Studio: LocalScript vs Script", descripcion : "Nueva lección de nuestro curso de Roblox Studio. Aquí veremos las diferencias entre Scripts y LocalScript en Roblox."},
             ]  
@@ -118,15 +118,15 @@ let realDB =
             Lectures : [5,
                 {video1 : "https://youtu.be/okku7EYkql4", titulo : "Buscar y escribir ideas para diseño de videojuegos", descripcion: "En este video veremos algunas estrategias y consejos para buscar ideas para nuestros videojuegos. También mencionamos cuales son los puntos principales a tratar en un GDD o Documento de Diseño de Juego"},
                 {video2 :"https://youtu.be/O9XZeRiCukQ", titulo: "Desarrollamos un juego para Roblox Studio: Planificación", descripcion : "En este video se hace un análisis básico de los distintos objetos y conceptos que formarán el videojuego en Roblox Studio que vamos a desarrollar en las siguientes lecciones."},
-                {video3 : "https://youtu.be/KOJovAhTkRM",titulo: "Desarrollamos un juego para Roblox Studio: Terreno", descripción: " En este video aprenderemos como crear un terreno para nuestro videojuego gracias a las herramientas que nos proporciona Roblox Studio."},
+                {video3 : "https://youtu.be/KOJovAhTkRM",titulo: "Desarrollamos un juego para Roblox Studio: Terreno", descripcion: " En este video aprenderemos como crear un terreno para nuestro videojuego gracias a las herramientas que nos proporciona Roblox Studio."},
                 {video4 : "https://youtu.be/jxe2vNBjNbc", titulo : "Desarrollamos un juego para Roblox Studio: Tablero (interfaz de usuario)", descripcion: "En este video aprenderemos como crear un tablero para nuestro videojuego que nos permita llevar un control de los logros del jugador durante la partida."},
                 {video5 :"https://youtu.be/QkMKnWAOlvY", titulo: "Desarrollamos un juego para Roblox Studio: Items (I)", descripcion : "En este video aprenderemos como crear objetos que pueden ser recolectados para nuestro videojuego, en nuestro caso serán diamantes."},
-                {video6 : "https://youtu.be/g0kHECpmjYM",titulo: "Desarrollamos un juego para Roblox Studio: Items (II)", descripción: "En este video aprenderemos como crear objetos que pueden ser recolectados para nuestro videojuego, en nuestro caso serán monedas de oro."},
+                {video6 : "https://youtu.be/g0kHECpmjYM",titulo: "Desarrollamos un juego para Roblox Studio: Items (II)", descripcion: "En este video aprenderemos como crear objetos que pueden ser recolectados para nuestro videojuego, en nuestro caso serán monedas de oro."},
                 {video7 : "https://youtu.be/lMqYt4LkNy4", titulo : "Desarrollamos un juego para Roblox Studio: Tools (I)", descripcion: "En este video aprenderemos como crear tools que puedan ser utilizadas en nuestro videojuegos para implementar nuevas mecánicas de juego."},
                 {video8 :"https://youtu.be/GoOuu_TTiuo", titulo: "Desarrollamos un juego para Roblox Studio: Tools (II)", descripcion : "Es la segunda parte de nuestro video anterior sobre creación de tools que puedan ser utilizadas en nuestro videojuegos para implementar nuevas mecánicas de juego"},
                 {video9 : "https://youtu.be/TeqXbOaNlwg", titulo : "Desarrollamos un juego para Roblox Studio: Programando Items", descripcion: "En este capítulo aprenderemos como programar el item de moneda que creamos previamente en nuestra lección sobre diseño de items. De esta manera podremos extender nuestro videojuego con una mecánica de recolección."},
                 {video10 :"https://youtu.be/NU5nK-jbzPE", titulo: "Desarrollamos un juego para Roblox Studio: Programando la Economía", descripcion : "En esta aprenderemos a programar una nueva mecánica de intercambio de items recolectados por puntuación de juego."},
-                {video11 : "https://youtu.be/KOJovAhTkRM",titulo: "💻 Cómo programar Mecánicas de Mejora en ROBLOX STUDIO 🎮 (con Lua)", descripción: "veremos como programar una sencilla mecánica de compra de mejoras dentro del juego. Para ello usaremos un intercambio de mejora por puntuación recibida al recoger nuestro item-moneda."},
+                {video11 : "https://youtu.be/KOJovAhTkRM",titulo: "💻 Cómo programar Mecánicas de Mejora en ROBLOX STUDIO 🎮 (con Lua)", descripcion: "veremos como programar una sencilla mecánica de compra de mejoras dentro del juego. Para ello usaremos un intercambio de mejora por puntuación recibida al recoger nuestro item-moneda."},
                 {video12 : "https://youtu.be/p6ZTwVrQATA", titulo : "Mecánicas de Mejora en ROBLOX STUDIO 🎮 (Parte 2)", descripcion: "Este vídeo es la segunda parte de nuestra lección donde programamos una mecánica de compra de mejoras dentro del juego. Para ello usaremos un intercambio de mejora por puntuación recibida al recoger nuestro item-moneda."},
                 {video13  : "https://youtu.be/XKHwj_f_lOI", titulo : "🏁 Terminando nuestro Videojuego 👾 con ROBLOX STUDIO.", descripcion: "Último vídeo de nuestra serie donde programamos un videojuego completo con Roblox Studio. En este vídeo damos los últimos pasos para tener listo nuestro videojuego, para ello ajustamos el terreno y situamos todos los elementos de juego."}
             ]  
@@ -149,7 +149,7 @@ let realDB =
             Lectures : [6,
                 {video1 : "https://youtu.be/_K1SBRGr5Z8", titulo : "Cómo Hacer un Coche Eléctrico Casero", descripcion: "aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."},
                 {video2 :"https://youtu.be/NL5-FV28uRA", titulo: "Continua la construcción de nuestro coche", descripcion : "aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."},
-                {video3 : "https://youtu.be/1HHFpzFOfko",titulo: "Ahora un coche de F1!!!!", descripción: " aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."}]   
+                {video3 : "https://youtu.be/1HHFpzFOfko",titulo: "Ahora un coche de F1!!!!", descripcion: " aprenderás cómo construir un coche eléctrico casero desde cero utilizando materiales fáciles de conseguir y herramientas básicas. Te enseñaremos cómo diseñar la estructura del coche, cómo construir el motor eléctrico y cómo instalarlo en el coche."}]   
         },
 
         {   
@@ -168,10 +168,10 @@ let realDB =
             Lectures : [7,
                 {video1 : "https://youtu.be/YjWIfsCkXz0", titulo : "[Parte 1] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "¿Siempre has querido desarrollar videojuegos pero crees que no tienes los conocimientos necesarios de programación? ¡Con GDevelop puedes crear tus propios juegos y de forma gratuita sin ser un programador experto!."},
                 {video2 :"https://youtu.be/6Dna4ZOzDoQ", titulo: "[Parte 2] Curso básico para desarrollar videojuegos con GDevelop", descripcion : "En este vídeo te explico las partes básicas del programa GDevelop. ¡Te será útil para desenvolverte bien el resto del curso!"},
-                {video3 : "https://youtu.be/RTIssq7B6iw",titulo: " [Parte 3] Curso básico para desarrollar videojuegos con GDevelop", descripción: "En este vídeo aprenderás cómo se colocan los principales objetos (sprites, tiled sprites y textos) en la escena de tu videojuego"},
+                {video3 : "https://youtu.be/RTIssq7B6iw",titulo: " [Parte 3] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "En este vídeo aprenderás cómo se colocan los principales objetos (sprites, tiled sprites y textos) en la escena de tu videojuego"},
                 {video4 : "https://youtu.be/D7UqPZdFrDg", titulo : "[Parte 4] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "En esta ocasión te explico cómo funcionan los comportamientos (behaviours) en GDevelop."},
                 {video5 :"https://youtu.be/TEbnbQJxcLY", titulo: "[Parte 5] Curso básico para desarrollar videojuegos con GDevelop", descripcion : "¡En este vídeo aprenderás a mover la cámara y las capas de tu escena!"},
-                {video6 : "https://youtu.be/Bmys7ARlqZ4",titulo: " [Parte 6] Curso básico para desarrollar videojuegos con GDevelop", descripción: "¡Añadimos algo más de acción a nuestro proyecto! ¡En este vídeo aprenderás a generar objetos en tiempo de ejecución! ¡Disparando corazones!"},
+                {video6 : "https://youtu.be/Bmys7ARlqZ4",titulo: " [Parte 6] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "¡Añadimos algo más de acción a nuestro proyecto! ¡En este vídeo aprenderás a generar objetos en tiempo de ejecución! ¡Disparando corazones!"},
             ]   
        
         },
@@ -191,7 +191,7 @@ let realDB =
             Lectures : [8,
                 {video1 : "https://youtu.be/9DFOQcWQGLM", titulo : "[Parte 7] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "En esta edición te explico cómo se utilizan los timers (temporizadores) y cómo eliminar objetos en tiempo de ejecución (destruir enemigos)."},
                 {video2 :"https://youtu.be/EdcaK77cErM", titulo: "[Parte 8] Curso básico para desarrollar videojuegos con GDevelop", descripcion : "En este vídeo te muestro cómo manejar variables globales para controlar la puntuación y las vidas de tus videojuegos!"},
-                {video3 : "https://youtu.be/YzRQuDLc3_Y",titulo: " [Parte 9] Curso básico para desarrollar videojuegos con GDevelop", descripción: "¡Te explico cómo puedes moverte entre escenas desde la hoja de eventos! ¡También perfeccionaremos el juego modificando los polígonos de colisión!"},
+                {video3 : "https://youtu.be/YzRQuDLc3_Y",titulo: " [Parte 9] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "¡Te explico cómo puedes moverte entre escenas desde la hoja de eventos! ¡También perfeccionaremos el juego modificando los polígonos de colisión!"},
                 {video4 : "https://youtu.be/tnbHsxkXKJ8", titulo : "[Parte 10] Curso básico para desarrollar videojuegos con GDevelop", descripcion: "En esta ocasión aprenderemos cómo se añaden los efectos a las capas de nuestras escenas ¡y también los efectos de sonido!"},
                 {video5 :"https://youtu.be/ZK72cXc52sg", titulo: "[Parte 11] Curso básico para desarrollar videojuegos con GDevelop", descripcion : "En este último vídeo del curso aprenderás exportar tu juego para Windows y para navegadores."},
             ]   
@@ -377,7 +377,7 @@ let realDB =
             Category :["Desarrollo", "Juegos"],
             Image: "https://res.cloudinary.com/dbbmgnhqf/image/upload/v1678047840/CAPACITECHKIDS/images/users/banner_curses/pejrlqjo93vumcnxbamw.png",
             Duration: 140,
-            PK_User:  8,
+            PK_User:  1,
             // ruta 8
             // 12 años
             Lectures : [14,

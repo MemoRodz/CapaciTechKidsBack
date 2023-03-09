@@ -9,14 +9,14 @@ const getFalseApiToDBUsers = require("./src/controllers/saveUsersDB")
 const PORT = process.env.PORT
 const {sequelize} = require ("./src/DB_connection")
 
-sequelize.sync({ force: true }).then(async () => {
+
+sequelize.sync({ force: false }).then(async () => {
     // await getFalseApiToDBUsers();
     // await postFalseCourses();
     // await getFalseApiToDB();
     // await relaciones();
     // await saveReviewsDB()
     // await saveLectures()
-    
 })
 
 
