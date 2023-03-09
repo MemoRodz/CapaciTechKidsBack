@@ -1,5 +1,4 @@
 const {tblCourses,tblUsers, tblUsersXCourses} = require("../DB_connection.js");
-const categoriesXCourses = require("./postCategoriesXCourse.js");
 
 
 

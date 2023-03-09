@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const {tblCourses,tblUsers} = require("../DB_connection.js");
+const {tblCourses,tblUsers,tblUsersXLectures} = require("../DB_connection.js");
 const register = require("../controllers/registerUser.js")
 const UsersRouter = Router();    
 const getUserDetails = require("../controllers/getUserDetails")
@@ -13,6 +13,23 @@ try{
 catch (error) {
     res.status(400).send(error.message)
         }   
+})
+
+UsersRouter.post("/userslectures", async (req,res) => {
+    const {student,lecture} = req.query;
+
+try{
+ const result =  await tblUsersXLectures.create({
+    tblLecturePKLecture: lecture,
+    tblUserPKUser : student
+   }) 
+ 
+  res.status(201).json(result)
+      }
+catch (error) {
+
+  res.status(400).send(error.message)
+      }
 })
 
 UsersRouter.get("/profescursos", async(req,res) => {
@@ -135,7 +152,7 @@ UsersRouter.get("/:id", async(req,res) => {
              }
      })
 
-UsersRouter.get("/:id/delete", async(req,res) => {
+UsersRouter.put("/:id/delete", async(req,res) => {
     const {id} = req.params;
     try{
         const result = await tblUsers.update({Active: false}, {where: {PK_User: id}})
@@ -146,7 +163,7 @@ UsersRouter.get("/:id/delete", async(req,res) => {
              }
      })
 
-UsersRouter.get("/:id/activate", async(req,res) => {
+UsersRouter.put("/:id/activate", async(req,res) => {
     const {id} = req.params;
     try{
         const result = await tblUsers.update({Active: true}, {where: {PK_User: id}})

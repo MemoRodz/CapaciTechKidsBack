@@ -7,7 +7,7 @@ let falseApi =
             End_Date: 2023-03-03,
             Image: "https://stackify.com/wp-content/uploads/2018/10/JavaScript-Tutorials-for-Beginners-881x441.jpg",
             Duration: 21600,
-            Instructor:  8,
+            Instructor:  1,
             Score : 10
 
         },

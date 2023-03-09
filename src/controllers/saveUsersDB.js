@@ -12,6 +12,7 @@ const getFalseApiToDBUsers = async() => {
     courseArray.UserType = falseApiUsers[i].UserType;
     courseArray.Register_Date= falseApiUsers[i].Register_Date
     courseArray.Active = falseApiUsers[i].Active
+    courseArray.Image = falseApiUsers[i].Image
     mapeados.push(courseArray)
   }
 
@@ -19,10 +20,11 @@ const getFalseApiToDBUsers = async() => {
    await tblUsers.create({
         Name : data.Name,
         Email : data.Email,
-        Password : data.Password,
+        //Password : data.Password,
         UserType: data.UserType,
         Register_Date : data.Register_Date,
-        Active: data.Active
+        Active: data.Active,
+        Image:data.Image
     })}
 
     return tblUsers.findAll()

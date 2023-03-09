@@ -3,6 +3,7 @@ let falseApiUsers =
         Name: "Youtube",
         Email: "youtube@mail.com",
         UserType: "Instructor",
+        Image: "//res.cloudinary.com/dbbmgnhqf/image/upload/v1678047837/CAPACITECHKIDS/images/users/banner_curses/tezpjw27hcwazdwt939z.png"
         
     },
     {
@@ -101,16 +102,16 @@ let falseApiUsers =
         
     },
     {
-        Name: "Patricio Garcia",
-        Email: "pato.garcia@yahoo.com",
-        UserType: "Student",
-        
-    },
-    {
 
         Name: "CapaciTech Admin",
         Email: "capacitechkids@gmail.com",
         UserType: "AdvUser",
+        
+    },
+    {
+        Name: "Patricio Garcia",
+        Email: "pato.garcia@yahoo.com",
+        UserType: "Student",
         
     },
     ]
