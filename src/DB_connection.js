@@ -20,12 +20,13 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY, DB_DB } = process.env;
 //     }
 //  );
 
- const sequelize = new Sequelize(DB_DEPLOY,
-    {
-       logging: false,
-       native: false
-    }
- );
+const sequelize = new Sequelize(DB_DEPLOY,
+   {
+      logging: false,
+      native: false
+   }
+);
+
 
 //Acá irán las funciones de los modelos. ej: modelStudents(sequelize)
 
@@ -41,7 +42,7 @@ modeltblReviews(sequelize);
 
 
 
-const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions, tblCategories, tblReviews,tblRoutes } = sequelize.models;
+const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions, tblCategories, tblReviews, tblRoutes } = sequelize.models;
 
 // Acá van las relaciones: 
 
