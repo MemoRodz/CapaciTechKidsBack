@@ -10,8 +10,6 @@ const getRelatedReviews = async (id) => {
     },
     include: [
         { model:tblUsers,
-         attributes : ["Email"]
-        
         }]
    })}
 
