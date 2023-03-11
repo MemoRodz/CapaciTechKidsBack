@@ -12,12 +12,18 @@ const getCategory = async (id) => {
         })
 
              return   tblCourses.findAll({
+
+              where : {
+                Active: true
+              },
                     include: [ {
                         model: tblUsers
                     },
+      
                       {model: tblCategories,
                       where: {
-                        PK_Category : tblCategoryPKCategory
+                        PK_Category : tblCategoryPKCategory,
+
                       }}
                     ]
  

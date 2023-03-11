@@ -41,7 +41,7 @@ modeltblReviews(sequelize);
 
 
 
-const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions, tblCategories, tblReviews,tblRoutes } = sequelize.models;
+const { tblUsers, tblCourses, tblLectures, tblExams, tblQuestions, tblCategories, tblReviews, tblRoutes } = sequelize.models;
 
 // Acá van las relaciones: 
 

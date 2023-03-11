@@ -1,5 +1,5 @@
 require('dotenv').config();
-const {server,express} = require("./src/App");
+const { server, express } = require("./src/App");
 const { postFalseCourses } = require('./src/controllers/postCategory');
 const relaciones = require('./src/controllers/Relaciones');
 const getFalseApiToDB = require('./src/controllers/saveCoursesDB');
@@ -7,6 +7,7 @@ const saveLectures = require('./src/controllers/saveLectures');
 const saveReviewsDB = require('./src/controllers/saveReviewsDB');
 const getFalseApiToDBUsers = require("./src/controllers/saveUsersDB")
 const PORT = process.env.PORT
+
 const {sequelize} = require ("./src/DB_connection")
 
 
@@ -35,7 +36,7 @@ const calculateOrderAmount = (items) => {
 
 server.post("/create-payment-intent", async (req, res) => {
   const { items, FABI } = req.body;
-    //console.log(FABI);
+  //console.log(FABI);
   // Create a PaymentIntent with the order amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
     amount: parseInt(FABI),
@@ -52,5 +53,5 @@ server.post("/create-payment-intent", async (req, res) => {
 });
 
 server.listen(PORT, () => {
-    console.log(`Listening on http://localhost:${PORT}`)
+  console.log(`Listening on http://localhost:${PORT}`)
 });

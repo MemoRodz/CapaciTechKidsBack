@@ -10,32 +10,27 @@ const postCourse = async (Title,Description,Professor,Category,Duration,Active,I
 
     try{
 
-  await tblCourses.create({
+      const last = await tblCourses.create({
         Title,
         Description,
         PK_User,
         Duration,
-        Active,
-        Category,
         Image
-    }
-    )
+});
 
-   const last = await tblCourses.findAll()
-
-  await categoriesXCourses(last.length,Category)
+  await categoriesXCourses(last.PK_Course,Category)
   let c = 1
   for (const data of Videos) {
           await tblLectures.create({
             Title: data.titulo,
             Description: data.descripcion,
-            PK_Courses: last.length,
+            PK_Courses: last.PK_Course,
             Video : data.video,
             NoVideo : c
           });
           c++
         }
-  postCoursexStudent(last.length,PK_User) 
+  postCoursexStudent(last.PK_Course ,PK_User) 
 
 }
     catch(error){
